@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "RNBoilerplate/*": "./*"
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
