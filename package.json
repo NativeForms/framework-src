@@ -3,11 +3,11 @@
   "version": "0.10.0",
   "private": true,
   "scripts": {
-    "start": "react-native start",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
     "ios-open": "open ios/*.xcodeproj",
-    "ios": "react-native run-ios",
-    "android": "react-native run-android",
-    "link": "react-native link",
+    "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
+    "android": "node node_modules/react-native/local-cli/cli.js run-android",
+    "link": "node node_modules/react-native/local-cli/cli.js link",
     "lint": "eslint src test *.js",
     "test": "mocha --recursive --compilers js:babel-core/register -r test/setup",
     "cover": "nyc npm test",
@@ -50,7 +50,7 @@
     "react-dom": "~15.4.1",
     "react-native-debugger-open": "^0.3.0",
     "react-native-mock": "^0.3.1",
-    "remote-redux-devtools": "^0.5.4",
+    "remote-redux-devtools": "^0.5.0",
     "remote-redux-devtools-on-debugger": "^0.7.0",
     "sinon": "^2.0.0"
   }
