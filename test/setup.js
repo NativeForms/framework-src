@@ -1,10 +1,9 @@
-import { jsdom } from 'jsdom';
+const jsdom = require("jsdom");
+const { JSDOM } = jsdom;
 
 global.fetch = require('node-fetch');
 
-global.document = jsdom('<!doctype html><html><body></body></html>');
-global.window = document.defaultView;
-global.navigator = global.window.navigator;
+new JSDOM('<!doctype html><html><body></body></html>');
 
 require('babel-polyfill');
 require('react-native-mock/mock');
