@@ -1,6 +1,4 @@
-import Immutable from 'immutable';
-
-const initialState = Immutable.Map({ counter: 0 });
+import initialState from './Counter.state';
 
 const actionsMap = {
   increment(state/*, action*/) {

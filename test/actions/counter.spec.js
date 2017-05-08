@@ -1,43 +1,85 @@
-import sinon from 'sinon';
 import { expect } from 'chai';
 import Immutable from 'immutable';
-import * as actions from '../../src/actions/counter';
+import configureMockStore from 'redux-mock-store';
+import { createEpicMiddleware, combineEpics } from 'redux-observable';
+
+// app
+import * as actions from '../../src/Framework/Counter/Counter.actions';
+import * as epics from '../../src/Framework/Counter/Counter.epics';
+import initialState from '../../src/Framework/Counter/Counter.state';
+
+const { Actions } = actions;
 
 describe('actions', () => {
   it('increment should create increment action', () => {
-    expect(actions.increment()).to.eql({ type: 'increment' });
+    expect(actions.increment()).to.eql({ type: Actions.INCREMENT });
   });
 
   it('decrement should create decrement action', () => {
-    expect(actions.decrement()).to.eql({ type: 'decrement' });
+    expect(actions.decrement()).to.eql({ type: Actions.DECREMENT });
   });
 
+  it('incrementIfOdd should create incrementIfOdd action', () => {
+    expect(actions.incrementIfOdd()).to.eql({ type: Actions.INCREMENT_IF_ODD });
+  });
+
+  it('incrementAsync should create incrementAsync action', () => {
+    expect(actions.incrementAsync()).to.eql({ type: Actions.INCREMENT_ASYNC, delay: 1000 });
+  });
+});
+
+const rootEpic = combineEpics(
+  epics.incrementIfOdd,
+  epics.incrementAsync
+);
+const epicMiddleware = createEpicMiddleware(rootEpic);
+const mockStore = configureMockStore([epicMiddleware]);
+
+function cleanUpEpic() {
+  epicMiddleware.replaceEpic(rootEpic);
+}
+
+describe('incrementIfOdd', () => {
+  afterEach(cleanUpEpic);
+
   it('incrementIfOdd should create increment action', () => {
-    const fn = actions.incrementIfOdd();
-    expect(fn).to.be.a('function');
-    const dispatch = sinon.spy();
-    const getState = () => ({ counter: Immutable.Map({ counter: 1 }) });
-    fn(dispatch, getState);
-    expect(dispatch.calledWith({ type: 'increment' })).to.be.true;
+    const incrementIfOdd = actions.incrementIfOdd();
+    const store = mockStore({ counter: Immutable.fromJS({ counter: 1 }) });
+    store.dispatch(incrementIfOdd);
+    expect(store.getActions()).to.eql([
+      incrementIfOdd,
+      actions.increment()
+    ]);
   });
 
   it('incrementIfOdd shouldnt create increment action if counter is even', () => {
-    const fn = actions.incrementIfOdd();
-    const dispatch = sinon.spy();
-    const getState = () => ({ counter: Immutable.Map({ counter: 2 }) });
-    fn(dispatch, getState);
-    expect(dispatch.callCount).to.equal(0);
+    const incrementIfOdd = actions.incrementIfOdd();
+    const store = mockStore({ counter: initialState });
+    store.dispatch(incrementIfOdd);
+    expect(store.getActions()).to.eql([
+      incrementIfOdd
+    ]);
+  });
+});
+
+describe('incrementAsync', () => {
+  let store;
+
+  beforeEach(() => {
+    store = mockStore({ counter: initialState });
   });
 
+  afterEach(cleanUpEpic);
+
   // There's no nice way to test this at the moment...
-  it('incrementAsync', (done) => {
-    const fn = actions.incrementAsync(1);
-    expect(fn).to.be.a('function');
-    const dispatch = sinon.spy();
-    fn(dispatch);
+  it('incrementAsync should create increment action', () => {
+    const incrementAsync = { type: Actions.INCREMENT_ASYNC, delay: 1 };
+    store.dispatch(incrementAsync);
     setTimeout(() => {
-      expect(dispatch.calledWith({ type: 'increment' })).to.be.true;
-      done();
+      expect(store.getActions()).to.eql([
+        incrementAsync,
+        actions.increment()
+      ]);
     }, 5);
   });
 });

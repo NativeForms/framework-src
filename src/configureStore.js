@@ -3,9 +3,11 @@
 import Immutable from 'immutable';
 import { Platform } from 'react-native';
 import { createStore, applyMiddleware, compose } from 'redux';
-import thunk from 'redux-thunk';
-import reducer from './reducers';
-import * as actionCreators from './actions/counter';
+import { createEpicMiddleware } from 'redux-observable';
+import rootReducer, { rootEpic } from './root';
+
+// framework
+import { actionCreators } from './Framework';
 
 let composeEnhancers = compose;
 if (__DEV__) {
@@ -27,15 +29,17 @@ if (__DEV__) {
   /* eslint-enable no-underscore-dangle */
 }
 
+const epicMiddleware = createEpicMiddleware(rootEpic);
 const enhancer = composeEnhancers(
-  applyMiddleware(thunk),
+  applyMiddleware(epicMiddleware),
 );
 
 export default function configureStore(initialState) {
-  const store = createStore(reducer, initialState, enhancer);
+  const store = createStore(rootReducer, initialState, enhancer);
   if (module.hot) {
     module.hot.accept(() => {
-      store.replaceReducer(require('./reducers').default);
+      store.replaceReducer(require('./root').default);
+      epicMiddleware.replaceEpic(require('./root').rootEpic);
     });
   }
   return store;
