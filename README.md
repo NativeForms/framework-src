@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/psychobolt/react-native-boilerplate.png?label=ready&title=Ready)](https://waffle.io/psychobolt/react-native-boilerplate)
 # React Native Boilerplate [![Build Status](https://travis-ci.org/psychobolt/react-native-boilerplate.svg)](https://travis-ci.org/psychobolt/react-native-boilerplate) [![Dependency Status](https://david-dm.org/psychobolt/react-native-boilerplate.svg)](https://david-dm.org/psychobolt/react-native-boilerplate) [![devDependency Status](https://david-dm.org/psychobolt/react-native-boilerplate/dev-status.svg)](https://david-dm.org/psychobolt/react-native-boilerplate?type=dev)
 
 > The React Native, Redux boilerplate for personal usage. React Navigation, Native Base example and Remote Redux DevTools control
