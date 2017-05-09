@@ -9,7 +9,7 @@
 [![iOS preview](https://cloud.githubusercontent.com/assets/560721/25835113/29f9bc18-3431-11e7-9b02-4be8ae1c317a.png)](https://cloud.githubusercontent.com/assets/560721/25835113/29f9bc18-3431-11e7-9b02-4be8ae1c317a.png)
 
 ### Android
-[![Android preview](https://cloud.githubusercontent.com/assets/560721/25835337/c3dbc92e-3432-11e7-886b-46aafb9a5b31.PNG)](https://cloud.githubusercontent.com/assets/560721/25835337/c3dbc92e-3432-11e7-886b-46aafb9a5b31.PNG)
+[![Android preview](https://cloud.githubusercontent.com/assets/560721/25835556/7dffae0a-3434-11e7-9a47-34793d91f15e.PNG)](https://cloud.githubusercontent.com/assets/560721/25835556/7dffae0a-3434-11e7-9a47-34793d91f15e.PNG)
 
 ## Included
 
