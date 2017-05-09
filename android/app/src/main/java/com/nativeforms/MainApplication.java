@@ -1,4 +1,4 @@
-package com.rnboilerplate;
+package com.nativeforms;
 
 import android.app.Application;
 

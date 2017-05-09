@@ -10,10 +10,10 @@ import App from './App';
 
 const store = configureStore();
 
-const RNBoilerplate = () => (
+const NativeForms = () => (
   <Provider store={store}>
     <App />
   </Provider>
 );
 
-AppRegistry.registerComponent('RNBoilerplate', () => RNBoilerplate);
+AppRegistry.registerComponent('NativeForms', () => NativeForms);
