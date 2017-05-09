@@ -8,7 +8,7 @@ import * as CounterActions from './Counter.actions';
 
 @connect(
   state => ({
-    counter: state.counter
+    counter: state.get('counter')
   }),
   dispatch => bindActionCreators(CounterActions, dispatch)
 )
