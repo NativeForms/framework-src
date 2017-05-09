@@ -3,11 +3,20 @@
 
 > The React Native, Redux boilerplate for personal usage. React Navigation, Native Base example and Remote Redux DevTools control
 
+## Screenshots
+
+### iOS
+[![iOS preview](https://cloud.githubusercontent.com/assets/560721/25835113/29f9bc18-3431-11e7-9b02-4be8ae1c317a.png)](https://cloud.githubusercontent.com/assets/560721/25835113/29f9bc18-3431-11e7-9b02-4be8ae1c317a.png)
+
+### Android
+[![Android preview](https://cloud.githubusercontent.com/assets/560721/25835337/c3dbc92e-3432-11e7-886b-46aafb9a5b31.PNG)](https://cloud.githubusercontent.com/assets/560721/25835337/c3dbc92e-3432-11e7-886b-46aafb9a5b31.PNG)
+
 ## Included
 
 * [React](https://github.com/facebook/react) & [React Native](https://github.com/facebook/react-native) v0.42
 * [React Navigation](https://github.com/react-community/react-navigation)
 * [Redux](https://github.com/reactjs/redux) & [Remote Redux DevTools](https://github.com/zalmoxisus/remote-redux-devtools) & [On Debugger](https://github.com/jhen0409/remote-redux-devtools-on-debugger)
+* [Redux Observable](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 * [Immutable](https://github.com/facebook/immutable-js) & [Immutable DevTools](https://github.com/andrewdavey/immutable-devtools)
 * [Babel](https://github.com/babel/babel) & Plugins: [transform-decorators-legacy](https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy)
 * [Native Base](https://nativebase.io/)
@@ -46,7 +55,7 @@ Open Android emulator and run command: (Or connect real device via USB)
 $ npm run android
 ```
 
-> With Hyper-V enabled, download and install [Visual Studio Android Emulator](https://aka.ms/vscomemudownload). You should run Android device Marshmallow (6.0.0) API Level 23. Next, configure Internet Connection for the device. See [Enable Internet Connection](http://blog.tpcware.com/2017/03/visual-studio-2017-android-emulation/) for instructions. For network access to debugger, you also need to install and configure [Telerik Fiddler](https://blogs.msdn.microsoft.com/visualstudioalm/2015/05/06/using-fiddler-to-monitor-network-traffic-from-the-vs-emulator-for-android/). Shake the emulator to display the Developer Menu (Tools > Shake > Play).
+> With Hyper-V enabled, download and install [Visual Studio Android Emulator](https://aka.ms/vscomemudownload). You should run a Android device Marshmallow (6.0.0) API Level 23. Next, configure Internet Connection for the device. See [Enable Internet Connection](http://blog.tpcware.com/2017/03/visual-studio-2017-android-emulation/) for instructions. For network access to debugger, you also need to install and configure [Telerik Fiddler](https://blogs.msdn.microsoft.com/visualstudioalm/2015/05/06/using-fiddler-to-monitor-network-traffic-from-the-vs-emulator-for-android/). Shake the emulator to display the Developer Menu (Tools > Shake > Play).
 
 ## DevTools
 
@@ -56,7 +65,7 @@ In development mode, you can install [React Native Debugger](https://github.com/
 
 ## Visual Studio Code
 
-It might be better to debug in a lightweight IDE. [Visual Studio Code](https://code.visualstudio.com/) provides a few extensions to debug React Native applications. Under extensions, install [Flow Language Support](https://marketplace.visualstudio.com/items?itemName=flowtype.flow-for-vscode),  [React Native Tools](https://marketplace.visualstudio.com/items?itemName=vsmobile.vscode-react-native) and [Redux DevTools](https://marketplace.visualstudio.com/items?itemName=jingkaizhao.vscode-redux-devtools). Make sure to configure local (custom) server for Redux DevlTools (host: localhost, port: 5678)
+It might be better to debug in a lightweight IDE. [Visual Studio Code](https://code.visualstudio.com/) provides a few extensions to debug React Native applications. Under extensions, install [Flow Language Support](https://marketplace.visualstudio.com/items?itemName=flowtype.flow-for-vscode), [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), [React Native Tools](https://marketplace.visualstudio.com/items?itemName=vsmobile.vscode-react-native), and [Redux DevTools](https://marketplace.visualstudio.com/items?itemName=jingkaizhao.vscode-redux-devtools). Make sure to configure local (custom) server for Redux DevlTools (host: localhost, port: 5678)
 
 > You may need to install Flow globally: ```npm install -g flow-bin```
 
@@ -66,6 +75,12 @@ We used [react-native-mock](https://github.com/lelandrichardson/react-native-moc
 
 ```bash
 $ npm test
+```
+
+Running ESLint:
+
+```bash
+$ npm run lint
 ```
 
 ## Credits
