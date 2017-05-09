@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "RNBoilerplate.app"
-               BlueprintName = "RNBoilerplate"
-               ReferencedContainer = "container:RNBoilerplate.xcodeproj">
+               BuildableName = "NativeForms.app"
+               BlueprintName = "NativeForms"
+               ReferencedContainer = "container:NativeForms.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "RNBoilerplateTests.xctest"
-               BlueprintName = "RNBoilerplateTests"
-               ReferencedContainer = "container:RNBoilerplate.xcodeproj">
+               BuildableName = "NativeFormsTests.xctest"
+               BlueprintName = "NativeFormsTests"
+               ReferencedContainer = "container:NativeForms.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "RNBoilerplateTests.xctest"
-               BlueprintName = "RNBoilerplateTests"
-               ReferencedContainer = "container:RNBoilerplate.xcodeproj">
+               BuildableName = "NativeFormsTests.xctest"
+               BlueprintName = "NativeFormsTests"
+               ReferencedContainer = "container:NativeForms.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "RNBoilerplate.app"
-            BlueprintName = "RNBoilerplate"
-            ReferencedContainer = "container:RNBoilerplate.xcodeproj">
+            BuildableName = "NativeForms.app"
+            BlueprintName = "NativeForms"
+            ReferencedContainer = "container:NativeForms.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "RNBoilerplate.app"
-            BlueprintName = "RNBoilerplate"
-            ReferencedContainer = "container:RNBoilerplate.xcodeproj">
+            BuildableName = "NativeForms.app"
+            BlueprintName = "NativeForms"
+            ReferencedContainer = "container:NativeForms.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "RNBoilerplate.app"
-            BlueprintName = "RNBoilerplate"
-            ReferencedContainer = "container:RNBoilerplate.xcodeproj">
+            BuildableName = "NativeForms.app"
+            BlueprintName = "NativeForms"
+            ReferencedContainer = "container:NativeForms.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
