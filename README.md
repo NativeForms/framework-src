@@ -5,7 +5,7 @@
 
 [![Stories in Ready](https://badge.waffle.io/psychobolt/react-native-boilerplate.png?label=ready&title=Ready)](https://waffle.io/psychobolt/react-native-boilerplate)
 
-> The React Native, Redux boilerplate for personal usage. React Navigation, Native Base example and Remote Redux DevTools control
+> The React Native, Redux boilerplate for personal usage. It also includes a example app which utilizes React Navigation, Native Base, Redux, and supports Remote Redux DevTools control.
 
 ## Screenshots
 
@@ -20,7 +20,7 @@
 * [React](https://github.com/facebook/react) & [React Native](https://github.com/facebook/react-native) v0.42
 * [React Navigation](https://github.com/react-community/react-navigation)
 * [Redux](https://github.com/reactjs/redux) & [Remote Redux DevTools](https://github.com/zalmoxisus/remote-redux-devtools) & [On Debugger](https://github.com/jhen0409/remote-redux-devtools-on-debugger)
-* [Redux Observable](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+* [Redux Observable](https://redux-observable.js.org/)
 * [Immutable](https://github.com/facebook/immutable-js) & [Immutable DevTools](https://github.com/andrewdavey/immutable-devtools)
 * [Babel](https://github.com/babel/babel) & Plugins: [transform-decorators-legacy](https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy)
 * [Native Base](https://nativebase.io/)
@@ -59,13 +59,16 @@ Open Android emulator and run command: (Or connect real device via USB)
 $ npm run android
 ```
 
-> With Hyper-V enabled, download and install [Visual Studio Android Emulator](https://aka.ms/vscomemudownload). You should run a Android device Marshmallow (6.0.0) API Level 23. Next, configure Internet Connection for the device. See [Enable Internet Connection](http://blog.tpcware.com/2017/03/visual-studio-2017-android-emulation/) for instructions. For network access to debugger, you also need to install and configure [Telerik Fiddler](https://blogs.msdn.microsoft.com/visualstudioalm/2015/05/06/using-fiddler-to-monitor-network-traffic-from-the-vs-emulator-for-android/). Shake the emulator to display the Developer Menu (Tools > Shake > Play).
+> For Windows with Hyper-V enabled, download and install [Visual Studio Android Emulator](https://aka.ms/vscomemudownload). You should run a Android device Marshmallow (6.0.0) API Level 23. Next, configure Internet Connection for the device. See [Enable Internet Connection](http://blog.tpcware.com/2017/03/visual-studio-2017-android-emulation/) for instructions. For network access to debugger, you also need to install and configure [Telerik Fiddler](https://blogs.msdn.microsoft.com/visualstudioalm/2015/05/06/using-fiddler-to-monitor-network-traffic-from-the-vs-emulator-for-android/). After setup, shake the emulator to display the Developer Menu (Tools > Shake > Play).
 
 ## DevTools
 
 In development mode, you can install [React Native Debugger](https://github.com/jhen0409/react-native-debugger) as default debugger. if not install, it will use [Remote Redux DevTools](https://github.com/zalmoxisus/remote-redux-devtools) and [On Debugger](https://github.com/jhen0409/remote-redux-devtools-on-debugger). As an alternative, you can install Visual Studio Code with Extensions.
 
-> Don't forget to Enable Remote JS Debugging, Live Reload, and Hot Reload in the Emulator from the Developer Menu.
+
+## Remote JS Debuggging and Hot Reload
+
+Don't forget to Enable Remote JS Debugging, Live Reload, and Hot Reload in your application running in the Device Emulator. This can be configued from the Developer Menu (Command+D on Mac).
 
 ## Visual Studio Code
 
