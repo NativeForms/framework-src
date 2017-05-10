@@ -1,17 +1,17 @@
 import React, { Component, PropTypes } from 'react';
 import { Text, View, TouchableHighlight } from 'react-native';
-import Immutable from 'immutable';
+import { toJS } from '../../Shared/utils';
 
 // app
 import styles from './Counter.styles';
 
-export default class CounterComponent extends Component {
+class CounterComponent extends Component {
   static propTypes = {
     increment: PropTypes.func.isRequired,
     incrementIfOdd: PropTypes.func.isRequired,
     incrementAsync: PropTypes.func.isRequired,
     decrement: PropTypes.func.isRequired,
-    counter: PropTypes.instanceOf(Immutable.Map).isRequired,
+    counter: PropTypes.object.isRequired,
   };
 
   render() {
@@ -19,7 +19,7 @@ export default class CounterComponent extends Component {
     return (
       <View style={styles.container}>
         <View>
-          <Text style={styles.text}>Clicked: {counter.get('counter')} times</Text>
+          <Text style={styles.text}>Clicked: {counter.counter} times</Text>
           <TouchableHighlight onPress={increment}>
             <Text style={styles.text}>+</Text>
           </TouchableHighlight>
@@ -37,3 +37,5 @@ export default class CounterComponent extends Component {
     );
   }
 }
+
+export default toJS(CounterComponent);

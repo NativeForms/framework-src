@@ -5,6 +5,11 @@ import { View, Text } from 'react-native';
 import styles from './Home.styles';
 
 export default class HomeComponent extends Component {
+  static navigationOptions = {
+    drawerLabel: 'Home',
+    title: 'Home',
+  };
+
   render() {
     return (
       <View style={styles.container}>

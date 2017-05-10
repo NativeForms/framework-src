@@ -2,7 +2,7 @@ import { StackNavigator, DrawerNavigator } from 'react-navigation';
 import React from 'react';
 
 // app
-import HomeContainer from '../Home';
+import HomeComponent from '../Home';
 import framework from '../../Framework';
 import NavHeaderContainer from './NavHeader';
 import MenuComponent from './Menu';
@@ -17,7 +17,7 @@ const stackConfig = {
 const NavigationContainer = new DrawerNavigator(Object.assign({
   Home: {
     screen: new StackNavigator({
-      Home: { screen: HomeContainer },
+      Home: { screen: HomeComponent },
     }, stackConfig)
   }
 }, Object.assign(...framework.map(view => {
