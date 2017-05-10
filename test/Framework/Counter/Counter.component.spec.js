@@ -4,7 +4,7 @@ import { shallow } from 'enzyme';
 import Immutable from 'immutable';
 import React from 'react';
 import { Text, View, TouchableHighlight } from 'react-native';
-import CounterComponent from '../../src/Framework/Counter/Counter.component';
+import CounterComponent from '../../../src/Framework/Counter/Counter.component';
 
 const props = {
   counter: Immutable.Map({ counter: 1 }),
