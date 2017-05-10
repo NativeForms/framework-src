@@ -9,7 +9,7 @@ import { baseTheme } from './themes/base.theme';
 
 @connect(
   state => ({
-    nav: state.nav,
+    nav: state.get('nav'),
   }),
   dispatch => ({ dispatch })
 )

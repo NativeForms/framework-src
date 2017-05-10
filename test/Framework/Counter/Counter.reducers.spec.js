@@ -1,6 +1,6 @@
 import Immutable from 'immutable';
 import { expect } from 'chai';
-import counter from '../../src/Framework/Counter/Counter.reducers';
+import counter from '../../../src/Framework/Counter/Counter.reducers';
 
 describe('reducers', () => {
   describe('counter', () => {

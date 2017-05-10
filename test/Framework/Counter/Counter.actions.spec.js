@@ -4,9 +4,9 @@ import configureMockStore from 'redux-mock-store';
 import { createEpicMiddleware, combineEpics } from 'redux-observable';
 
 // app
-import * as actions from '../../src/Framework/Counter/Counter.actions';
-import * as epics from '../../src/Framework/Counter/Counter.epics';
-import initialState from '../../src/Framework/Counter/Counter.state';
+import * as actions from '../../../src/Framework/Counter/Counter.actions';
+import * as epics from '../../../src/Framework/Counter/Counter.epics';
+import initialState from '../../../src/Framework/Counter/Counter.state';
 
 const { Actions } = actions;
 
@@ -44,7 +44,7 @@ describe('incrementIfOdd', () => {
 
   it('incrementIfOdd should create increment action', () => {
     const incrementIfOdd = actions.incrementIfOdd();
-    const store = mockStore({ counter: Immutable.fromJS({ counter: 1 }) });
+    const store = mockStore(Immutable.Map({ counter: Immutable.fromJS({ counter: 1 }) }));
     store.dispatch(incrementIfOdd);
     expect(store.getActions()).to.eql([
       incrementIfOdd,
@@ -54,7 +54,7 @@ describe('incrementIfOdd', () => {
 
   it('incrementIfOdd shouldnt create increment action if counter is even', () => {
     const incrementIfOdd = actions.incrementIfOdd();
-    const store = mockStore({ counter: initialState });
+    const store = mockStore(Immutable.Map({ counter: initialState }));
     store.dispatch(incrementIfOdd);
     expect(store.getActions()).to.eql([
       incrementIfOdd
@@ -66,7 +66,7 @@ describe('incrementAsync', () => {
   let store;
 
   beforeEach(() => {
-    store = mockStore({ counter: initialState });
+    store = mockStore(Immutable.Map({ counter: initialState }));
   });
 
   afterEach(cleanUpEpic);

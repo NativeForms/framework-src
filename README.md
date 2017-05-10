@@ -37,13 +37,13 @@ $ npm install
 
 ## Development
 
-#### Start local server
+### Start local server
 
 ```bash
 $ npm start
 ```
 
-#### iOS
+### iOS
 
 Run command to open iOS simulator and run app:
 
@@ -51,7 +51,7 @@ Run command to open iOS simulator and run app:
 $ npm run ios
 ```
 
-#### Android (5.0+)
+### Android (5.0+)
 
 Open Android emulator and run command: (Or connect real device via USB)
 
@@ -61,22 +61,22 @@ $ npm run android
 
 > For Windows with Hyper-V enabled, download and install [Visual Studio Android Emulator](https://aka.ms/vscomemudownload). You should run a Android device Marshmallow (6.0.0) API Level 23. Next, configure Internet Connection for the device. See [Enable Internet Connection](http://blog.tpcware.com/2017/03/visual-studio-2017-android-emulation/) for instructions. For network access to debugger, you also need to install and configure [Telerik Fiddler](https://blogs.msdn.microsoft.com/visualstudioalm/2015/05/06/using-fiddler-to-monitor-network-traffic-from-the-vs-emulator-for-android/). After setup, shake the emulator to display the Developer Menu (Tools > Shake > Play).
 
-## DevTools
+### DevTools
 
 In development mode, you can install [React Native Debugger](https://github.com/jhen0409/react-native-debugger) as default debugger. if not install, it will use [Remote Redux DevTools](https://github.com/zalmoxisus/remote-redux-devtools) and [On Debugger](https://github.com/jhen0409/remote-redux-devtools-on-debugger). As an alternative, you can install Visual Studio Code with Extensions.
 
 
-## Remote JS Debuggging and Hot Reload
+### Remote JS Debuggging and Hot Reload
 
 Don't forget to Enable Remote JS Debugging, Live Reload, and Hot Reload in your application running in the Device Emulator. This can be configued from the Developer Menu (Command+D on Mac).
 
-## Visual Studio Code
+### Visual Studio Code
 
 It might be better to debug in a lightweight IDE. [Visual Studio Code](https://code.visualstudio.com/) provides a few extensions to debug React Native applications. Under extensions, install [Flow Language Support](https://marketplace.visualstudio.com/items?itemName=flowtype.flow-for-vscode), [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), [React Native Tools](https://marketplace.visualstudio.com/items?itemName=vsmobile.vscode-react-native), and [Redux DevTools](https://marketplace.visualstudio.com/items?itemName=jingkaizhao.vscode-redux-devtools). Make sure to configure local (custom) server for Redux DevlTools (host: localhost, port: 5678)
 
 > You may need to install Flow globally: ```npm install -g flow-bin```
 
-## Test
+## Testing
 
 We used [react-native-mock](https://github.com/lelandrichardson/react-native-mock), and test with [Jest](https://facebook.github.io/jest/), [Enzyme](https://github.com/airbnb/enzyme).
 
