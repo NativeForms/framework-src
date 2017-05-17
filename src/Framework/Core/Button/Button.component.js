@@ -1,6 +1,5 @@
 import React, { Component, PropTypes } from 'react';
 import { Text, View, TouchableHighlight } from 'react-native';
-import { toJS } from '../../Shared/utils';
 
 class ButtonComponent extends Component {
   static propTypes = {
