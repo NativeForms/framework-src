@@ -3,26 +3,27 @@ import { Text, View, TouchableHighlight, Linking } from 'react-native';
 
 class LinkComponent extends Component {
   static propTypes = {
-    url: React.PropTypes.string,
+    label: React.PropTypes.string.isRequired,
+    url: React.PropTypes.string.isRequired,
   }
 
-  handleURLClick = () => {
+  linkTo = () => {
     Linking.canOpenURL(this.props.url).then(supported => {
       if (supported) {
         Linking.openURL(this.props.url);
       } else {
-        console.log('Cannot open URI: ' + this.props.url);
+        console.log('Cannot open URL: ' + this.props.url);
       }
     });
   }
 
   render() {
-    const { url } = this.props;
+    const { label, url } = this.props;
 
     return (
-      <TouchableHighlight onPress={this.handleURLClick}>
+      <TouchableHighlight onPress={this.linkTo}>
         <View>
-          <Text>{url}</Text>
+          <Text>{label}</Text>
         </View>
       </TouchableHighlight>
     );
