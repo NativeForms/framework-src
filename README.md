@@ -12,9 +12,7 @@ An mobile application for showcasing demo forms and components. Located under **
 
 ### Core Framework
 
-Core framework for rendering form components and demos.
-* Core form components are located under **src/Framework/Core**
-* Demos are located under **src/Framework/Core/<Demo Name\>**
+Core framework for rendering form components and demos. Core form components are located under **src/Framework/Core**
 
 #### Tests
 
