@@ -1,0 +1,25 @@
+export default class Textinputschema {
+const schema = {
+   uid : "textInputId" // an unique identifier
+      type : "object",
+      category : "textCategory"
+   attributes: {
+    formComponents: [
+     value: "object" ,
+     headerLabel: "Text",
+           label:  "Text" ,
+           headerText: "Text" ,
+          defaultText: "Text",
+          footDescription: "Text",
+          clearButton: true,
+          error: {
+             message : "Text",
+             validator : function(value): IObservable
+          }
+
+         ]
+
+}
+  };
+};
+
