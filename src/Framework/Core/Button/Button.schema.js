@@ -1,4 +1,4 @@
-export default class ButtonSchema {
+export default ButtonSchema {
 
   const schema = {
     uid: "buttonID",

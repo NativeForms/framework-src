@@ -1,4 +1,4 @@
-export default class LinkSchema {
+export default LinkSchema {
 
   const schema = {
     uid: "linkID",
