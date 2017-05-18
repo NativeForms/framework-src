@@ -5,8 +5,7 @@ export default class LinkSchema {
     type: "link",
     category: "control",
     attributes: {
-      label: "Text",
-      required: false
+      label: "Text"
     }
   };
 

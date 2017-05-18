@@ -6,8 +6,7 @@ export default class ButtonSchema {
     category: "control",
     attributes: {
       label: "Text",
-      validate: true,
-      required: false
+      validate: true
     }
   };
 
