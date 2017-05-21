@@ -1,9 +1,10 @@
 import React, { Component, PropTypes } from 'react';
 import { Text, View, TouchableHighlight } from 'react-native';
-import { toJS } from '../../Shared/utils';
+import { FormattedMessage } from 'react-intl';
 
 // app
 import styles from './Counter.styles';
+import { toJS } from '../../Shared/utils';
 
 class CounterComponent extends Component {
   static propTypes = {
@@ -19,7 +20,9 @@ class CounterComponent extends Component {
     return (
       <View style={styles.container}>
         <View>
-          <Text style={styles.text}>Clicked: {counter.counter} times</Text>
+          <Text style={styles.text}>
+            <FormattedMessage id="clickedMessage" values={{ count: counter.counter }} />
+          </Text>
           <TouchableHighlight onPress={increment}>
             <Text style={styles.text}>+</Text>
           </TouchableHighlight>
@@ -27,10 +30,10 @@ class CounterComponent extends Component {
             <Text style={styles.text}>-</Text>
           </TouchableHighlight>
           <TouchableHighlight onPress={incrementIfOdd}>
-            <Text style={styles.text}>Increment if odd</Text>
+            <Text style={styles.text}><FormattedMessage id="incrementIfOdd" /></Text>
           </TouchableHighlight>
           <TouchableHighlight onPress={incrementAsync}>
-            <Text style={styles.text}>Increment async</Text>
+            <Text style={styles.text}><FormattedMessage id="incrementAsync" /></Text>
           </TouchableHighlight>
         </View>
       </View>

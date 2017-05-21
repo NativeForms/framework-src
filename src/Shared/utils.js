@@ -21,3 +21,7 @@ export const toJS = (WrappedComponent) =>
 
     return <WrappedComponent {...propsJS} />;
   };
+
+export function getLocale() {
+  return 'en';
+}

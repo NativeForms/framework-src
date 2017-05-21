@@ -1,8 +1,14 @@
 import React, { Component, PropTypes } from 'react';
 import { Content, List, ListItem, Text } from 'native-base';
 
+// App
+import i18n from './Menu.i18n';
+import { getLocale } from '../../../Shared/utils';
+
 // framework
 import { demos } from '../../../Framework';
+
+const messages = i18n[getLocale()];
 
 export default class MenuComponent extends Component {
   static propTypes = {
@@ -19,7 +25,7 @@ export default class MenuComponent extends Component {
               navigation.navigate('Home');
             }}
           >
-            <Text>Home</Text>
+            <Text>{messages.home}</Text>
           </ListItem>
           <ListItem itemDivider>
             <Text>Items</Text>
@@ -35,7 +41,7 @@ export default class MenuComponent extends Component {
           </ListItem>
         </List>
         <ListItem itemDivider>
-          <Text>Demos</Text>
+          <Text>{messages.demos}</Text>
         </ListItem>
         {demos.map(view => {
           const { routeName, screen } = view;
