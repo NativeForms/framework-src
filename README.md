@@ -24,6 +24,7 @@
 * [Immutable](https://github.com/facebook/immutable-js) & [Immutable DevTools](https://github.com/andrewdavey/immutable-devtools)
 * [Babel](https://github.com/babel/babel) & Plugins: [transform-decorators-legacy](https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy)
 * [Native Base](https://nativebase.io/)
+* [React Intl](https://github.com/yahoo/react-intl)
 * [Visual Studio Code](https://code.visualstudio.com/) Configurations
 
 ## Installation
