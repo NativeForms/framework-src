@@ -11,8 +11,8 @@ const messages = i18n[getLocale()];
 
 export default class HomeComponent extends Component {
   static navigationOptions = {
-    drawerLabel: messages.home,
-    title: messages.home,
+    drawerLabel: messages.title,
+    title: messages.title,
   };
 
   render() {
