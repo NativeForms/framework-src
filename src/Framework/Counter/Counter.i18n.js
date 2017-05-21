@@ -1,7 +1,6 @@
 export default {
   en: {
-    incrementIfOdd: 'Increment if odd',
-    incrementAsync: 'Increment async',
+    incrementLabel: 'Increment {type, select, odd {if odd} async {async}}',
     clickedMessage: 'Clicked: {count, plural, one {# time} other {# times}}',
     title: 'Counter'
   }
