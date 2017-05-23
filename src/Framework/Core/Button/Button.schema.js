@@ -1,9 +1,16 @@
 export default {
-  uid: "buttonID",
-  type: "button",
-  category: "control",
+  uid: 'buttonExample',
+  type: 'section',
+  category: 'group',
   attributes: {
-  label: "Text",
-    validate: true
+    label: 'Button Example',
+    formComponents: [{
+      uid: 'Button1',
+      type: 'button',
+      category: 'control',
+      attributes: {
+        label: 'Button Text',
+      }
+    }]
   }
 };

@@ -1,8 +1,16 @@
 export default {
-  uid: "linkID",
-  type: "link",
-  category: "control",
+  uid: 'linkExample',
+  type: 'section',
+  category: 'group',
   attributes: {
-    label: "Text"
+    label: 'Link Example',
+    formComponents: [{
+      uid: 'Link1',
+      type: 'link',
+      category: 'control',
+      attributes: {
+        label: 'Link Text',
+      }
+    }]
   }
 };
