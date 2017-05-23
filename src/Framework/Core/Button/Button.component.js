@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { Button, Text } from 'native-base';
 
-class ButtonComponent extends Component {
+export default class ButtonComponent extends Component {
   static propTypes = {
     label: React.PropTypes.string.isRequired,
   }
@@ -16,5 +16,3 @@ class ButtonComponent extends Component {
     );
   }
 }
-
-export default ButtonComponent;

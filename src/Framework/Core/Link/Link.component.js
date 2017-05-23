@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { Text, View, TouchableHighlight, Linking } from 'react-native';
 
-class LinkComponent extends Component {
+export default class LinkComponent extends Component {
   static propTypes = {
     label: React.PropTypes.string.isRequired,
     route: React.PropTypes.string.isRequired,
@@ -29,5 +29,3 @@ class LinkComponent extends Component {
     );
   }
 }
-
-export default LinkComponent;
