@@ -1,68 +1,57 @@
 import React, { Component, PropTypes } from 'react';
-import { TextInput } from 'react-native'
+import { Content, Item, Input, Label, Text, Button } from 'native-base';
+import renderIf from 'render-if';
 
 class TextInputComponent extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-        defaultText: this.props.defaultText,
-        optionalHeaderLabel: this.props.optionalHeaderLabel,
-        optionalFootDescription: this.props.optionalFootDescription,
-        optionalValue: this.props.optionalValue,
-        optionalHiddenText: this.props.optionalHiddenText,
-    }
-    this.clearInput = this.clearInput.bind(this)
+  static propTypes = {
+    defaultText: PropTypes.string.isRequired,
+    value: PropTypes.string,
+    headerLabel: PropTypes.string,
+    label: PropTypes.string, //TODO -
+    hiddenText: PropTypes.bool,
+    footDescription: PropTypes.string,
+    clearButton: PropTypes.bool,
+    error: PropTypes.string, //TODO -
   }
 
-    static propTypes = {
-      defaultText: PropTypes.string.isRequired,
-      optionalValue:  PropTypes.string,
-      optionalHeaderLabel: PropTypes.string,
-      optionalLabel: PropTypes.string,
-      optionalHiddenText: PropTypes.bool,
-      optionalFootDescription: PropTypes.string,
-      optionalClearButton: PropTypes.bool,
-      optionalError: PropTypes.string,
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: this.props.value,
+    };
+    this.clearInput = this.clearInput.bind(this);
+  }
 
-    clearInput () {
-      this._textInput.setNativeProps({text:''});
-    }
+  clearInput() {
+    this.textInput._root.clear();
+  }
 
-    render() {
-      return (
-        <View>
-          {renderIf(this.props.optionalHeaderLabel != '')(
-            <Text> {this.state.optionalHeaderLabel} </Text>
-          )}
-
-          <TextInput ref={component => this._textInput = component}
-            style={{height: 40, borderColor: 'gray', borderWidth: 1}}
-            placeholder = {this.state.defaultText}
-            value = {this.state.optionalValue}
-            secureTextEntry = {this.state.optionalHiddenText}
+  render() {
+    return (
+      <Content>
+        {renderIf(this.props.headerLabel !== '')(
+          <Label> {this.props.headerLabel} </Label>
+        )}
+        <Item regular>
+          <Input
+            ref={component => this.textInput = component}
+            placeholder={this.props.defaultText}
+            value={this.state.value}
+            secureTextEntry={this.props.hiddenText}
           />
 
-          {renderIf(this.props.optionalFootDescription != '')(
-              <Text> {this.state.optionalFootDescription} </Text>
+          {renderIf(this.props.clearButton)(
+            <Button transparent onPress={this.clearInput}>
+              <Text> Clear </Text>
+            </Button>
           )}
-
-          {renderIf(this.props.optionalClearButton)(
-            <Button title="Clear" onPress={this.clearInput} />
-          )}
-        </View>
-      );
-    }
-
+        </Item>
+        {renderIf(this.props.footDescription !== '')(
+          <Label> {this.props.footDescription} </Label>
+         )}
+      </Content>
+    );
+  }
 }
-    /*
-    EXAMPLE
-    <TextInputComponent
-        defaultText="Default Text"
-        optionalHeaderLabel ="Optional Header here"
-        optionalFootDescription ="optional foot description"
-        optionalClearButton = {true}
-        optionalHiddenText = {true}/>
-      </View>
-     */
+
 export default TextInputComponent;
