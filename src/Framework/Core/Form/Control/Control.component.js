@@ -13,7 +13,7 @@ const CONTROL_MAP = {
 export default class ControlComponent extends Component {
   static propTypes = {
     label: React.PropTypes.string.isRequired,
-    type: React.PropTypes.string.isRequired
+    type: React.PropTypes.string.isRequired // button or link
   }
 
   renderControl() {
@@ -30,7 +30,7 @@ export default class ControlComponent extends Component {
     );
   }
 
-  renderField() {
+  renderLink() {
     return (
       <View>
         <LinkComponent label={this.props.label} route='http://www.google.com' />
