@@ -4,14 +4,14 @@ import renderIf from 'render-if';
 
 class TextInputComponent extends Component {
   static propTypes = {
-    defaultText: PropTypes.string.isRequired,
+    defaultText: PropTypes.string,
     value: PropTypes.string,
     headerLabel: PropTypes.string,
     label: PropTypes.string,
     hiddenText: PropTypes.bool,
     footDescription: PropTypes.string,
     clearButton: PropTypes.bool,
-    error: PropTypes.string, //TODO -
+    error: PropTypes.string,
   }
 
   constructor(props) {
@@ -30,12 +30,12 @@ class TextInputComponent extends Component {
     return (
       <Content>
         {renderIf(this.props.headerLabel !== '')(
-          <Label>{this.props.headerLabel}</Label> //when on, will appear on top of text input
+          <Label>{this.props.headerLabel}</Label>
         )}
 
         <Item underline>
           {renderIf(this.props.label !== '')(
-            <Label>{this.props.label}</Label> //when on, will appear left to text input
+            <Label>{this.props.label}</Label>
           )}
           <Input
           ref = {component => this.textInput = component}
