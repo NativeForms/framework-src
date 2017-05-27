@@ -26,7 +26,7 @@ export default class CounterContainer extends Component {
   render() {
     return (
       <IntlProvider messages={messages}>
-        <CounterComponent {...this.props} handleBack={this.handleBack} />
+        <CounterComponent {...this.props} />
       </IntlProvider>
     );
   }
