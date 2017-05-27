@@ -7,7 +7,7 @@ class TextInputComponent extends Component {
     defaultText: PropTypes.string.isRequired,
     value: PropTypes.string,
     headerLabel: PropTypes.string,
-    label: PropTypes.string, //TODO -
+    label: PropTypes.string,
     hiddenText: PropTypes.bool,
     footDescription: PropTypes.string,
     clearButton: PropTypes.bool,
@@ -30,28 +30,31 @@ class TextInputComponent extends Component {
     return (
       <Content>
         {renderIf(this.props.headerLabel !== '')(
-          <Label> {this.props.headerLabel} </Label>
+          <Label>{this.props.headerLabel}</Label> //when on, will appear on top of text input
         )}
-        <Item regular>
+
+        <Item underline>
+          {renderIf(this.props.label !== '')(
+            <Label>{this.props.label}</Label> //when on, will appear left to text input
+          )}
           <Input
-            ref={component => this.textInput = component}
-            placeholder={this.props.defaultText}
-            value={this.state.value}
-            secureTextEntry={this.props.hiddenText}
-          />
+          ref = {component => this.textInput = component}
+          value = {this.state.value}
+          placeholder= {this.props.defaultText}
+          secureTextEntry = {this.props.hiddenText}/>
 
           {renderIf(this.props.clearButton)(
-            <Button transparent onPress={this.clearInput}>
-              <Text> Clear </Text>
-            </Button>
+            <Icon active name='backspace' onPress={this.clearInput}/>
           )}
         </Item>
+
         {renderIf(this.props.footDescription !== '')(
           <Label> {this.props.footDescription} </Label>
-         )}
+        )}
       </Content>
     );
   }
 }
+
 
 export default TextInputComponent;
