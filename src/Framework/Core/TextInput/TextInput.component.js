@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { Content, Item, Input, Label, Text, Button } from 'native-base';
+import { Content, Item, Input, Label, Icon } from 'native-base';
 import renderIf from 'render-if';
 
 class TextInputComponent extends Component {
@@ -11,7 +11,16 @@ class TextInputComponent extends Component {
     hiddenText: PropTypes.bool,
     footDescription: PropTypes.string,
     clearButton: PropTypes.bool,
-    error: PropTypes.string,
+  }
+
+  static defaultProps = {
+    defaultText: null,
+    value: null,
+    headerLabel: null,
+    label: null,
+    hiddenText: null,
+    footDescription: null,
+    clearButton: false,
   }
 
   constructor(props) {
@@ -23,7 +32,7 @@ class TextInputComponent extends Component {
   }
 
   clearInput() {
-    this.textInput._root.clear();
+    this.setState({ value: '' });
   }
 
   render() {
@@ -38,13 +47,14 @@ class TextInputComponent extends Component {
             <Label>{this.props.label}</Label>
           )}
           <Input
-          ref = {component => this.textInput = component}
-          value = {this.state.value}
-          placeholder= {this.props.defaultText}
-          secureTextEntry = {this.props.hiddenText}/>
+            ref={component => { this.textInput = component; }}
+            value={this.state.value}
+            placeholder={this.props.defaultText}
+            secureTextEntry={this.props.hiddenText}
+          />
 
           {renderIf(this.props.clearButton)(
-            <Icon active name='backspace' onPress={this.clearInput}/>
+            <Icon active name="backspace" onPress={this.clearInput} />
           )}
         </Item>
 
