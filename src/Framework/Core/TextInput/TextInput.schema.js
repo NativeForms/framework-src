@@ -23,7 +23,7 @@ export default  {
       type:'text',
       category: 'field',
       attributes: {
-        headerText: 'Header Text',
+        hiddenText: true,
       }
     }, {
       uid: 'textInput4',
