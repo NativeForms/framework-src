@@ -5,27 +5,30 @@ import { View } from 'react-native';
 import ButtonComponent from './Button/Button.component';
 import LinkComponent from './Link/Link.component';
 
-const CONTROL_MAP = {
-  button: 'renderButton',
-  link: 'renderLink',
-};
-
 export default class ControlComponent extends Component {
   static propTypes = {
-    label: React.PropTypes.string.isRequired,
-    type: React.PropTypes.string.isRequired // button or link
+    type: PropTypes.string.isRequired,
+    attributes: PropTypes.any.isRequired,
+  }
+
+  constructor() {
+    super();
+
+    this.CONTROL_MAP = {
+      button: this.renderButton.bind(this),
+      link: this.renderLink.bind(this),
+    };
   }
 
   renderControl() {
-    const controlType = this.props.type;
-    const func = this[CONTROL_MAP[controlType]].bind(this);
+    const func = this.CONTROL_MAP[this.props.type];
     return func();
   }
 
   renderButton() {
     return (
       <View>
-        <ButtonComponent label={this.props.label} />
+        <ButtonComponent {...this.props.attributes} />
       </View>
     );
   }
@@ -33,7 +36,7 @@ export default class ControlComponent extends Component {
   renderLink() {
     return (
       <View>
-        <LinkComponent label={this.props.label} route='http://www.google.com' />
+        <LinkComponent {...this.props.attributes} />
       </View>
     );
   }

@@ -10,6 +10,7 @@ export default {
       category: 'control',
       attributes: {
         label: 'Link Text',
+        route: 'http://www.google.com'
       }
     }]
   }

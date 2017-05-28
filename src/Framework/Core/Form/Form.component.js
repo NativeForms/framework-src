@@ -5,34 +5,43 @@ import { View, Text } from 'react-native';
 import ControlComponent from './Control/Control.component';
 import FieldComponent from './Field/Field.component';
 
-const FORM_MAP = {
-  control: 'renderControl',
-  field: 'renderField',
-};
-
 export default class FormComponent extends Component {
   static propTypes = {
-    schema: React.PropTypes.any.isRequired
+    schema: PropTypes.any.isRequired,
+  }
+
+  constructor() {
+    super();
+
+    this.FORM_MAP = {
+      control: this.renderControl.bind(this),
+      field: this.renderField.bind(this),
+    };
   }
 
   renderForm() { // TODO: iterate through all formcomponents
-    const formComponents = this.props.schema.attributes.formComponents;
-    const category = formComponents[0].category;
-    const func = this[FORM_MAP[category]].bind(this);
-    return func(formComponents[0]);
+    const category = this.props.schema.attributes.formComponents[0].category;
+    const func = this.FORM_MAP[category];
+    return func();
   }
 
-  renderControl(component) {
-    const controlLabel = component.attributes.label;
-    const controlType = component.type;
+  renderControl() {
+    const control = this.props.schema.attributes.formComponents[0];
+    const props = {
+      type: control.type,
+      attributes: control.attributes,
+    };
     return (
-      <ControlComponent label={controlLabel} type={controlType} />
+      <ControlComponent {...props} />
     );
   }
 
-  renderField(component) {
-    const fieldLabel = component.attributes.label;
-    const fieldType = component.type;
+  renderField() {
+    const field = this.props.schema.attributes.formComponents[0];
+    const props = {
+      type: field.type,
+      attributes: field.attributes,
+    };
     return (
       <Text>Some field component</Text> // TODO: update after complete Field Component
     );

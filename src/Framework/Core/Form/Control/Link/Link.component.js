@@ -3,8 +3,8 @@ import { Text, View, TouchableHighlight, Linking } from 'react-native';
 
 export default class LinkComponent extends Component {
   static propTypes = {
-    label: React.PropTypes.string.isRequired,
-    route: React.PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+    route: PropTypes.string.isRequired,
   }
 
   linkTo = () => {

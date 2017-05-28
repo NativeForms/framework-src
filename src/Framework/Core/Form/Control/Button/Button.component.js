@@ -3,7 +3,7 @@ import { Button, Text } from 'native-base';
 
 export default class ButtonComponent extends Component {
   static propTypes = {
-    label: React.PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
   }
 
   render() {
