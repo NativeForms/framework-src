@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { Content, Item, Input, Label, Icon } from 'native-base';
+import {formatMessage, injectIntl, intlShape} from 'react-intl';
 import renderIf from 'render-if';
 
 class TextInputComponent extends Component {
@@ -11,6 +12,7 @@ class TextInputComponent extends Component {
     hiddenText: PropTypes.bool,
     footDescription: PropTypes.string,
     clearButton: PropTypes.bool,
+    intl: intlShape.isRequired,
   }
 
   static defaultProps = {
@@ -36,20 +38,25 @@ class TextInputComponent extends Component {
   }
 
   render() {
+    var defaultText = this.props.intl.formatMessage({id: 'defaultText'}, {defaultText: this.props.defaultText});
+    var headerLabel = this.props.intl.formatMessage({id: 'headerLabel'}, {headerLabel: this.props.headerLabel});
+    var label = this.props.intl.formatMessage({id: 'label'}, {label: this.props.label});
+    var footDescription = this.props.intl.formatMessage({id: 'footDescription'}, {footDescription: this.props.footDescription});
+
     return (
       <Content>
         {renderIf(this.props.headerLabel !== '')(
-          <Label>{this.props.headerLabel}</Label>
+          <Label>{headerLabel}</Label>
         )}
 
         <Item underline>
           {renderIf(this.props.label !== '')(
-            <Label>{this.props.label}</Label>
+            <Label>{label}</Label>
           )}
           <Input
             ref={component => { this.textInput = component; }}
             value={this.state.value}
-            placeholder={this.props.defaultText}
+            placeholder={defaultText}
             secureTextEntry={this.props.hiddenText}
           />
 
@@ -59,7 +66,7 @@ class TextInputComponent extends Component {
         </Item>
 
         {renderIf(this.props.footDescription !== '')(
-          <Label> {this.props.footDescription} </Label>
+          <Label> {footDescription} </Label>
         )}
       </Content>
     );
@@ -67,4 +74,4 @@ class TextInputComponent extends Component {
 }
 
 
-export default TextInputComponent;
+export default injectIntl(TextInputComponent);
