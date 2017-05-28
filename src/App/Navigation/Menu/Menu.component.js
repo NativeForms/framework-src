@@ -6,7 +6,7 @@ import i18n from './Menu.i18n';
 import { getLocale } from '../../../Shared/utils';
 
 // framework
-import { demos } from '../../../Framework';
+import { forms, demos } from '../../../Framework';
 
 const messages = i18n[getLocale()];
 
@@ -46,17 +46,9 @@ export default class MenuComponent extends Component {
             <Text>{messages.home}</Text>
           </ListItem>
           <ListItem itemDivider>
-            <Text>Items</Text>
+            <Text>{messages.form}</Text>
           </ListItem>
-          <ListItem>
-            <Text>Item 1</Text>
-          </ListItem>
-          <ListItem>
-            <Text>Item 2</Text>
-          </ListItem>
-          <ListItem>
-            <Text>Item 3</Text>
-          </ListItem>
+          {forms.map(this.renderItem)}
         </List>
         <ListItem itemDivider>
           <Text>{messages.demos}</Text>

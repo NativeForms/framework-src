@@ -1,3 +1,4 @@
+import * as Core from './Core';
 import Counter, { CounterActions, CounterEpics, counterReducer } from './Counter';
 
 export const actionCreators = [
@@ -12,10 +13,7 @@ export const epics = Object.assign({},
   CounterEpics,
 );
 
-export const items = [
-
-];
-
+export const forms = Core.forms;
 export const demos = [
   {
     routeName: 'Counter',
@@ -23,4 +21,7 @@ export const demos = [
   },
 ];
 
-export default [...items, ...demos];
+export default [
+  ...Core.forms,
+  ...demos
+];
