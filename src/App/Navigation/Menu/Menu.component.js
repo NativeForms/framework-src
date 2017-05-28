@@ -15,6 +15,24 @@ export default class MenuComponent extends Component {
     navigation: PropTypes.object.isRequired
   };
 
+  constructor(props) {
+    super(props);
+    this.renderItem = this.renderItem.bind(this);
+  }
+
+  renderItem(view) {
+    const { navigation } = this.props;
+    const { routeName, screen } = view;
+    const label = screen.navigationOptions.drawerLabel;
+    return (<ListItem
+      button onPress={() => {
+        navigation.navigate(routeName);
+      }} key={label}
+    >
+      <Text>{label}</Text>
+    </ListItem>);
+  }
+
   render() {
     const { navigation } = this.props;
     return (
@@ -43,17 +61,7 @@ export default class MenuComponent extends Component {
         <ListItem itemDivider>
           <Text>{messages.demos}</Text>
         </ListItem>
-        {demos.map(view => {
-          const { routeName, screen } = view;
-          const label = screen.navigationOptions.drawerLabel;
-          return (<ListItem
-            button onPress={() => {
-              navigation.navigate(routeName);
-            }} key={label}
-          >
-            <Text>{label}</Text>
-          </ListItem>);
-        })}
+        {demos.map(this.renderItem)}
       </Content>
     );
   }
