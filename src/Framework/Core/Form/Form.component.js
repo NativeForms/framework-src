@@ -1,10 +1,11 @@
 import React, { Component, PropTypes } from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 
 // app
 import ControlComponent from './Control/Control.component';
 import FieldComponent from './Field/Field.component';
 
+/* eslint class-methods-use-this:0 */
 export default class FormComponent extends Component {
   static propTypes = {
     schema: PropTypes.any.isRequired,
@@ -14,36 +15,33 @@ export default class FormComponent extends Component {
     super();
 
     this.FORM_MAP = {
-      control: this.renderControl.bind(this),
-      field: this.renderField.bind(this),
+      control: this.renderControl,
+      field: this.renderField,
     };
   }
 
-  renderForm() { // TODO: iterate through all formcomponents
-    const category = this.props.schema.attributes.formComponents[0].category;
-    const func = this.FORM_MAP[category];
-    return func();
+  renderForm() {
+    return this.props.schema.attributes.formComponents.map(
+      formComponent => this.FORM_MAP[formComponent.category](formComponent));
   }
 
-  renderControl() {
-    const control = this.props.schema.attributes.formComponents[0];
+  renderControl(control) {
     const props = {
       type: control.type,
       attributes: control.attributes,
     };
     return (
-      <ControlComponent {...props} />
+      <ControlComponent key={control.uid} {...props} />
     );
   }
 
-  renderField() {
-    const field = this.props.schema.attributes.formComponents[0];
+  renderField(field) {
     const props = {
       type: field.type,
       attributes: field.attributes,
     };
     return (
-      <Text>Some field component</Text> // TODO: update after complete Field Component
+      <FieldComponent key={field.uid} {...props} />
     );
   }
 
