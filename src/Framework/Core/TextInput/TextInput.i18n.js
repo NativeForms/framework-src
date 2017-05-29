@@ -1,8 +1,9 @@
 export default {
   en: {
-    defaultText: 'PlaceHolder Text',
-    headerLabel: 'Header Label',
-    label: 'Left Label',
-    footDescription: 'Foot Description',
+    defaultText: ' {defaultText}',
+    headerLabel: ' {headerLabel}',
+    label: ' {label}',
+    footDescription: ' {footDescription}',
+    title: 'Text Input',
   }
 };
