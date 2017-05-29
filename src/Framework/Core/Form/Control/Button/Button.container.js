@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { IntlProvider } from 'react-intl';
 
 import FormComponent from '../../Form.component';
 import ButtonSchema from './Button.schema';
