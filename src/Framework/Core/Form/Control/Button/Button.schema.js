@@ -9,7 +9,9 @@ export default {
       type: 'button',
       category: 'control',
       attributes: {
-        label: 'Button Text',
+        label: {
+          code: 'myLabel'
+        },
       }
     }]
   }
