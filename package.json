@@ -13,7 +13,7 @@
     "cover": "nyc npm test",
     "remotedev": "remotedev-debugger --injectserver",
     "postinstall": "npm run postinstall-js && npm run link && npm run remotedev && rndebugger-open",
-    "postinstall-js": "node scripts/postinstall-js"
+    "postinstall-js": "node scripts/postinstall.js"
   },
   "remotedev": {
     "hostname": "localhost",
