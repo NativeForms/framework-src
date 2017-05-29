@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { View } from 'react-native';
 
 // app
-import TextInputComponent from '../../TextInput/TextInput.component'; // TODO move TextInput to Core/Form/Field
+import TextInputComponent from './TextInput/TextInput.component';
 
 export default class FieldComponent extends Component {
   static propTypes = {

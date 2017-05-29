@@ -1,3 +1,7 @@
-/* eslint import/prefer-default-export:0 */
+import { route as textInputRoute } from './TextInput';
+
 export const routes = [
+  textInputRoute
 ];
+
+export default from './Field.component';

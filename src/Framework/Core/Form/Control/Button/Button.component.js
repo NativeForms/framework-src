@@ -6,8 +6,8 @@ import renderIf from 'render-if';
 export default class ButtonComponent extends Component {
   static propTypes = {
     label: PropTypes.oneOfType([
-      PropTypes.string.isRequired,
-      PropTypes.object.isRequired,
+      PropTypes.string,
+      PropTypes.object,
     ]).isRequired,
   }
 

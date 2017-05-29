@@ -1,7 +1,7 @@
 import LinkContainer from './Link.container';
 
 export const route = {
-  routeName: 'Button',
+  routeName: 'Link',
   screen: LinkContainer
 };
 
