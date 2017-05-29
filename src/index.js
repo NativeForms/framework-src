@@ -1,3 +1,4 @@
+import 'intl';
 import React from 'react';
 import { AppRegistry, Text } from 'react-native';
 import { Provider } from 'react-redux';

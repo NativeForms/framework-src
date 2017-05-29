@@ -1,4 +1,4 @@
-import Counter, { CounterActions, CounterEpics, counterReducer } from './Counter';
+import { route as counterRoute, CounterActions, CounterEpics, counterReducer } from './Counter';
 
 export const actionCreators = [
   CounterActions,
@@ -17,10 +17,7 @@ export const items = [
 ];
 
 export const demos = [
-  {
-    routeName: 'Counter',
-    screen: Counter
-  },
+  counterRoute,
 ];
 
 export default [...items, ...demos];
