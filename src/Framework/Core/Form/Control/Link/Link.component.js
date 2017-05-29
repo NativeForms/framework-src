@@ -21,7 +21,6 @@ export default class LinkComponent extends Component {
   }
 
   render() {
-    const { label } = this.props;
     return (
       <TouchableHighlight onPress={this.linkTo}>
         <View>
@@ -29,7 +28,7 @@ export default class LinkComponent extends Component {
             <Text>label</Text>
           )}
           {renderIf(typeof this.props.label === 'object')(
-            <FormattedMessage id={label.code} values={label.values} />
+            <FormattedMessage id={this.label.code} values={this.label.values} />
           )}
         </View>
       </TouchableHighlight>
