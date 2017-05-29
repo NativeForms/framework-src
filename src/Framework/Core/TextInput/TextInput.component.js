@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
-import { Content, Item, Input, Label, Icon } from 'native-base';
+import { View } from 'react-native';
+import { Item, Input, Label, Icon } from 'native-base';
 import {formatMessage, injectIntl, intlShape} from 'react-intl';
 import renderIf from 'render-if';
 
@@ -44,7 +45,7 @@ class TextInputComponent extends Component {
     var footDescription = this.props.intl.formatMessage({id: 'footDescription'}, {footDescription: this.props.footDescription});
 
     return (
-      <Content>
+      <View>
         {renderIf(this.props.headerLabel !== '')(
           <Label>{headerLabel}</Label>
         )}
@@ -68,7 +69,7 @@ class TextInputComponent extends Component {
         {renderIf(this.props.footDescription !== '')(
           <Label> {footDescription} </Label>
         )}
-      </Content>
+      </View>
     );
   }
 }
