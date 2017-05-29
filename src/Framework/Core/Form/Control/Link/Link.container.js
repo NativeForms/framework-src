@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 // framework
 import { Form } from '../../../Form';
 import schema from './Link.schema';
