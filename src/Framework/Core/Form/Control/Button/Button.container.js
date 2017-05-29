@@ -12,6 +12,7 @@ export default class ButtonContainer extends Component {
   static navigationOptions = {
     drawerLabel: messages.title,
     title: messages.title,
+  }
 
   render() {
     return <Form schema={schema} messages={messages} />;
