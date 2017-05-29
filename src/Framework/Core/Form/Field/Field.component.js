@@ -4,7 +4,7 @@ import { View } from 'react-native';
 // app
 import TextInputComponent from '../../TextInput/TextInput.component'; // TODO move TextInput to Core/Form/Field
 
-export default class ControlComponent extends Component {
+export default class FieldComponent extends Component {
   static propTypes = {
     type: PropTypes.string.isRequired,
     attributes: PropTypes.any.isRequired,
@@ -13,13 +13,13 @@ export default class ControlComponent extends Component {
   constructor() {
     super();
 
-    this.CONTROL_MAP = {
+    this.FIELD_MAP = {
       text: this.renderTextInput.bind(this),
     };
   }
 
-  renderControl() {
-    const func = this.CONTROL_MAP[this.props.type];
+  renderField() {
+    const func = this.FIELD_MAP[this.props.type];
     return func();
   }
 
@@ -35,7 +35,7 @@ export default class ControlComponent extends Component {
     return (
       <View>
         {
-          this.renderControl()
+          this.renderField()
         }
       </View>
     );
