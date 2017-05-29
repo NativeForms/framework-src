@@ -9,7 +9,9 @@ export default {
       type: 'link',
       category: 'control',
       attributes: {
-        label: 'Link Text',
+        label: {
+          code: 'googleLabel'
+        },
         route: 'http://www.google.com'
       }
     }]

@@ -1,9 +1,11 @@
 import React, { Component, PropTypes } from 'react';
 import { Text, View, TouchableHighlight, Linking } from 'react-native';
+import { FormattedMessage, } from 'react-intl';
+import renderIf from 'render-if';
 
 export default class LinkComponent extends Component {
   static propTypes = {
-    label: PropTypes.string.isRequired,
+    label: PropTypes.oneOf([PropTypes.string.isRequired, PropTypes.object.isRequired]).isRequired,
     route: PropTypes.string.isRequired,
   }
 
@@ -23,7 +25,12 @@ export default class LinkComponent extends Component {
     return (
       <TouchableHighlight onPress={this.linkTo}>
         <View>
-          <Text>{label}</Text>
+          {renderIf(typeof this.props.label === 'string')(
+            <Text>label</Text>
+          )}
+          {renderIf(typeof this.props.label === 'object')(
+            <FormattedMessage id={label.code} values={label.values} />
+          )}
         </View>
       </TouchableHighlight>
     );
