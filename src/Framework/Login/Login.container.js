@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-// app
 import { Form } from '../Core/Form';
 import schema from './Login.schema';
 import i18n from './Login.i18n';
