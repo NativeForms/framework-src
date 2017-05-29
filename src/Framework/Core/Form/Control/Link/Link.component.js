@@ -25,14 +25,12 @@ export default class LinkComponent extends Component {
     return (
       <TouchableHighlight onPress={this.linkTo}>
         <View>
-          <Text>
-            {renderIf(typeof this.props.label === 'string')(
-              label
-            )}
-            {renderIf(typeof this.props.label === 'object')(
-              <FormattedMessage id={label.code} values={label.values} />
-            )}
-          </Text>
+          {renderIf(typeof this.props.label === 'string')(
+            <Text>label</Text>
+          )}
+          {renderIf(typeof this.props.label === 'object')(
+            <FormattedMessage id={label.code} values={label.values} />
+          )}
         </View>
       </TouchableHighlight>
     );
