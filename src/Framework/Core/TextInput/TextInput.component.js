@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
-import { Content, Item, Input, Label, Icon } from 'native-base';
+import { View } from 'react-native';
+import { Item, Input, Label, Icon } from 'native-base';
 import renderIf from 'render-if';
 
 class TextInputComponent extends Component {
@@ -37,7 +38,7 @@ class TextInputComponent extends Component {
 
   render() {
     return (
-      <Content>
+      <View>
         {renderIf(this.props.headerLabel !== '')(
           <Label>{this.props.headerLabel}</Label>
         )}
@@ -61,7 +62,7 @@ class TextInputComponent extends Component {
         {renderIf(this.props.footDescription !== '')(
           <Label> {this.props.footDescription} </Label>
         )}
-      </Content>
+      </View>
     );
   }
 }

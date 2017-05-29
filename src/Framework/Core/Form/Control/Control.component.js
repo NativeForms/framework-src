@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { View } from 'react-native';
+import { Item } from 'native-base';
 
 // app
 import ButtonComponent from './Button/Button.component';
@@ -11,8 +11,8 @@ export default class ControlComponent extends Component {
     attributes: PropTypes.any.isRequired,
   }
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.CONTROL_MAP = {
       button: this.renderButton.bind(this),
@@ -26,28 +26,20 @@ export default class ControlComponent extends Component {
   }
 
   renderButton() {
-    return (
-      <View>
-        <ButtonComponent {...this.props.attributes} />
-      </View>
-    );
+    return <ButtonComponent {...this.props.attributes} />;
   }
 
   renderLink() {
-    return (
-      <View>
-        <LinkComponent {...this.props.attributes} />
-      </View>
-    );
+    return <LinkComponent {...this.props.attributes} />;
   }
 
   render() {
     return (
-      <View>
+      <Item>
         {
           this.renderControl()
         }
-      </View>
+      </Item>
     );
   }
 }

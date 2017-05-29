@@ -5,7 +5,10 @@ import renderIf from 'render-if';
 
 export default class LinkComponent extends Component {
   static propTypes = {
-    label: PropTypes.oneOf([PropTypes.string.isRequired, PropTypes.object.isRequired]).isRequired,
+    label: PropTypes.oneOfType([
+      PropTypes.string.isRequired,
+      PropTypes.object.isRequired,
+    ]).isRequired,
     route: PropTypes.string.isRequired,
   }
 
@@ -21,14 +24,15 @@ export default class LinkComponent extends Component {
   }
 
   render() {
+    const { label } = this.props;
     return (
       <TouchableHighlight onPress={this.linkTo}>
         <View>
-          {renderIf(typeof this.props.label === 'string')(
+          {renderIf(typeof label === 'string')(
             <Text>label</Text>
           )}
-          {renderIf(typeof this.props.label === 'object')(
-            <FormattedMessage id={this.label.code} values={this.label.values} />
+          {renderIf(typeof label === 'object')(
+            <FormattedMessage id={label.code} values={label.values} />
           )}
         </View>
       </TouchableHighlight>
