@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { View } from 'react-native';
+import { IntlProvider } from 'react-intl';
 
 // app
 import ControlComponent from './Control/Control.component';
@@ -9,6 +10,11 @@ import FieldComponent from './Field/Field.component';
 export default class FormComponent extends Component {
   static propTypes = {
     schema: PropTypes.any.isRequired,
+    messages: PropTypes.object,
+  }
+
+  static defaultProps = {
+    messages: {}
   }
 
   constructor() {
@@ -47,11 +53,13 @@ export default class FormComponent extends Component {
 
   render() {
     return (
-      <View>
-        {
-          this.renderForm()
-        }
-      </View>
+      <IntlProvider messages={this.props.messages}>
+        <View>
+          {
+            this.renderForm()
+          }
+        </View>
+      </IntlProvider>
     );
   }
 }
