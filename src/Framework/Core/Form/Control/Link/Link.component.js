@@ -3,8 +3,8 @@ import { Text, View, TouchableHighlight, Linking } from 'react-native';
 
 export default class LinkComponent extends Component {
   static propTypes = {
-    label: React.PropTypes.string.isRequired,
-    route: React.PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+    route: PropTypes.string.isRequired,
   }
 
   linkTo = () => {
@@ -12,14 +12,14 @@ export default class LinkComponent extends Component {
       if (supported) {
         Linking.openURL(this.props.route);
       } else {
-        console.log('Cannot open route: ' + this.props.route);
+        /* eslint no-console:0 */
+        console.log(`Cannot open route:${this.props.route}`);
       }
     });
   }
 
   render() {
-    const { label, route } = this.props;
-
+    const { label } = this.props;
     return (
       <TouchableHighlight onPress={this.linkTo}>
         <View>
