@@ -5,7 +5,10 @@ import renderIf from 'render-if';
 
 export default class ButtonComponent extends Component {
   static propTypes = {
-    label: PropTypes.oneOf([PropTypes.string.isRequired, PropTypes.object.isRequired]).isRequired,
+    label: PropTypes.oneOfType([
+      PropTypes.string.isRequired,
+      PropTypes.object.isRequired,
+    ]).isRequired,
   }
 
   render() {
@@ -13,11 +16,11 @@ export default class ButtonComponent extends Component {
 
     return (
       <Button>
-        {renderIf(typeof this.props.label === 'string')(
-          <Text>label</Text>
+        {renderIf(typeof label === 'string')(
+          <Text>{label}</Text>
         )}
-        {renderIf(typeof this.props.label === 'object')(
-          <FormattedMessage id={label.code} values={label.values} />
+        {renderIf(typeof label === 'object')(
+          <Text><FormattedMessage id={label.code} values={label.values} /></Text>
         )}
       </Button>
     );
