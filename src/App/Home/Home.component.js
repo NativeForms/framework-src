@@ -19,7 +19,7 @@ export default class HomeComponent extends Component {
     return (
       <IntlProvider messages={messages}>
         <View style={styles.container}>
-         <Image source={require('./img/front-page-icon.png')} style={{width: 50, height: 60}} />
+         <Image source={require('./img/front-page-icon.png')} style={{width: 60, height: 60}} />
           <Text style={styles.welcome}>
             <FormattedMessage id="welcome" />
           </Text>
