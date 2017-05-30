@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { View, Text, Image } from 'react-native';
+import { Text, Image } from 'react-native';
+import { Content, Grid, Row } from 'native-base';
 import { IntlProvider, FormattedMessage } from 'react-intl';
 
 // app
@@ -8,6 +9,7 @@ import i18n from './Home.i18n';
 import { getLocale } from '../../Shared/utils';
 
 const messages = i18n[getLocale()];
+const image = require('./logo.png');
 
 export default class HomeComponent extends Component {
   static navigationOptions = {
@@ -18,12 +20,19 @@ export default class HomeComponent extends Component {
   render() {
     return (
       <IntlProvider messages={messages}>
-        <View style={styles.container}>
-         <Image source={require('./img/front-page-icon.png')} style={{width: 60, height: 60}} />
-          <Text style={styles.welcome}>
-            <FormattedMessage id="welcome" />
-          </Text>
-        </View>
+        <Content>
+          <Grid style={styles.container}>
+            <Row>
+              <Image source={image} />
+            </Row>
+            <Row>
+              <Text style={styles.welcome}>
+                <FormattedMessage id="welcome" />
+              </Text>
+            </Row>
+            <Row />
+          </Grid>
+        </Content>
       </IntlProvider>
     );
   }
