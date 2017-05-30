@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { View } from 'react-native';
+import { Text } from 'react-native';
 import { Item, Input, Label, Icon } from 'native-base';
 import { FormattedMessage, injectIntl, intlShape } from 'react-intl';
 
@@ -19,10 +19,10 @@ class TextInputComponent extends Component {
       PropTypes.object,
     ]),
     hiddenText: PropTypes.bool,
-    footDescription: PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.object,
-    ]),
+    // footDescription: PropTypes.oneOfType([
+    //   PropTypes.string,
+    //   PropTypes.object,
+    // ]),
     clearButton: PropTypes.bool,
     intl: intlShape.isRequired,
   }
@@ -42,7 +42,12 @@ class TextInputComponent extends Component {
     this.state = {
       value: this.props.value,
     };
+    this.handleChange = this.handleChange.bind(this);
     this.clearInput = this.clearInput.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({ value: event.target.value });
   }
 
   clearInput() {
@@ -50,46 +55,37 @@ class TextInputComponent extends Component {
   }
 
   render() {
-    const { headerLabel, label, footDescription, clearButton, hiddenText, intl } = this.props;
-    let { defaultText } = this.props;
+    const { headerLabel, clearButton, hiddenText, intl } = this.props;
+    let { label, defaultText } = this.props;
+    if (headerLabel) {
+      label = headerLabel;
+    }
     if (defaultText && typeof defaultText === 'object') {
       defaultText = intl.formatMessage({ id: defaultText.code }, defaultText.values);
     }
+    const props = {
+      fixedLabel: true,
+    };
     return (
-      <View>
-        {headerLabel && typeof headerLabel === 'string' &&
-          <Label>{headerLabel}</Label>
+      <Item {...props}>
+        {label && typeof label === 'string' &&
+          <Label><Text>{label}</Text></Label>
         }
-        {headerLabel && typeof headerLabel === 'object' &&
-          <Label><FormattedMessage id={headerLabel.code} values={headerLabel.values} /></Label>
+        {label && typeof label === 'object' &&
+          <Label><Text><FormattedMessage id={label.code} values={label.values} /></Text></Label>
         }
-        <Item underline>
-          {label && typeof label === 'string' &&
-            <Label>{label}</Label>
-          }
-          {label && typeof label === 'object' &&
-            <Label><FormattedMessage id={headerLabel.code} values={headerLabel.values} /></Label>
-          }
-          <Input
-            ref={component => { this.textInput = component; }}
-            value={this.state.value}
-            placeholder={defaultText}
-            secureTextEntry={hiddenText}
-          />
+        <Input
+          ref={component => { this.textInput = component; }}
+          value={this.state.value}
+          onChange={this.handleChange}
+          placeholder={defaultText}
+          secureTextEntry={hiddenText}
+        />
 
-          {clearButton &&
-            <Icon active name="backspace" onPress={this.clearInput} />
-          }
-        </Item>
-        {footDescription && typeof footDescription === 'string' &&
-          <Label>{footDescription}</Label>
+        {clearButton &&
+          <Icon active name="backspace" onPress={this.clearInput} />
         }
-        {footDescription && typeof footDescription === 'object' &&
-          <Label>
-            <FormattedMessage id={footDescription.code} values={footDescription.values} />
-          </Label>
-        }
-      </View>
+      </Item>
     );
   }
 }

@@ -1,52 +1,46 @@
 export default {
-  uid: 'textInputExample', // an unique identifier
+  uid: 'textInputExample',
   type: 'section',
   category: 'group',
   attributes: {
     label: 'Text Input Examples',
-    formComponents: [{
-      uid: 'textInput1',
-      type: 'text',
-      category: 'field',
-      attributes: {
-        headerLabel: 'Header Label',
-      }
-    }, {
-      uid: 'textInput2',
-      type: 'text',
-      category: 'field',
-      attributes: {
-        label: 'Label',
-      }
-    }, {
-      uid: 'textInput3',
-      type: 'text',
-      category: 'field',
-      attributes: {
-        hiddenText: true,
-      }
-    }, {
-      uid: 'textInput4',
-      type: 'text',
-      category: 'field',
-      attributes: {
-        defaultText: 'Default Text',
-      }
-    }, {
-      uid: 'textInput5',
-      type: 'text',
-      category: 'field',
-      attributes: {
-        footDescription: 'Foot Description Text',
-      }
-    }, {
-      uid: 'textInput6',
-      type: 'text',
-      category: 'field',
-      attributes: {
-        clearButton: true,
-      }
-    },
+    formComponents: [
+      {
+        uid: 'fixedLabelExample',
+        type: 'text',
+        category: 'field',
+        attributes: {
+          label: 'Key',
+        }
+      },
+      {
+        uid: 'secretExample',
+        type: 'text',
+        category: 'field',
+        attributes: {
+          label: 'Secret',
+          hiddenText: true,
+        }
+      },
+      {
+        uid: 'clearExample',
+        type: 'text',
+        category: 'field',
+        attributes: {
+          label: 'Value 1',
+          clearButton: true,
+          value: 'Delete Me'
+        }
+      },
+      {
+        uid: 'placeHolderExample',
+        type: 'text',
+        category: 'field',
+        attributes: {
+          label: 'Value 2',
+          defaultText: 'Replace Me'
+        }
+      },
     ]
   }
 };
