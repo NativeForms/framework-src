@@ -28,7 +28,7 @@ export default class TextInputContainer extends Component {
           <Row>
             <Form schema={schema} messages={messages} />
           </Row>
-          <Row>
+          <Row style={{ paddingTop: 10 }}>
             <SyntaxHiglighter language="javascript" style={github}>
               {schemaText}
             </SyntaxHiglighter>

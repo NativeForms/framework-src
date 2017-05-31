@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Content } from 'native-base';
 
 import { Form } from '../Core/Form';
 import schema from './Login.schema';
@@ -14,6 +15,10 @@ export default class LoginContainer extends Component {
   }
 
   render() {
-    return <Form schema={schema} messages={messages} />;
+    return (
+      <Content>
+        <Form schema={schema} messages={messages} />
+      </Content>
+    );
   }
 }

@@ -35,7 +35,7 @@ export default class ControlComponent extends Component {
 
   render() {
     return (
-      <Item>
+      <Item style={{ borderBottomWidth: 0 }}>
         {
           this.renderControl()
         }

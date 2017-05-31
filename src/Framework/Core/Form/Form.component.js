@@ -54,7 +54,9 @@ export default class FormComponent extends Component {
   render() {
     return (
       <IntlProvider messages={this.props.messages}>
-        <Form>{this.renderForm()}</Form>
+        <Form style={{ width: '100%' /* temp fix */ }}>
+          {this.renderForm()}
+        </Form>
       </IntlProvider>
     );
   }
