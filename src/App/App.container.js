@@ -5,7 +5,6 @@ import { addNavigationHelpers } from 'react-navigation';
 
 // app
 import NavigationContainer from './Navigation';
-import { baseTheme } from './themes/base.theme';
 
 @connect(
   state => ({
@@ -22,7 +21,7 @@ export default class AppContainer extends Component {
   render() {
     const { dispatch, nav } = this.props;
     return (
-      <Container theme={baseTheme}>
+      <Container>
         <NavigationContainer navigation={addNavigationHelpers({ dispatch, state: nav })} />
       </Container>
     );

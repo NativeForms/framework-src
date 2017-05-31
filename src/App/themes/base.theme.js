@@ -2,6 +2,7 @@ import color from 'color';
 
 import { Platform } from 'react-native';
 
+/* This is an example of a theme */
 export default {
 
     // Badge
