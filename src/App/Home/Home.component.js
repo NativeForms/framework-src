@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Text, Image } from 'react-native';
-import { Content, Grid, Row } from 'native-base';
+import { View, Text, Image } from 'react-native';
 import { IntlProvider, FormattedMessage } from 'react-intl';
 
 // app
@@ -20,19 +19,12 @@ export default class HomeComponent extends Component {
   render() {
     return (
       <IntlProvider messages={messages}>
-        <Content>
-          <Grid style={styles.container}>
-            <Row>
-              <Image source={image} />
-            </Row>
-            <Row>
-              <Text style={styles.welcome}>
-                <FormattedMessage id="welcome" />
-              </Text>
-            </Row>
-            <Row />
-          </Grid>
-        </Content>
+        <View style={styles.container}>
+          <Image source={image} />
+          <Text style={styles.welcome}>
+            <FormattedMessage id="welcome" />
+          </Text>
+        </View>
       </IntlProvider>
     );
   }

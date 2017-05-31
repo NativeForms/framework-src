@@ -1,6 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { View } from 'react-native';
-import { Container, Form } from 'native-base';
+import { Form } from 'native-base';
 import { IntlProvider } from 'react-intl';
 
 // app
@@ -55,13 +54,7 @@ export default class FormComponent extends Component {
   render() {
     return (
       <IntlProvider messages={this.props.messages}>
-        <Container>
-          <Form>
-            {
-              this.renderForm()
-            }
-          </Form>
-        </Container>
+        <Form>{this.renderForm()}</Form>
       </IntlProvider>
     );
   }

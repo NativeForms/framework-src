@@ -41,6 +41,14 @@ export default {
           defaultText: 'Replace Me'
         }
       },
+      {
+        uid: 'headerExample',
+        type: 'text',
+        category: 'field',
+        attributes: {
+          headerLabel: 'Header Label'
+        }
+      }
     ]
   }
 };

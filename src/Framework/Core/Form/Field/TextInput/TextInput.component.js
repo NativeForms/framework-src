@@ -57,15 +57,15 @@ class TextInputComponent extends Component {
   render() {
     const { headerLabel, clearButton, hiddenText, intl } = this.props;
     let { label, defaultText } = this.props;
+    const props = {
+      stackedLabel: !!headerLabel,
+    };
     if (headerLabel) {
       label = headerLabel;
     }
     if (defaultText && typeof defaultText === 'object') {
       defaultText = intl.formatMessage({ id: defaultText.code }, defaultText.values);
     }
-    const props = {
-      fixedLabel: true,
-    };
     return (
       <Item {...props}>
         {label && typeof label === 'string' &&

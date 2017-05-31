@@ -1,5 +1,5 @@
 import * as Core from './Core';
-import { route as counterRoute, CounterActions, CounterEpics, counterReducer } from './Counter';
+import { route as counterRoute, CounterActions, CounterEpics, counterReducer } from './Counter'; //eslint-disable-line no-unused-vars
 import { route as loginRoute } from './Login';
 
 export const actionCreators = [
@@ -16,7 +16,7 @@ export const epics = Object.assign({},
 
 export const forms = Core.forms;
 export const demos = [
-  counterRoute,
+  // counterRoute,
   loginRoute,
 ];
 

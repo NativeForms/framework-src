@@ -1,7 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { Text, View, TouchableHighlight, Linking } from 'react-native';
 import { FormattedMessage, } from 'react-intl';
-import renderIf from 'render-if';
 
 export default class LinkComponent extends Component {
   static propTypes = {
@@ -17,8 +16,7 @@ export default class LinkComponent extends Component {
       if (supported) {
         Linking.openURL(this.props.route);
       } else {
-        /* eslint no-console:0 */
-        console.log(`Cannot open route:${this.props.route}`);
+        console.log(`Cannot open route:${this.props.route}`); // eslint-disable-line no-console
       }
     });
   }
@@ -28,12 +26,12 @@ export default class LinkComponent extends Component {
     return (
       <TouchableHighlight onPress={this.linkTo}>
         <View>
-          {renderIf(typeof label === 'string')(
+          {typeof label === 'string' &&
             <Text>label</Text>
-          )}
-          {renderIf(typeof label === 'object')(
+          }
+          {label && typeof label === 'object' &&
             <FormattedMessage id={label.code} values={label.values} />
-          )}
+          }
         </View>
       </TouchableHighlight>
     );
