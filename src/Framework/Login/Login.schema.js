@@ -9,14 +9,18 @@ export default {
       type: 'text',
       category: 'field',
       attributes: {
-        label: 'Username',
+        headerLabel: {
+          code: 'username'
+        },
       }
     }, {
       uid: 'password',
       type: 'text',
       category: 'field',
       attributes: {
-        label: 'Password',
+        headerLabel: {
+          code: 'password'
+        },
         hiddenText: true
       }
     }, {
