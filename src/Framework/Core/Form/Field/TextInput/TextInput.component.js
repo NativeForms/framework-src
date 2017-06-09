@@ -19,11 +19,8 @@ class TextInputComponent extends Component {
       PropTypes.object,
     ]),
     hiddenText: PropTypes.bool,
-    // footDescription: PropTypes.oneOfType([
-    //   PropTypes.string,
-    //   PropTypes.object,
-    // ]),
     clearButton: PropTypes.bool,
+    multiline: PropTypes.bool,
     intl: intlShape.isRequired,
   }
 
@@ -33,8 +30,8 @@ class TextInputComponent extends Component {
     headerLabel: null,
     label: null,
     hiddenText: null,
-    footDescription: null,
     clearButton: false,
+    multiline: false,
   }
 
   constructor(props) {
@@ -42,12 +39,17 @@ class TextInputComponent extends Component {
     this.state = {
       value: this.props.value,
     };
-    this.handleChange = this.handleChange.bind(this);
+    this.measure = this.measure.bind(this);
+    this.setValue = this.setValue.bind(this);
     this.clearInput = this.clearInput.bind(this);
   }
 
-  handleChange(event) {
-    this.setState({ value: event.target.value });
+  setValue(value) {
+    this.setState({ value });
+  }
+
+  measure(event) {
+    this.setState({ height: event.nativeEvent.contentSize.height });
   }
 
   clearInput() {
@@ -55,7 +57,7 @@ class TextInputComponent extends Component {
   }
 
   render() {
-    const { headerLabel, clearButton, hiddenText, intl } = this.props;
+    const { headerLabel, clearButton, hiddenText, multiline, intl } = this.props;
     let { label, defaultText } = this.props;
     const props = {
       stackedLabel: !!headerLabel,
@@ -77,9 +79,12 @@ class TextInputComponent extends Component {
         <Input
           ref={component => { this.textInput = component; }}
           value={this.state.value}
-          onChange={this.handleChange}
+          onChangeText={this.setValue}
           placeholder={defaultText}
           secureTextEntry={hiddenText}
+          multiline={multiline}
+          onContentSizeChange={this.measure}
+          style={{ height: this.state.height }}
         />
 
         {clearButton &&
