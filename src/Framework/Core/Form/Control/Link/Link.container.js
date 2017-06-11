@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import { Content, Grid, Row } from 'native-base';
-import SyntaxHiglighter from 'react-native-syntax-highlighter';
-import { github } from 'react-syntax-highlighter/dist/styles';
 
 // framework
 import { Form } from '../../../Form';
 import i18n from './Link.i18n';
-import { getLocale } from '../../../../../Shared/utils';
+import { SchemaViewer, getLocale } from '../../../../../Shared/utils';
 
 /* eslint-disable import/no-duplicates, import/extensions */
 import schema from './Link.schema';
@@ -29,9 +27,9 @@ export default class LinkContainer extends Component {
             <Form schema={schema} messages={messages} />
           </Row>
           <Row style>
-            <SyntaxHiglighter language="javascript" style={github}>
+            <SchemaViewer>
               {schemaText}
-            </SyntaxHiglighter>
+            </SchemaViewer>
           </Row>
         </Grid>
       </Content>

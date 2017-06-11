@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import { Content, Grid, Row } from 'native-base';
-import SyntaxHiglighter from 'react-native-syntax-highlighter';
-import { github } from 'react-syntax-highlighter/dist/styles';
 
 // framework
 import { Form } from '../../../Form';
 import i18n from './TextInput.i18n';
-import { getLocale } from '../../../../../Shared/utils';
+import { SchemaViewer, getLocale } from '../../../../../Shared/utils';
 
 /* eslint-disable import/no-duplicates, import/extensions */
 import schema from './TextInput.schema';
@@ -28,10 +26,8 @@ export default class TextInputContainer extends Component {
           <Row>
             <Form schema={schema} messages={messages} />
           </Row>
-          <Row style={{ padding: 15 }}>
-            <SyntaxHiglighter language="javascript" style={github}>
-              {schemaText}
-            </SyntaxHiglighter>
+          <Row style={{ paddingTop: 10 }}>
+            <SchemaViewer>{schemaText}</SchemaViewer>
           </Row>
         </Grid>
       </Content>

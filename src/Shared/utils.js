@@ -1,7 +1,16 @@
 import React from 'react';
+import syntaxHighlighter from 'react-native-syntax-highlighter';
+import { github } from 'react-syntax-highlighter/dist/styles';
 import { Iterable } from 'immutable';
 
-/* eslint import/prefer-default-export:0 */
+export const SchemaViewer = (props) => syntaxHighlighter(
+  Object.assign({}, syntaxHighlighter.defaultProps, {
+    language: 'javascript',
+    style: github,
+    codeTagProps: {
+      alwaysBounceVertical: false
+    }
+  }, props));
 
 // See http://redux.js.org/docs/recipes/UsingImmutableJS.html#use-a-higher-order-component-to-convert-your-smart-components-immutablejs-props-to-your-dumb-components-javascript-props
 export const toJS = (WrappedComponent) =>
