@@ -16,7 +16,7 @@
                 "NODE_ENV": "development"
             },
             "console": "integratedTerminal",
-            "sourceMaps": false
+            "sourceMaps": true
         },
         {
             "name": "Debug Android",
@@ -33,7 +33,7 @@
             "type": "reactnative",
             "request": "launch",
             "platform": "ios",
-            "target": "iPhone 5s",
+            "target": "iPhone 6",
             "sourceMaps": true,
             "outDir": "${workspaceRoot}/.vscode/.react"
         },

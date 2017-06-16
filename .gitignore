@@ -54,3 +54,5 @@ fastlane/screenshots
 
 # VSCode
 .vscode/.react
+
+coverage

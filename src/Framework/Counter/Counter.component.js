@@ -21,23 +21,21 @@ class CounterComponent extends Component {
     const incrementAsyncMsg = intl.formatMessage({ id: 'incrementLabel' }, { type: 'async' }); // example of using formatMessage API
     return (
       <View style={styles.container}>
-        <View>
-          <Text style={styles.text}>
-            <FormattedMessage id="clickedMessage" values={{ count: counter.counter }} />
-          </Text>
-          <TouchableHighlight onPress={increment}>
-            <Text style={styles.text}>+</Text>
-          </TouchableHighlight>
-          <TouchableHighlight onPress={decrement}>
-            <Text style={styles.text}>-</Text>
-          </TouchableHighlight>
-          <TouchableHighlight onPress={incrementIfOdd}>
-            <Text style={styles.text}><FormattedMessage id="incrementLabel" values={{ type: 'odd' }} /></Text>
-          </TouchableHighlight>
-          <TouchableHighlight onPress={incrementAsync}>
-            <Text style={styles.text}>{incrementAsyncMsg}</Text>
-          </TouchableHighlight>
-        </View>
+        <Text style={styles.text}>
+          <FormattedMessage id="clickedMessage" values={{ count: counter.counter }} />
+        </Text>
+        <TouchableHighlight onPress={increment}>
+          <Text style={styles.text}>+</Text>
+        </TouchableHighlight>
+        <TouchableHighlight onPress={decrement}>
+          <Text style={styles.text}>-</Text>
+        </TouchableHighlight>
+        <TouchableHighlight onPress={incrementIfOdd}>
+          <Text style={styles.text}><FormattedMessage id="incrementLabel" values={{ type: 'odd' }} /></Text>
+        </TouchableHighlight>
+        <TouchableHighlight onPress={incrementAsync}>
+          <Text style={styles.text}>{incrementAsyncMsg}</Text>
+        </TouchableHighlight>
       </View>
     );
   }

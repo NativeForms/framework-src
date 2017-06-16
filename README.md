@@ -29,11 +29,11 @@
 
 ## Installation
 
-See [Getting Started](https://facebook.github.io/react-native/docs/getting-started.html) to install requirement tools.
+See [Getting Started](https://facebook.github.io/react-native/docs/getting-started.html) to install required tools.
 
 ```bash
 $ npm install -g react-native-cli
-$ npm install
+$ npm install # install npm packages. Required for every package.json update
 ```
 
 ## Development
@@ -69,7 +69,7 @@ In development mode, you can install [React Native Debugger](https://github.com/
 
 ### Remote JS Debuggging and Hot Reload
 
-Don't forget to Enable Remote JS Debugging, Live Reload, and Hot Reload in your application running in the Device Emulator. This can be configued from the Developer Menu (Command+D on Mac).
+Don't forget to Enable Remote JS Debugging and Hot Reload in your application running in the Device Emulator. This can be configued from the Developer Menu (Command+D on Mac).
 
 ### Visual Studio Code
 
@@ -83,6 +83,18 @@ We used [react-native-mock](https://github.com/lelandrichardson/react-native-moc
 
 ```bash
 $ npm test
+```
+
+Updating Snapshot tests
+```bash
+$ npm test -- -u
+```
+
+> When appropriate, you should commit and push the new snapshots
+
+Running Tests w/ coverage report:
+```bash
+$ npm test -- --coverage
 ```
 
 Running ESLint:

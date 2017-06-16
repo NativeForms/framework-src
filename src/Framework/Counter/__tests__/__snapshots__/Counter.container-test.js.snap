@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CounterContainer should render correctly 1`] = `
+<IntlProvider
+  messages={
+    Object {
+      "clickedMessage": "Clicked: {count, plural, one {# time} other {# times}}",
+      "incrementLabel": "Increment {type, select, odd {if odd} async {async}}",
+      "title": "Counter",
+    }
+  }
+>
+  <Component
+    counter={
+      Immutable.Map {
+        counter: 0,
+      }
+    }
+    decrement={[Function]}
+    increment={[Function]}
+    incrementAsync={[Function]}
+    incrementIfOdd={[Function]}
+  />
+</IntlProvider>
+`;
+
+exports[`CounterContainer should render correctly 2`] = `
+<IntlProvider
+  messages={
+    Object {
+      "clickedMessage": "Clicked: {count, plural, one {# time} other {# times}}",
+      "incrementLabel": "Increment {type, select, odd {if odd} async {async}}",
+      "title": "Counter",
+    }
+  }
+>
+  <Component
+    counter={
+      Immutable.Map {
+        counter: 0,
+      }
+    }
+    decrement={[Function]}
+    increment={[Function]}
+    incrementAsync={[Function]}
+    incrementIfOdd={[Function]}
+  />
+</IntlProvider>
+`;
