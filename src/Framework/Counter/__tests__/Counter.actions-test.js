@@ -3,10 +3,10 @@ import Immutable from 'immutable';
 import configureMockStore from 'redux-mock-store';
 import { createEpicMiddleware, combineEpics } from 'redux-observable';
 
-// app
-import * as actions from '../../../src/Framework/Counter/Counter.actions';
-import * as epics from '../../../src/Framework/Counter/Counter.epics';
-import initialState from '../../../src/Framework/Counter/Counter.state';
+// framework
+import * as actions from '../Counter.actions';
+import * as epics from '../Counter.epics';
+import initialState from '../Counter.state';
 
 const { Actions } = actions;
 
@@ -72,7 +72,7 @@ describe('incrementAsync', () => {
   afterEach(cleanUpEpic);
 
   // There's no nice way to test this at the moment...
-  it('incrementAsync should create increment action', () => {
+  it('incrementAsync should create increment action', done => {
     const incrementAsync = { type: Actions.INCREMENT_ASYNC, delay: 1 };
     store.dispatch(incrementAsync);
     setTimeout(() => {
@@ -80,6 +80,7 @@ describe('incrementAsync', () => {
         incrementAsync,
         actions.increment()
       ]);
+      done();
     }, 5);
   });
 });

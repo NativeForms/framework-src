@@ -10,7 +10,6 @@
     "link": "node node_modules/react-native/local-cli/cli.js link",
     "lint": "eslint src test *.js",
     "test": "jest",
-    "cover": "nyc npm test",
     "remotedev": "remotedev-debugger --injectserver",
     "postinstall": "npm run postinstall-js && npm run link && npm run remotedev && rndebugger-open",
     "postinstall-js": "node scripts/postinstall.js"
@@ -20,13 +19,10 @@
     "port": 5678
   },
   "jest": {
-    "setupTestFrameworkScriptFile": "./test/setup.js",
-    "unmockedModulePathPatterns": [
-      "react",
-      "enzyme",
-      "jest-enzyme"
+    "preset": "react-native",
+    "snapshotSerializers": [
+      "./node_modules/jest-serializer-enzyme"
     ],
-    "preset": "jest-react-native",
     "globals": {
       "__DEV__": true
     }
@@ -56,9 +52,8 @@
     "babel-eslint": "^7.1.1",
     "babel-plugin-transform-remove-console": "^6.8.1",
     "babel-polyfill": "^6.5.0",
-    "babel-preset-react-native": "^1.9.1",
     "babel-preset-react-native-stage-0": "^1.0.1",
-    "chai": "^3.5.0",
+    "chai": "^4.0.2",
     "enzyme": "^2.0.0",
     "eslint": "^3.2.2",
     "eslint-config-airbnb": "^14.1.0",
@@ -69,10 +64,8 @@
     "jest": "^20.0.0",
     "jest-cli": "^20.0.0",
     "jest-enzyme": "^3.1.0",
-    "jest-react-native": "^18.0.0",
-    "jsdom": "^10.1.0",
+    "jest-serializer-enzyme": "^1.0.0",
     "node-fetch": "^1.3.3",
-    "nyc": "^10.1.2",
     "proxyquire": "^1.7.4",
     "react-addons-test-utils": "~15.4.1",
     "react-dom": "~15.4.1",

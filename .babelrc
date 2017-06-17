@@ -9,7 +9,8 @@
   ],
   "env": {
     "development": {
-      "plugins": ["transform-react-jsx-source"]
+      "plugins": ["transform-react-jsx-source"],
+      "sourceMaps": "inline"
     },
     "production": {
       "plugins": ["transform-remove-console"]
