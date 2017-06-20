@@ -25,6 +25,7 @@
 * [Babel](https://github.com/babel/babel) & Plugins: [transform-decorators-legacy](https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy)
 * [Native Base](https://nativebase.io/)
 * [React Intl](https://github.com/yahoo/react-intl)
+* [ESDoc](https://esdoc.org/)
 * [Visual Studio Code](https://code.visualstudio.com/) Configurations
 
 ## Installation

@@ -1,0 +1,23 @@
+{
+  "source": "./src",
+  "destination": "./doc",
+  "excludes": [
+    "\\.(config|styles|i18n|theme|actions|epics|reducers|state|container)\\.(js|es6)$",
+    "__tests__",
+    "App",
+    "(index|configureStore|root)\\.(js|es6)$"
+  ],
+  "experimentalProposal": {
+    "classProperties": true,
+    "objectRestSpread": true,
+    "decorators": true,
+    "doExpressions": true,
+    "functionBind": true,
+    "asyncGenerators": true,
+    "exportExtensions": true,
+    "dynamicImport": true
+  },
+  "plugins": [
+    {"name": "./scripts/postdocgen.js"}
+  ]
+}
