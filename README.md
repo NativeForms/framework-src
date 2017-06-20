@@ -104,13 +104,14 @@ Running ESLint:
 $ npm run lint
 ```
 
-## Documentation
+## API Docs
 
-Frameworks supports documentation coverage with ESDoc.
-
+Generate documentation with coverage
 ```bash
 $ npm run esdoc
 ```
+
+The generated docs are hosted [here](https://doc.esdoc.org/github.com/psychobolt/react-native-boilerplate/) for previewing purposes.
 
 ## Credits
 
