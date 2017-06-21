@@ -8,7 +8,11 @@ import { toJS, injectIntl } from '../../Shared/utils';
 
 @toJS()
 @injectIntl()
-/** A Counter with increment and decrement buttons */
+/**
+ * A Counter with increment and decrement buttons
+ * @example
+ * <Counter {...props} />
+ * */
 class CounterComponent extends Component {
   /**
    * @namespace
