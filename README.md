@@ -1,5 +1,6 @@
 # React Native Boilerplate 
 [![Build Status](https://travis-ci.org/psychobolt/react-native-boilerplate.svg)](https://travis-ci.org/psychobolt/react-native-boilerplate) [![CircleCI](https://circleci.com/gh/psychobolt/react-native-boilerplate.svg?style=svg)](https://circleci.com/gh/psychobolt/react-native-boilerplate)
+[![ES Doc Coverage](https://doc.esdoc.org/github.com/psychobolt/react-native-boilerplate/badge.svg)](https://doc.esdoc.org/github.com/psychobolt/react-native-boilerplate/)
 
 [![Dependency Status](https://david-dm.org/psychobolt/react-native-boilerplate.svg)](https://david-dm.org/psychobolt/react-native-boilerplate) [![devDependency Status](https://david-dm.org/psychobolt/react-native-boilerplate/dev-status.svg)](https://david-dm.org/psychobolt/react-native-boilerplate?type=dev)
 
@@ -111,7 +112,7 @@ Generate documentation with coverage
 $ npm run esdoc
 ```
 
-The generated docs are hosted [here](https://doc.esdoc.org/github.com/psychobolt/react-native-boilerplate/) for previewing purposes.
+> Local generated docs are at `doc/`.
 
 ## Credits
 

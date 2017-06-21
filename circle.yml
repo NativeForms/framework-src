@@ -6,6 +6,11 @@ test:
     - npm run lint
   override:
     - npm test -- --coverage
+deployment:
+  master:
+    branch: master
+    commands:
+      - ./scripts/deploydoc.sh
 general:
   branches:
     ignore:

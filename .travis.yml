@@ -21,6 +21,12 @@ script:
   - npm run lint
   - npm test -- --coverage
 
+deploy:
+  provider: script
+  script: ./scripts/deploydoc.sh
+  on: 
+    branch: master
+
 branches:
   except:
     - /.+-experimental/

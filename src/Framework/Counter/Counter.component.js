@@ -11,7 +11,8 @@ import { toJS, injectIntl } from '../../Shared/utils';
 /**
  * A Counter with increment and decrement buttons
  * @example
- * <Counter {...props} />
+ * import Counter from '../Counter'; // Some relative path to Counter module export
+ * <Counter {...counterProps} />
  * */
 class CounterComponent extends Component {
   /**
