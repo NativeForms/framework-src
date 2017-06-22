@@ -12,7 +12,8 @@
     "test": "jest",
     "remotedev": "remotedev-debugger --injectserver",
     "postinstall": "npm run postinstall-js && npm run link && npm run remotedev && rndebugger-open",
-    "postinstall-js": "node scripts/postinstall.js"
+    "postinstall-js": "node scripts/postinstall.js",
+    "esdoc": "./node_modules/.bin/esdoc"
   },
   "remotedev": {
     "hostname": "localhost",
@@ -55,6 +56,7 @@
     "babel-preset-react-native-stage-0": "^1.0.1",
     "chai": "^4.0.2",
     "enzyme": "^2.0.0",
+    "esdoc": "^0.5.2",
     "eslint": "^3.2.2",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",

@@ -1,12 +1,29 @@
 import React, { Component, PropTypes } from 'react';
 import { Text, View, TouchableHighlight } from 'react-native';
-import { FormattedMessage, injectIntl, intlShape } from 'react-intl';
+import { FormattedMessage, intlShape } from 'react-intl';
 
 // app
 import styles from './Counter.styles';
-import { toJS } from '../../Shared/utils';
+import { toJS, injectIntl } from '../../Shared/utils';
 
+@toJS()
+@injectIntl()
+/**
+ * A Counter with increment and decrement buttons
+ * @example
+ * import Counter from '../Counter'; // Some relative path to Counter module export
+ * <Counter {...counterProps} />
+ * */
 class CounterComponent extends Component {
+  /**
+   * @namespace
+   * @property {function} increment - Increment action
+   * @property {function} incrementIfOdd - Increment If Odd action
+   * @property {function} incrementAsync - Increment Async action
+   * @property {function} decrement - Decrement action
+   * @property {Object} counter - Counter state
+   * @property {Object} intl - React Intl API object
+   */
   static propTypes = {
     increment: PropTypes.func.isRequired,
     incrementIfOdd: PropTypes.func.isRequired,
@@ -16,6 +33,10 @@ class CounterComponent extends Component {
     intl: intlShape.isRequired
   };
 
+  /**
+   * render
+   * @return {ViewComponent} - View that represents the Counter
+   */
   render() {
     const { increment, incrementIfOdd, incrementAsync, decrement, counter, intl } = this.props;
     const incrementAsyncMsg = intl.formatMessage({ id: 'incrementLabel' }, { type: 'async' }); // example of using formatMessage API
@@ -41,4 +62,4 @@ class CounterComponent extends Component {
   }
 }
 
-export default toJS(injectIntl(CounterComponent));
+export default CounterComponent;
