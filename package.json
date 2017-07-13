@@ -26,7 +26,8 @@
     ],
     "globals": {
       "__DEV__": true
-    }
+    },
+    "collectCoverageFrom": ["src/(App|Framework)/**/*.js", "!**/(index|*.(styles|theme|state|i18n)).js"]
   },
   "dependencies": {
     "color": "^1.0.3",

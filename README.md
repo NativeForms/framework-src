@@ -80,6 +80,27 @@ It might be better to debug in a lightweight IDE. [Visual Studio Code](https://c
 
 > You may need to install Flow globally: ```npm install -g flow-bin```
 
+### File Convention
+
+This project is organized using conventions borrowed from [Angular Seed Advanced](https://github.com/NathanWalker/angular-seed-advanced). Most specifically, filenames are postfixed before the file extension e.g.:
+```
+- *.i18n.js
+- *.style.js
+- *.theme.js
+- *.container.js
+- *.component.js
+- *.[_type_].js
+```
+> To support a clean hiearchy and easy search, "*" is replaced with component name and all associated files placed in a directory with the compoennt name, along with the ```index.js``` (JS module export file).
+
+### Project Structure
+
+The project is divided into two three parts: ```App/```, ```Framework/```, and ```Shared/```:
+
+1. App - Code that handles interaction and display of the mobile app.
+2. Framework - Independent code, where you will be mainly be concern with your projects.
+3. Shared - Any code that is shared between App and Framework (usually utility classes or functions).
+
 ## Testing
 
 We used [react-native-mock](https://github.com/lelandrichardson/react-native-mock), and test with [Jest](https://facebook.github.io/jest/), [Enzyme](https://github.com/airbnb/enzyme).
