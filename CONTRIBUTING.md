@@ -24,17 +24,17 @@ Main announcements will be posted by team leads on Gitter. This incluides any te
 
 ### Issues
 
-Problems or questions should be filed under the [issues](https://github.com/psychobolt/react-native-boilerplate/issues). Any issue will be looked at by a team member and then appropriately assigned to the a project (as cards) to be worked on. Issues should have appropriate tags.
+Problems or questions should be filed under the issues (e.g. [https://github.com/NativeForms/framework-src/issues](https://github.com/NativeForms/framework-src/issues)). Any issue will be looked at by a team member and then appropriately assigned to the a project (as cards) to be worked on. Issues should have appropriate tags.
 
 ### Cards
 
-You can assign yourself a available task that is Ready in [projects](https://github.com/NativeForms/framework-src/projects). Cards that are In Progress should have assignee(s). Done cards should have their issues closed.
+You can assign yourself a available task that is Ready in projects (e.g. [https://github.com/NativeForms/framework-src/projects](https://github.com/NativeForms/framework-src/projects)). Cards that are In Progress should have assignee(s). Done cards should have their issues closed.
 
 ### Merging Commits
 
 Commits directly to `master` branch are prohibited. Instead, when working on a assigned issue you should create a branch that you will later assign as a [pull request](https://github.com/NativeForms/framework-src/pulls). Only issues associated with pull requests will be reviewed and closed appropriatly. This ensures every branch is tested and have sufficient reviewers. The only exception are `*-experimental` branches, which is used to test a feature in a progress state. Experimental branches when ready to be reviewed, should be renamed (without the `-experimental` postfix) before being associated with a pull request.
 
-### Testing
+## Testing
 
 It is advised to run both Jest and Linter on source changes before a push:
 
