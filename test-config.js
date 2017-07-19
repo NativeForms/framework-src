@@ -1,3 +1,5 @@
+Date.now = jest.fn(() => 42);
+
 const jsdom = require('jsdom').jsdom;
 
 global.document = jsdom('');

@@ -23,16 +23,16 @@ exports[`AppContainer should render correctly 1`] = `
                   "routeName": "Home",
                   "routes": Array [
                     Object {
-                      "key": "Init-id-1500489612258-0",
+                      "key": "Init-id-42-0",
                       "routeName": "Home",
                     },
                     Object {
-                      "key": "id-1500489612258-2",
+                      "key": "id-42-2",
                       "params": undefined,
                       "routeName": "Home",
                     },
                     Object {
-                      "key": "id-1500489612258-3",
+                      "key": "id-42-3",
                       "params": undefined,
                       "routeName": "Home",
                     },
@@ -44,7 +44,7 @@ exports[`AppContainer should render correctly 1`] = `
                   "routeName": "Counter",
                   "routes": Array [
                     Object {
-                      "key": "Init-id-1500489612258-1",
+                      "key": "Init-id-42-1",
                       "routeName": "Counter",
                     },
                   ],
