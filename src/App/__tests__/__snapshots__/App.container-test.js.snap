@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppContainer should render correctly 1`] = `
+<Styled(Container)>
+  <NavigationContainer
+    navigation={
+      Object {
+        "dispatch": [Function],
+        "goBack": [Function],
+        "navigate": [Function],
+        "setParams": [Function],
+        "state": Object {
+          "index": 0,
+          "routes": Array [
+            Object {
+              "index": 0,
+              "key": "DrawerClose",
+              "routeName": "DrawerClose",
+              "routes": Array [
+                Object {
+                  "index": 2,
+                  "key": "Home",
+                  "routeName": "Home",
+                  "routes": Array [
+                    Object {
+                      "key": "Init-id-1500488809091-0",
+                      "routeName": "Home",
+                    },
+                    Object {
+                      "key": "id-1500488809091-2",
+                      "params": undefined,
+                      "routeName": "Home",
+                    },
+                    Object {
+                      "key": "id-1500488809091-3",
+                      "params": undefined,
+                      "routeName": "Home",
+                    },
+                  ],
+                },
+                Object {
+                  "index": 0,
+                  "key": "Counter",
+                  "routeName": "Counter",
+                  "routes": Array [
+                    Object {
+                      "key": "Init-id-1500488809091-1",
+                      "routeName": "Counter",
+                    },
+                  ],
+                },
+              ],
+            },
+            Object {
+              "key": "DrawerOpen",
+              "routeName": "DrawerOpen",
+            },
+          ],
+        },
+      }
+    }
+  />
+</Styled(Container)>
+`;

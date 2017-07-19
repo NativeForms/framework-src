@@ -89,7 +89,9 @@ This project is organized using conventions borrowed from [Angular Seed Advanced
 - *.theme.js
 - *.container.js
 - *.component.js
+- *.reducers.js
 - *.[_type_].js
+- *.[_type_]-test.js
 ```
 > To support a clean hiearchy and easy search, "*" is replaced with component name and all associated files placed in a directory with the compoennt name, along with the ```index.js``` (JS module export file).
 
