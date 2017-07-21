@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MenuComponent should render correctly 1`] = `
+<Styled(Content)>
+  <Styled(List)>
+    <Styled(ListItem)
+      button={true}
+      onPress={[Function]}
+    >
+      <Styled(Text)>
+        Home
+      </Styled(Text)>
+    </Styled(ListItem)>
+    <Styled(ListItem)
+      itemDivider={true}
+    >
+      <Styled(Text)>
+        Form
+      </Styled(Text)>
+    </Styled(ListItem)>
+    <Styled(ListItem)
+      button={true}
+      onPress={[Function]}
+    >
+      <Styled(Text)>
+        Text Input
+      </Styled(Text)>
+    </Styled(ListItem)>
+    <Styled(ListItem)
+      button={true}
+      onPress={[Function]}
+    >
+      <Styled(Text)>
+        Button
+      </Styled(Text)>
+    </Styled(ListItem)>
+    <Styled(ListItem)
+      button={true}
+      onPress={[Function]}
+    >
+      <Styled(Text)>
+        Link
+      </Styled(Text)>
+    </Styled(ListItem)>
+  </Styled(List)>
+  <Styled(ListItem)
+    itemDivider={true}
+  >
+    <Styled(Text)>
+      Demos
+    </Styled(Text)>
+  </Styled(ListItem)>
+  <Styled(ListItem)
+    button={true}
+    onPress={[Function]}
+  >
+    <Styled(Text)>
+      Login
+    </Styled(Text)>
+  </Styled(ListItem)>
+</Styled(Content)>
+`;

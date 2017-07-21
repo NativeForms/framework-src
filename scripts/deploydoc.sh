@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # setup repo info
-git='psychobolt/react-native-boilerplate'
+git='NativeForms/framework-src'
 git_url="git@github.com:$git.git"
 finish_path="https://doc.esdoc.org/github.com/$git/.finish.json"
 
