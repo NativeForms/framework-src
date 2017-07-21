@@ -20,7 +20,7 @@ Core framework for rendering form components and demos. Core form components are
 
 ### Announcements
 
-Main announcements will be posted by team leads on Gitter. This incluides any team scheduled meetings, milestones, and deadlines.
+Main announcements will be posted by team leads on [Gitter](https://gitter.im/NativeForms). This incluides any team scheduled meetings, milestones, and deadlines.
 
 ### Issues
 
