@@ -30,12 +30,45 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                 },
                 Object {
                   "index": 0,
-                  "key": "Counter",
-                  "routeName": "Counter",
+                  "key": "TextInput",
+                  "routeName": "TextInput",
                   "routes": Array [
                     Object {
                       "key": "Init-id-42-1",
-                      "routeName": "Counter",
+                      "routeName": "TextInput",
+                    },
+                  ],
+                },
+                Object {
+                  "index": 0,
+                  "key": "Button",
+                  "routeName": "Button",
+                  "routes": Array [
+                    Object {
+                      "key": "Init-id-42-2",
+                      "routeName": "Button",
+                    },
+                  ],
+                },
+                Object {
+                  "index": 0,
+                  "key": "Link",
+                  "routeName": "Link",
+                  "routes": Array [
+                    Object {
+                      "key": "Init-id-42-3",
+                      "routeName": "Link",
+                    },
+                  ],
+                },
+                Object {
+                  "index": 0,
+                  "key": "Login",
+                  "routeName": "Login",
+                  "routes": Array [
+                    Object {
+                      "key": "Init-id-42-4",
+                      "routeName": "Login",
                     },
                   ],
                 },
@@ -78,12 +111,45 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                   },
                   Object {
                     "index": 0,
-                    "key": "Counter",
-                    "routeName": "Counter",
+                    "key": "TextInput",
+                    "routeName": "TextInput",
                     "routes": Array [
                       Object {
                         "key": "Init-id-42-1",
-                        "routeName": "Counter",
+                        "routeName": "TextInput",
+                      },
+                    ],
+                  },
+                  Object {
+                    "index": 0,
+                    "key": "Button",
+                    "routeName": "Button",
+                    "routes": Array [
+                      Object {
+                        "key": "Init-id-42-2",
+                        "routeName": "Button",
+                      },
+                    ],
+                  },
+                  Object {
+                    "index": 0,
+                    "key": "Link",
+                    "routeName": "Link",
+                    "routes": Array [
+                      Object {
+                        "key": "Init-id-42-3",
+                        "routeName": "Link",
+                      },
+                    ],
+                  },
+                  Object {
+                    "index": 0,
+                    "key": "Login",
+                    "routeName": "Login",
+                    "routes": Array [
+                      Object {
+                        "key": "Init-id-42-4",
+                        "routeName": "Login",
                       },
                     ],
                   },
@@ -140,12 +206,45 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                     },
                     Object {
                       "index": 0,
-                      "key": "Counter",
-                      "routeName": "Counter",
+                      "key": "TextInput",
+                      "routeName": "TextInput",
                       "routes": Array [
                         Object {
                           "key": "Init-id-42-1",
-                          "routeName": "Counter",
+                          "routeName": "TextInput",
+                        },
+                      ],
+                    },
+                    Object {
+                      "index": 0,
+                      "key": "Button",
+                      "routeName": "Button",
+                      "routes": Array [
+                        Object {
+                          "key": "Init-id-42-2",
+                          "routeName": "Button",
+                        },
+                      ],
+                    },
+                    Object {
+                      "index": 0,
+                      "key": "Link",
+                      "routeName": "Link",
+                      "routes": Array [
+                        Object {
+                          "key": "Init-id-42-3",
+                          "routeName": "Link",
+                        },
+                      ],
+                    },
+                    Object {
+                      "index": 0,
+                      "key": "Login",
+                      "routeName": "Login",
+                      "routes": Array [
+                        Object {
+                          "key": "Init-id-42-4",
+                          "routeName": "Login",
                         },
                       ],
                     },
@@ -268,12 +367,45 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                               },
                               Object {
                                 "index": 0,
-                                "key": "Counter",
-                                "routeName": "Counter",
+                                "key": "TextInput",
+                                "routeName": "TextInput",
                                 "routes": Array [
                                   Object {
                                     "key": "Init-id-42-1",
-                                    "routeName": "Counter",
+                                    "routeName": "TextInput",
+                                  },
+                                ],
+                              },
+                              Object {
+                                "index": 0,
+                                "key": "Button",
+                                "routeName": "Button",
+                                "routes": Array [
+                                  Object {
+                                    "key": "Init-id-42-2",
+                                    "routeName": "Button",
+                                  },
+                                ],
+                              },
+                              Object {
+                                "index": 0,
+                                "key": "Link",
+                                "routeName": "Link",
+                                "routes": Array [
+                                  Object {
+                                    "key": "Init-id-42-3",
+                                    "routeName": "Link",
+                                  },
+                                ],
+                              },
+                              Object {
+                                "index": 0,
+                                "key": "Login",
+                                "routeName": "Login",
+                                "routes": Array [
+                                  Object {
+                                    "key": "Init-id-42-4",
+                                    "routeName": "Login",
                                   },
                                 ],
                               },
@@ -307,12 +439,45 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                                 },
                                 Object {
                                   "index": 0,
-                                  "key": "Counter",
-                                  "routeName": "Counter",
+                                  "key": "TextInput",
+                                  "routeName": "TextInput",
                                   "routes": Array [
                                     Object {
                                       "key": "Init-id-42-1",
-                                      "routeName": "Counter",
+                                      "routeName": "TextInput",
+                                    },
+                                  ],
+                                },
+                                Object {
+                                  "index": 0,
+                                  "key": "Button",
+                                  "routeName": "Button",
+                                  "routes": Array [
+                                    Object {
+                                      "key": "Init-id-42-2",
+                                      "routeName": "Button",
+                                    },
+                                  ],
+                                },
+                                Object {
+                                  "index": 0,
+                                  "key": "Link",
+                                  "routeName": "Link",
+                                  "routes": Array [
+                                    Object {
+                                      "key": "Init-id-42-3",
+                                      "routeName": "Link",
+                                    },
+                                  ],
+                                },
+                                Object {
+                                  "index": 0,
+                                  "key": "Login",
+                                  "routeName": "Login",
+                                  "routes": Array [
+                                    Object {
+                                      "key": "Init-id-42-4",
+                                      "routeName": "Login",
                                     },
                                   ],
                                 },
@@ -357,12 +522,45 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                                   },
                                   Object {
                                     "index": 0,
-                                    "key": "Counter",
-                                    "routeName": "Counter",
+                                    "key": "TextInput",
+                                    "routeName": "TextInput",
                                     "routes": Array [
                                       Object {
                                         "key": "Init-id-42-1",
-                                        "routeName": "Counter",
+                                        "routeName": "TextInput",
+                                      },
+                                    ],
+                                  },
+                                  Object {
+                                    "index": 0,
+                                    "key": "Button",
+                                    "routeName": "Button",
+                                    "routes": Array [
+                                      Object {
+                                        "key": "Init-id-42-2",
+                                        "routeName": "Button",
+                                      },
+                                    ],
+                                  },
+                                  Object {
+                                    "index": 0,
+                                    "key": "Link",
+                                    "routeName": "Link",
+                                    "routes": Array [
+                                      Object {
+                                        "key": "Init-id-42-3",
+                                        "routeName": "Link",
+                                      },
+                                    ],
+                                  },
+                                  Object {
+                                    "index": 0,
+                                    "key": "Login",
+                                    "routeName": "Login",
+                                    "routes": Array [
+                                      Object {
+                                        "key": "Init-id-42-4",
+                                        "routeName": "Login",
                                       },
                                     ],
                                   },
@@ -385,19 +583,19 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                           <DrawerScreen
                             childNavigationProps={
                               Object {
-                                "Counter": Object {
+                                "Button": Object {
                                   "dispatch": [Function],
                                   "goBack": [Function],
                                   "navigate": [Function],
                                   "setParams": [Function],
                                   "state": Object {
                                     "index": 0,
-                                    "key": "Counter",
-                                    "routeName": "Counter",
+                                    "key": "Button",
+                                    "routeName": "Button",
                                     "routes": Array [
                                       Object {
-                                        "key": "Init-id-42-1",
-                                        "routeName": "Counter",
+                                        "key": "Init-id-42-2",
+                                        "routeName": "Button",
                                       },
                                     ],
                                   },
@@ -415,6 +613,57 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                                       Object {
                                         "key": "Init-id-42-0",
                                         "routeName": "Home",
+                                      },
+                                    ],
+                                  },
+                                },
+                                "Link": Object {
+                                  "dispatch": [Function],
+                                  "goBack": [Function],
+                                  "navigate": [Function],
+                                  "setParams": [Function],
+                                  "state": Object {
+                                    "index": 0,
+                                    "key": "Link",
+                                    "routeName": "Link",
+                                    "routes": Array [
+                                      Object {
+                                        "key": "Init-id-42-3",
+                                        "routeName": "Link",
+                                      },
+                                    ],
+                                  },
+                                },
+                                "Login": Object {
+                                  "dispatch": [Function],
+                                  "goBack": [Function],
+                                  "navigate": [Function],
+                                  "setParams": [Function],
+                                  "state": Object {
+                                    "index": 0,
+                                    "key": "Login",
+                                    "routeName": "Login",
+                                    "routes": Array [
+                                      Object {
+                                        "key": "Init-id-42-4",
+                                        "routeName": "Login",
+                                      },
+                                    ],
+                                  },
+                                },
+                                "TextInput": Object {
+                                  "dispatch": [Function],
+                                  "goBack": [Function],
+                                  "navigate": [Function],
+                                  "setParams": [Function],
+                                  "state": Object {
+                                    "index": 0,
+                                    "key": "TextInput",
+                                    "routeName": "TextInput",
+                                    "routes": Array [
+                                      Object {
+                                        "key": "Init-id-42-1",
+                                        "routeName": "TextInput",
                                       },
                                     ],
                                   },
@@ -445,12 +694,45 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                                     },
                                     Object {
                                       "index": 0,
-                                      "key": "Counter",
-                                      "routeName": "Counter",
+                                      "key": "TextInput",
+                                      "routeName": "TextInput",
                                       "routes": Array [
                                         Object {
                                           "key": "Init-id-42-1",
-                                          "routeName": "Counter",
+                                          "routeName": "TextInput",
+                                        },
+                                      ],
+                                    },
+                                    Object {
+                                      "index": 0,
+                                      "key": "Button",
+                                      "routeName": "Button",
+                                      "routes": Array [
+                                        Object {
+                                          "key": "Init-id-42-2",
+                                          "routeName": "Button",
+                                        },
+                                      ],
+                                    },
+                                    Object {
+                                      "index": 0,
+                                      "key": "Link",
+                                      "routeName": "Link",
+                                      "routes": Array [
+                                        Object {
+                                          "key": "Init-id-42-3",
+                                          "routeName": "Link",
+                                        },
+                                      ],
+                                    },
+                                    Object {
+                                      "index": 0,
+                                      "key": "Login",
+                                      "routeName": "Login",
+                                      "routes": Array [
+                                        Object {
+                                          "key": "Init-id-42-4",
+                                          "routeName": "Login",
                                         },
                                       ],
                                     },
@@ -1076,7 +1358,7 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                                                                       messages={
                                                                         Object {
                                                                           "title": "Home",
-                                                                          "welcome": "Welcome to React Native Boilerplate!",
+                                                                          "welcome": "Native Forms",
                                                                         }
                                                                       }
                                                                     >
@@ -1084,8 +1366,8 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                                                                         style={
                                                                           Object {
                                                                             "alignItems": "center",
-                                                                            "backgroundColor": "#F5FCFF",
                                                                             "flex": 1,
+                                                                            "flexDirection": "column",
                                                                             "justifyContent": "center",
                                                                           }
                                                                         }
@@ -1094,12 +1376,19 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                                                                           style={
                                                                             Object {
                                                                               "alignItems": "center",
-                                                                              "backgroundColor": "#F5FCFF",
                                                                               "flex": 1,
+                                                                              "flexDirection": "column",
                                                                               "justifyContent": "center",
                                                                             }
                                                                           }
                                                                         >
+                                                                          <Image
+                                                                            source={1}
+                                                                          >
+                                                                            <Image
+                                                                              source={1}
+                                                                            />
+                                                                          </Image>
                                                                           <Text
                                                                             accessible={true}
                                                                             allowFontScaling={true}
@@ -1108,7 +1397,6 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                                                                               Object {
                                                                                 "fontSize": 20,
                                                                                 "margin": 10,
-                                                                                "textAlign": "center",
                                                                               }
                                                                             }
                                                                           >
@@ -1120,7 +1408,6 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                                                                                 Object {
                                                                                   "fontSize": 20,
                                                                                   "margin": 10,
-                                                                                  "textAlign": "center",
                                                                                 }
                                                                               }
                                                                             >
@@ -2005,12 +2292,45 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                               },
                               Object {
                                 "index": 0,
-                                "key": "Counter",
-                                "routeName": "Counter",
+                                "key": "TextInput",
+                                "routeName": "TextInput",
                                 "routes": Array [
                                   Object {
                                     "key": "Init-id-42-1",
-                                    "routeName": "Counter",
+                                    "routeName": "TextInput",
+                                  },
+                                ],
+                              },
+                              Object {
+                                "index": 0,
+                                "key": "Button",
+                                "routeName": "Button",
+                                "routes": Array [
+                                  Object {
+                                    "key": "Init-id-42-2",
+                                    "routeName": "Button",
+                                  },
+                                ],
+                              },
+                              Object {
+                                "index": 0,
+                                "key": "Link",
+                                "routeName": "Link",
+                                "routes": Array [
+                                  Object {
+                                    "key": "Init-id-42-3",
+                                    "routeName": "Link",
+                                  },
+                                ],
+                              },
+                              Object {
+                                "index": 0,
+                                "key": "Login",
+                                "routeName": "Login",
+                                "routes": Array [
+                                  Object {
+                                    "key": "Init-id-42-4",
+                                    "routeName": "Login",
                                   },
                                 ],
                               },
@@ -2033,19 +2353,19 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                       <DrawerSidebar
                         childNavigationProps={
                           Object {
-                            "Counter": Object {
+                            "Button": Object {
                               "dispatch": [Function],
                               "goBack": [Function],
                               "navigate": [Function],
                               "setParams": [Function],
                               "state": Object {
                                 "index": 0,
-                                "key": "Counter",
-                                "routeName": "Counter",
+                                "key": "Button",
+                                "routeName": "Button",
                                 "routes": Array [
                                   Object {
-                                    "key": "Init-id-42-1",
-                                    "routeName": "Counter",
+                                    "key": "Init-id-42-2",
+                                    "routeName": "Button",
                                   },
                                 ],
                               },
@@ -2063,6 +2383,57 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                                   Object {
                                     "key": "Init-id-42-0",
                                     "routeName": "Home",
+                                  },
+                                ],
+                              },
+                            },
+                            "Link": Object {
+                              "dispatch": [Function],
+                              "goBack": [Function],
+                              "navigate": [Function],
+                              "setParams": [Function],
+                              "state": Object {
+                                "index": 0,
+                                "key": "Link",
+                                "routeName": "Link",
+                                "routes": Array [
+                                  Object {
+                                    "key": "Init-id-42-3",
+                                    "routeName": "Link",
+                                  },
+                                ],
+                              },
+                            },
+                            "Login": Object {
+                              "dispatch": [Function],
+                              "goBack": [Function],
+                              "navigate": [Function],
+                              "setParams": [Function],
+                              "state": Object {
+                                "index": 0,
+                                "key": "Login",
+                                "routeName": "Login",
+                                "routes": Array [
+                                  Object {
+                                    "key": "Init-id-42-4",
+                                    "routeName": "Login",
+                                  },
+                                ],
+                              },
+                            },
+                            "TextInput": Object {
+                              "dispatch": [Function],
+                              "goBack": [Function],
+                              "navigate": [Function],
+                              "setParams": [Function],
+                              "state": Object {
+                                "index": 0,
+                                "key": "TextInput",
+                                "routeName": "TextInput",
+                                "routes": Array [
+                                  Object {
+                                    "key": "Init-id-42-1",
+                                    "routeName": "TextInput",
                                   },
                                 ],
                               },
@@ -2094,12 +2465,45 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                                 },
                                 Object {
                                   "index": 0,
-                                  "key": "Counter",
-                                  "routeName": "Counter",
+                                  "key": "TextInput",
+                                  "routeName": "TextInput",
                                   "routes": Array [
                                     Object {
                                       "key": "Init-id-42-1",
-                                      "routeName": "Counter",
+                                      "routeName": "TextInput",
+                                    },
+                                  ],
+                                },
+                                Object {
+                                  "index": 0,
+                                  "key": "Button",
+                                  "routeName": "Button",
+                                  "routes": Array [
+                                    Object {
+                                      "key": "Init-id-42-2",
+                                      "routeName": "Button",
+                                    },
+                                  ],
+                                },
+                                Object {
+                                  "index": 0,
+                                  "key": "Link",
+                                  "routeName": "Link",
+                                  "routes": Array [
+                                    Object {
+                                      "key": "Init-id-42-3",
+                                      "routeName": "Link",
+                                    },
+                                  ],
+                                },
+                                Object {
+                                  "index": 0,
+                                  "key": "Login",
+                                  "routeName": "Login",
+                                  "routes": Array [
+                                    Object {
+                                      "key": "Init-id-42-4",
+                                      "routeName": "Login",
                                     },
                                   ],
                                 },
@@ -2159,12 +2563,45 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                                   },
                                   Object {
                                     "index": 0,
-                                    "key": "Counter",
-                                    "routeName": "Counter",
+                                    "key": "TextInput",
+                                    "routeName": "TextInput",
                                     "routes": Array [
                                       Object {
                                         "key": "Init-id-42-1",
-                                        "routeName": "Counter",
+                                        "routeName": "TextInput",
+                                      },
+                                    ],
+                                  },
+                                  Object {
+                                    "index": 0,
+                                    "key": "Button",
+                                    "routeName": "Button",
+                                    "routes": Array [
+                                      Object {
+                                        "key": "Init-id-42-2",
+                                        "routeName": "Button",
+                                      },
+                                    ],
+                                  },
+                                  Object {
+                                    "index": 0,
+                                    "key": "Link",
+                                    "routeName": "Link",
+                                    "routes": Array [
+                                      Object {
+                                        "key": "Init-id-42-3",
+                                        "routeName": "Link",
+                                      },
+                                    ],
+                                  },
+                                  Object {
+                                    "index": 0,
+                                    "key": "Login",
+                                    "routeName": "Login",
+                                    "routes": Array [
+                                      Object {
+                                        "key": "Init-id-42-4",
+                                        "routeName": "Login",
                                       },
                                     ],
                                   },
@@ -2194,12 +2631,45 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                                       },
                                       Object {
                                         "index": 0,
-                                        "key": "Counter",
-                                        "routeName": "Counter",
+                                        "key": "TextInput",
+                                        "routeName": "TextInput",
                                         "routes": Array [
                                           Object {
                                             "key": "Init-id-42-1",
-                                            "routeName": "Counter",
+                                            "routeName": "TextInput",
+                                          },
+                                        ],
+                                      },
+                                      Object {
+                                        "index": 0,
+                                        "key": "Button",
+                                        "routeName": "Button",
+                                        "routes": Array [
+                                          Object {
+                                            "key": "Init-id-42-2",
+                                            "routeName": "Button",
+                                          },
+                                        ],
+                                      },
+                                      Object {
+                                        "index": 0,
+                                        "key": "Link",
+                                        "routeName": "Link",
+                                        "routes": Array [
+                                          Object {
+                                            "key": "Init-id-42-3",
+                                            "routeName": "Link",
+                                          },
+                                        ],
+                                      },
+                                      Object {
+                                        "index": 0,
+                                        "key": "Login",
+                                        "routeName": "Login",
+                                        "routes": Array [
+                                          Object {
+                                            "key": "Init-id-42-4",
+                                            "routeName": "Login",
                                           },
                                         ],
                                       },
@@ -2239,12 +2709,45 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                                     },
                                     Object {
                                       "index": 0,
-                                      "key": "Counter",
-                                      "routeName": "Counter",
+                                      "key": "TextInput",
+                                      "routeName": "TextInput",
                                       "routes": Array [
                                         Object {
                                           "key": "Init-id-42-1",
-                                          "routeName": "Counter",
+                                          "routeName": "TextInput",
+                                        },
+                                      ],
+                                    },
+                                    Object {
+                                      "index": 0,
+                                      "key": "Button",
+                                      "routeName": "Button",
+                                      "routes": Array [
+                                        Object {
+                                          "key": "Init-id-42-2",
+                                          "routeName": "Button",
+                                        },
+                                      ],
+                                    },
+                                    Object {
+                                      "index": 0,
+                                      "key": "Link",
+                                      "routeName": "Link",
+                                      "routes": Array [
+                                        Object {
+                                          "key": "Init-id-42-3",
+                                          "routeName": "Link",
+                                        },
+                                      ],
+                                    },
+                                    Object {
+                                      "index": 0,
+                                      "key": "Login",
+                                      "routeName": "Login",
+                                      "routes": Array [
+                                        Object {
+                                          "key": "Init-id-42-4",
+                                          "routeName": "Login",
                                         },
                                       ],
                                     },
@@ -2274,12 +2777,45 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                                         },
                                         Object {
                                           "index": 0,
-                                          "key": "Counter",
-                                          "routeName": "Counter",
+                                          "key": "TextInput",
+                                          "routeName": "TextInput",
                                           "routes": Array [
                                             Object {
                                               "key": "Init-id-42-1",
-                                              "routeName": "Counter",
+                                              "routeName": "TextInput",
+                                            },
+                                          ],
+                                        },
+                                        Object {
+                                          "index": 0,
+                                          "key": "Button",
+                                          "routeName": "Button",
+                                          "routes": Array [
+                                            Object {
+                                              "key": "Init-id-42-2",
+                                              "routeName": "Button",
+                                            },
+                                          ],
+                                        },
+                                        Object {
+                                          "index": 0,
+                                          "key": "Link",
+                                          "routeName": "Link",
+                                          "routes": Array [
+                                            Object {
+                                              "key": "Init-id-42-3",
+                                              "routeName": "Link",
+                                            },
+                                          ],
+                                        },
+                                        Object {
+                                          "index": 0,
+                                          "key": "Login",
+                                          "routeName": "Login",
+                                          "routes": Array [
+                                            Object {
+                                              "key": "Init-id-42-4",
+                                              "routeName": "Login",
                                             },
                                           ],
                                         },
@@ -2701,7 +3237,7 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                                                                                 }
                                                                               }
                                                                             >
-                                                                              Items
+                                                                              Form
                                                                             </Text>
                                                                           </Text>
                                                                         </Text>
@@ -2713,8 +3249,13 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                                                             </TouchableHighlight>
                                                           </ListItem>
                                                         </Styled(ListItem)>
-                                                        <Styled(ListItem)>
+                                                        <Styled(ListItem)
+                                                          button={true}
+                                                          onPress={[Function]}
+                                                        >
                                                           <ListItem
+                                                            button={true}
+                                                            onPress={[Function]}
                                                             style={
                                                               Object {
                                                                 "alignItems": "center",
@@ -2731,6 +3272,7 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                                                           >
                                                             <TouchableHighlight
                                                               activeOpacity={0.85}
+                                                              onPress={[Function]}
                                                               underlayColor="#DDD"
                                                             >
                                                               <View
@@ -2770,6 +3312,8 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                                                                   }
                                                                 >
                                                                   <View
+                                                                    button={true}
+                                                                    onPress={[Function]}
                                                                     style={
                                                                       Object {
                                                                         "alignItems": "center",
@@ -2785,6 +3329,8 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                                                                     }
                                                                   >
                                                                     <View
+                                                                      button={true}
+                                                                      onPress={[Function]}
                                                                       style={
                                                                         Object {
                                                                           "alignItems": "center",
@@ -2836,7 +3382,7 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                                                                                 }
                                                                               }
                                                                             >
-                                                                              Item 1
+                                                                              Text Input
                                                                             </Text>
                                                                           </Text>
                                                                         </Text>
@@ -2848,8 +3394,13 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                                                             </TouchableHighlight>
                                                           </ListItem>
                                                         </Styled(ListItem)>
-                                                        <Styled(ListItem)>
+                                                        <Styled(ListItem)
+                                                          button={true}
+                                                          onPress={[Function]}
+                                                        >
                                                           <ListItem
+                                                            button={true}
+                                                            onPress={[Function]}
                                                             style={
                                                               Object {
                                                                 "alignItems": "center",
@@ -2866,6 +3417,7 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                                                           >
                                                             <TouchableHighlight
                                                               activeOpacity={0.85}
+                                                              onPress={[Function]}
                                                               underlayColor="#DDD"
                                                             >
                                                               <View
@@ -2905,6 +3457,8 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                                                                   }
                                                                 >
                                                                   <View
+                                                                    button={true}
+                                                                    onPress={[Function]}
                                                                     style={
                                                                       Object {
                                                                         "alignItems": "center",
@@ -2920,6 +3474,8 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                                                                     }
                                                                   >
                                                                     <View
+                                                                      button={true}
+                                                                      onPress={[Function]}
                                                                       style={
                                                                         Object {
                                                                           "alignItems": "center",
@@ -2971,7 +3527,7 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                                                                                 }
                                                                               }
                                                                             >
-                                                                              Item 2
+                                                                              Button
                                                                             </Text>
                                                                           </Text>
                                                                         </Text>
@@ -2983,8 +3539,13 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                                                             </TouchableHighlight>
                                                           </ListItem>
                                                         </Styled(ListItem)>
-                                                        <Styled(ListItem)>
+                                                        <Styled(ListItem)
+                                                          button={true}
+                                                          onPress={[Function]}
+                                                        >
                                                           <ListItem
+                                                            button={true}
+                                                            onPress={[Function]}
                                                             style={
                                                               Object {
                                                                 "alignItems": "center",
@@ -3001,6 +3562,7 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                                                           >
                                                             <TouchableHighlight
                                                               activeOpacity={0.85}
+                                                              onPress={[Function]}
                                                               underlayColor="#DDD"
                                                             >
                                                               <View
@@ -3040,6 +3602,8 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                                                                   }
                                                                 >
                                                                   <View
+                                                                    button={true}
+                                                                    onPress={[Function]}
                                                                     style={
                                                                       Object {
                                                                         "alignItems": "center",
@@ -3055,6 +3619,8 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                                                                     }
                                                                   >
                                                                     <View
+                                                                      button={true}
+                                                                      onPress={[Function]}
                                                                       style={
                                                                         Object {
                                                                           "alignItems": "center",
@@ -3106,7 +3672,7 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                                                                                 }
                                                                               }
                                                                             >
-                                                                              Item 3
+                                                                              Link
                                                                             </Text>
                                                                           </Text>
                                                                         </Text>
@@ -3398,7 +3964,7 @@ exports[`components <NavigationContainer /> should render correctly 1`] = `
                                                                         }
                                                                       }
                                                                     >
-                                                                      Counter
+                                                                      Login
                                                                     </Text>
                                                                   </Text>
                                                                 </Text>

@@ -27,12 +27,12 @@ exports[`AppContainer should render correctly 1`] = `
                       "routeName": "Home",
                     },
                     Object {
-                      "key": "id-42-2",
+                      "key": "id-42-5",
                       "params": undefined,
                       "routeName": "Home",
                     },
                     Object {
-                      "key": "id-42-3",
+                      "key": "id-42-6",
                       "params": undefined,
                       "routeName": "Home",
                     },
@@ -40,12 +40,45 @@ exports[`AppContainer should render correctly 1`] = `
                 },
                 Object {
                   "index": 0,
-                  "key": "Counter",
-                  "routeName": "Counter",
+                  "key": "TextInput",
+                  "routeName": "TextInput",
                   "routes": Array [
                     Object {
                       "key": "Init-id-42-1",
-                      "routeName": "Counter",
+                      "routeName": "TextInput",
+                    },
+                  ],
+                },
+                Object {
+                  "index": 0,
+                  "key": "Button",
+                  "routeName": "Button",
+                  "routes": Array [
+                    Object {
+                      "key": "Init-id-42-2",
+                      "routeName": "Button",
+                    },
+                  ],
+                },
+                Object {
+                  "index": 0,
+                  "key": "Link",
+                  "routeName": "Link",
+                  "routes": Array [
+                    Object {
+                      "key": "Init-id-42-3",
+                      "routeName": "Link",
+                    },
+                  ],
+                },
+                Object {
+                  "index": 0,
+                  "key": "Login",
+                  "routeName": "Login",
+                  "routes": Array [
+                    Object {
+                      "key": "Init-id-42-4",
+                      "routeName": "Login",
                     },
                   ],
                 },

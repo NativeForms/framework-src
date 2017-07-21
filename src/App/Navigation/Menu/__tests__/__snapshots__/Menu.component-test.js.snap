@@ -15,22 +15,31 @@ exports[`MenuComponent should render correctly 1`] = `
       itemDivider={true}
     >
       <Styled(Text)>
-        Items
+        Form
       </Styled(Text)>
     </Styled(ListItem)>
-    <Styled(ListItem)>
+    <Styled(ListItem)
+      button={true}
+      onPress={[Function]}
+    >
       <Styled(Text)>
-        Item 1
+        Text Input
       </Styled(Text)>
     </Styled(ListItem)>
-    <Styled(ListItem)>
+    <Styled(ListItem)
+      button={true}
+      onPress={[Function]}
+    >
       <Styled(Text)>
-        Item 2
+        Button
       </Styled(Text)>
     </Styled(ListItem)>
-    <Styled(ListItem)>
+    <Styled(ListItem)
+      button={true}
+      onPress={[Function]}
+    >
       <Styled(Text)>
-        Item 3
+        Link
       </Styled(Text)>
     </Styled(ListItem)>
   </Styled(List)>
@@ -46,7 +55,7 @@ exports[`MenuComponent should render correctly 1`] = `
     onPress={[Function]}
   >
     <Styled(Text)>
-      Counter
+      Login
     </Styled(Text)>
   </Styled(ListItem)>
 </Styled(Content)>
