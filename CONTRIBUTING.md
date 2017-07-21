@@ -2,7 +2,7 @@
 
 This project is based on [react-native-boilerplate](https://github.com/psychobolt/react-native-boilerplate). Please refer its README for development setup. Also be sure to check out its [resources page](https://github.com/psychobolt/react-native-boilerplate/wiki/Resources)
 
-If you would like to contribute, you could state your interest in our Gitter lobby or send a private message to any project owners. We will then assign you a to team as soon as possible.
+If you would like to contribute, you could state your interest in our [Gitter lobby](https://gitter.im/NativeForms/Lobby) or send a private message to any project owners. We will then assign you a to team as soon as possible.
 
 ## Components
 
