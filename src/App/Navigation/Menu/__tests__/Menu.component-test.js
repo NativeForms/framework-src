@@ -12,14 +12,14 @@ import routes from '../../../../Framework';
 const props = {
   navigation: { navigate: sinon.spy() }
 };
-const routeNames = routes.map(route => route.routeName);
+const labels = routes.map(route => route.screen.navigationOptions.drawerLabel);
 
 test('MenuComponent should render correctly', () => {
   const wrapper = shallow(<MenuComponent {...props} />);
   expect(wrapper).toMatchSnapshot();
 });
 
-['Home', ...routeNames].forEach(route => {
+['Home', ...labels].forEach(route => {
   describe(`component <ListItem>${route}</ListItem>`, () => {
     const consoleError = global.console.error;
     let menuProps;
