@@ -1,2 +1,2 @@
-export navigationReducer from './Navigation.reducer';
+export navigationReducer from './Navigation.reducers';
 export default from './Navigation.container';
