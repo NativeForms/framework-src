@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`container <ButtonContainer /> container render correctly 1`] = `
+<Styled(Content)>
+  <GridNB>
+    <RowNB
+      style={
+        Object {
+          "padding": 10,
+        }
+      }
+    >
+      <FormComponent
+        messages={
+          Object {
+            "myLabel": "Button Text",
+            "title": "Button",
+          }
+        }
+        schema={
+          Object {
+            "attributes": Object {
+              "formComponents": Array [
+                Object {
+                  "attributes": Object {
+                    "label": Object {
+                      "code": "myLabel",
+                    },
+                  },
+                  "category": "control",
+                  "type": "button",
+                  "uid": "Button1",
+                },
+              ],
+              "label": "Button Example",
+            },
+            "category": "group",
+            "type": "section",
+            "uid": "buttonExample",
+          }
+        }
+      />
+    </RowNB>
+    <RowNB>
+      <SchemaViewer>
+        export default {
+          uid: 'buttonExample',
+          type: 'section',
+          category: 'group',
+          attributes: {
+            label: 'Button Example',
+            formComponents: [{
+              uid: 'Button1',
+              type: 'button',
+              category: 'control',
+              attributes: {
+                label: {
+                  code: 'myLabel'
+                },
+              }
+            }]
+          }
+        };
+        
+      </SchemaViewer>
+    </RowNB>
+  </GridNB>
+</Styled(Content)>
+`;

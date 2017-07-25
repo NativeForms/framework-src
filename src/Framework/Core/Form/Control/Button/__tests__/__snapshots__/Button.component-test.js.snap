@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components <ButtonComponent /> renders label button correctly -- object type 1`] = `
+<Styled(Button)>
+  <Styled(Text)>
+    <FormattedMessage
+      id="Button Text"
+      values={Object {}}
+    />
+  </Styled(Text)>
+</Styled(Button)>
+`;
+
+exports[`components <ButtonComponent /> renders label button correctly -- string type 1`] = `
+<Styled(Button)>
+  <Styled(Text)>
+    Button
+  </Styled(Text)>
+</Styled(Button)>
+`;
