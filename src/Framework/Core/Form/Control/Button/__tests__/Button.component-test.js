@@ -1,23 +1,29 @@
-import React, { PropTypes } from 'react';
-
-//button-framework
+import React from 'react';
+import { shallow } from 'enzyme';
 import ButtonComponent from '../Button.component';
 import i18n from '../Button.i18n';
-
-import {shallowWithIntl} from '../../../../../../Shared/intl-enzyme-test-helper';
-
-const props = {
-      label: "test"
-    }
 
 const messages = i18n.en;
 
 describe('components <ButtonComponent />', () => {
-  let wrapper;
-
-  it('renders lebel button correctly', () => {
-    wrapper = shallowWithIntl(<ButtonComponent {...props} />, {}, messages);
+  it('renders lebel button correctly -- string type', () => {
+    const props = {
+      label: messages.title
+    };
+    const wrapper = shallow(
+      <ButtonComponent {...props} />
+    );
     expect(wrapper).toMatchSnapshot();
   });
-
+  it('renders lebel button correctly -- object type', () => {
+    const props = {
+      label: {
+        code: messages.myLabel
+      }
+    };
+    const wrapper = shallow(
+      <ButtonComponent {...props} />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
 });
