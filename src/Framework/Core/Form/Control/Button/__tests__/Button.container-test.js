@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import ButtonContainer from '../Button.container';
 
 describe('container <ButtonContainer />', () => {
-  it('container rander correctly', () => {
+  it('container render correctly', () => {
     const wrapper = shallow(
       <ButtonContainer />
     );

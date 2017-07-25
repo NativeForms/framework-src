@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components <ButtonComponent /> renders lebel button correctly -- object type 1`] = `
+exports[`components <ButtonComponent /> renders label button correctly -- object type 1`] = `
 <Styled(Button)>
   <Styled(Text)>
     <FormattedMessage
@@ -11,7 +11,7 @@ exports[`components <ButtonComponent /> renders lebel button correctly -- object
 </Styled(Button)>
 `;
 
-exports[`components <ButtonComponent /> renders lebel button correctly -- string type 1`] = `
+exports[`components <ButtonComponent /> renders label button correctly -- string type 1`] = `
 <Styled(Button)>
   <Styled(Text)>
     Button

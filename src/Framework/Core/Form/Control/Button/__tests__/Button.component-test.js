@@ -6,7 +6,7 @@ import i18n from '../Button.i18n';
 const messages = i18n.en;
 
 describe('components <ButtonComponent />', () => {
-  it('renders lebel button correctly -- string type', () => {
+  it('renders label button correctly -- string type', () => {
     const props = {
       label: messages.title
     };
@@ -15,7 +15,7 @@ describe('components <ButtonComponent />', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
-  it('renders lebel button correctly -- object type', () => {
+  it('renders label button correctly -- object type', () => {
     const props = {
       label: {
         code: messages.myLabel

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`container <ButtonContainer /> container rander correctly 1`] = `
+exports[`container <ButtonContainer /> container render correctly 1`] = `
 <Styled(Content)>
   <GridNB>
     <RowNB
