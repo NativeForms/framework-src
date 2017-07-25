@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components <ButtonComponent /> renders lebel button 1`] = `
+exports[`components <ButtonComponent /> renders lebel button correctly 1`] = `
 <View
   accessibilityComponentType={undefined}
   accessibilityLabel={undefined}
@@ -37,6 +37,23 @@ exports[`components <ButtonComponent /> renders lebel button 1`] = `
   testID={undefined}
   tvParallaxProperties={undefined}
 >
-  Test
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#fff",
+        "fontFamily": "System",
+        "fontSize": 16.5,
+        "lineHeight": 19,
+        "marginLeft": 0,
+        "marginRight": 0,
+      }
+    }
+    virtual={undefined}
+  >
+    Button Text
+  </Text>
 </View>
 `;
