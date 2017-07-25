@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`container <LinkContainer /> container render correctly 1`] = `
+<Styled(Content)>
+  <GridNB>
+    <RowNB
+      style={
+        Object {
+          "padding": 10,
+        }
+      }
+    >
+      <FormComponent
+        messages={
+          Object {
+            "googleLabel": "Click to visit google!",
+            "title": "Link",
+          }
+        }
+        schema={
+          Object {
+            "attributes": Object {
+              "formComponents": Array [
+                Object {
+                  "attributes": Object {
+                    "label": Object {
+                      "code": "googleLabel",
+                    },
+                    "route": "http://www.google.com",
+                  },
+                  "category": "control",
+                  "type": "link",
+                  "uid": "Link1",
+                },
+              ],
+              "label": "Link Example",
+            },
+            "category": "group",
+            "type": "section",
+            "uid": "linkExample",
+          }
+        }
+      />
+    </RowNB>
+    <RowNB
+      style={true}
+    >
+      <SchemaViewer>
+        export default {
+          uid: 'linkExample',
+          type: 'section',
+          category: 'group',
+          attributes: {
+            label: 'Link Example',
+            formComponents: [{
+              uid: 'Link1',
+              type: 'link',
+              category: 'control',
+              attributes: {
+                label: {
+                  code: 'googleLabel'
+                },
+                route: 'http://www.google.com'
+              }
+            }]
+          }
+        };
+        
+      </SchemaViewer>
+    </RowNB>
+  </GridNB>
+</Styled(Content)>
+`;
