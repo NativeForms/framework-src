@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`container <TextInputComponent /> container render correctly 1`] = `
+<Styled(Content)>
+  <GridNB>
+    <RowNB>
+      <FormComponent
+        messages={
+          Object {
+            "defaultText": "Default Text",
+            "footDescription": "Foot Description",
+            "headerLabel": "Header Label",
+            "label": "Label",
+            "title": "Text Input",
+          }
+        }
+        schema={
+          Object {
+            "attributes": Object {
+              "formComponents": Array [
+                Object {
+                  "attributes": Object {
+                    "label": "Key",
+                  },
+                  "category": "field",
+                  "type": "text",
+                  "uid": "fixedLabelExample",
+                },
+                Object {
+                  "attributes": Object {
+                    "hiddenText": true,
+                    "label": "Secret",
+                  },
+                  "category": "field",
+                  "type": "text",
+                  "uid": "secretExample",
+                },
+                Object {
+                  "attributes": Object {
+                    "clearButton": true,
+                    "label": "Value 1",
+                    "value": "Delete Me",
+                  },
+                  "category": "field",
+                  "type": "text",
+                  "uid": "clearExample",
+                },
+                Object {
+                  "attributes": Object {
+                    "defaultText": "Replace Me",
+                    "label": "Value 2",
+                  },
+                  "category": "field",
+                  "type": "text",
+                  "uid": "placeHolderExample",
+                },
+                Object {
+                  "attributes": Object {
+                    "headerLabel": "Header Label",
+                  },
+                  "category": "field",
+                  "type": "text",
+                  "uid": "headerExample",
+                },
+                Object {
+                  "attributes": Object {
+                    "headerLabel": "Description",
+                    "multiline": true,
+                    "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Itaque hic ipse iam pridem est reiectus; De ingenio eius in his disputationibus, non de moribus quaeritur. Nunc haec primum fortasse audientis servire debemus. Atqui iste locus est, Piso, tibi etiam atque etiam confirmandus, inquam;",
+                  },
+                  "category": "field",
+                  "type": "text",
+                  "uid": "multilineExample",
+                },
+              ],
+              "label": "Text Input Examples",
+            },
+            "category": "group",
+            "type": "section",
+            "uid": "textInputExample",
+          }
+        }
+      />
+    </RowNB>
+    <RowNB
+      style={
+        Object {
+          "paddingTop": 10,
+        }
+      }
+    >
+      <SchemaViewer>
+        export default {
+          uid: 'textInputExample',
+          type: 'section',
+          category: 'group',
+          attributes: {
+            label: 'Text Input Examples',
+            formComponents: [
+              {
+                uid: 'fixedLabelExample',
+                type: 'text',
+                category: 'field',
+                attributes: {
+                  label: 'Key',
+                }
+              },
+              {
+                uid: 'secretExample',
+                type: 'text',
+                category: 'field',
+                attributes: {
+                  label: 'Secret',
+                  hiddenText: true,
+                }
+              },
+              {
+                uid: 'clearExample',
+                type: 'text',
+                category: 'field',
+                attributes: {
+                  label: 'Value 1',
+                  clearButton: true,
+                  value: 'Delete Me'
+                }
+              },
+              {
+                uid: 'placeHolderExample',
+                type: 'text',
+                category: 'field',
+                attributes: {
+                  label: 'Value 2',
+                  defaultText: 'Replace Me'
+                }
+              },
+              {
+                uid: 'headerExample',
+                type: 'text',
+                category: 'field',
+                attributes: {
+                  headerLabel: 'Header Label'
+                }
+              },
+              {
+                uid: 'multilineExample',
+                type: 'text',
+                category: 'field',
+                attributes: {
+                  headerLabel: 'Description',
+                  multiline: true,
+                  value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Itaque hic ipse iam pridem est reiectus; De ingenio eius in his disputationibus, non de moribus quaeritur. Nunc haec primum fortasse audientis servire debemus. Atqui iste locus est, Piso, tibi etiam atque etiam confirmandus, inquam;'
+                }
+              }
+            ]
+          }
+        };
+        
+      </SchemaViewer>
+    </RowNB>
+  </GridNB>
+</Styled(Content)>
+`;

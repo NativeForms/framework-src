@@ -1,0 +1,259 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components <TextInputComponent /> renders text input component correctly 1`] = `
+<TextInputComponent
+  clearButton={false}
+  defaultText={null}
+  headerLabel={null}
+  hiddenText={null}
+  intl={
+    Object {
+      "defaultFormats": Object {},
+      "defaultLocale": "en",
+      "formatDate": [Function],
+      "formatHTMLMessage": [Function],
+      "formatMessage": [Function],
+      "formatNumber": [Function],
+      "formatPlural": [Function],
+      "formatRelative": [Function],
+      "formatTime": [Function],
+      "formats": Object {},
+      "formatters": Object {
+        "getDateTimeFormat": [Function],
+        "getMessageFormat": [Function],
+        "getNumberFormat": [Function],
+        "getPluralFormat": [Function],
+        "getRelativeFormat": [Function],
+      },
+      "locale": "en",
+      "messages": Object {
+        "defaultText": "Default Text",
+        "footDescription": "Foot Description",
+        "headerLabel": "Header Label",
+        "label": "Label",
+        "title": "Text Input",
+      },
+      "now": [Function],
+      "textComponent": "span",
+    }
+  }
+  label="Key"
+  multiline={false}
+  value={null}
+/>
+`;
+
+exports[`components <TextInputComponent /> renders text input component correctly 2`] = `
+<TextInputComponent
+  clearButton={false}
+  defaultText={null}
+  headerLabel={null}
+  hiddenText={true}
+  intl={
+    Object {
+      "defaultFormats": Object {},
+      "defaultLocale": "en",
+      "formatDate": [Function],
+      "formatHTMLMessage": [Function],
+      "formatMessage": [Function],
+      "formatNumber": [Function],
+      "formatPlural": [Function],
+      "formatRelative": [Function],
+      "formatTime": [Function],
+      "formats": Object {},
+      "formatters": Object {
+        "getDateTimeFormat": [Function],
+        "getMessageFormat": [Function],
+        "getNumberFormat": [Function],
+        "getPluralFormat": [Function],
+        "getRelativeFormat": [Function],
+      },
+      "locale": "en",
+      "messages": Object {
+        "defaultText": "Default Text",
+        "footDescription": "Foot Description",
+        "headerLabel": "Header Label",
+        "label": "Label",
+        "title": "Text Input",
+      },
+      "now": [Function],
+      "textComponent": "span",
+    }
+  }
+  label="Secret"
+  multiline={false}
+  value={null}
+/>
+`;
+
+exports[`components <TextInputComponent /> renders text input component correctly 3`] = `
+<TextInputComponent
+  clearButton={true}
+  defaultText={null}
+  headerLabel={null}
+  hiddenText={null}
+  intl={
+    Object {
+      "defaultFormats": Object {},
+      "defaultLocale": "en",
+      "formatDate": [Function],
+      "formatHTMLMessage": [Function],
+      "formatMessage": [Function],
+      "formatNumber": [Function],
+      "formatPlural": [Function],
+      "formatRelative": [Function],
+      "formatTime": [Function],
+      "formats": Object {},
+      "formatters": Object {
+        "getDateTimeFormat": [Function],
+        "getMessageFormat": [Function],
+        "getNumberFormat": [Function],
+        "getPluralFormat": [Function],
+        "getRelativeFormat": [Function],
+      },
+      "locale": "en",
+      "messages": Object {
+        "defaultText": "Default Text",
+        "footDescription": "Foot Description",
+        "headerLabel": "Header Label",
+        "label": "Label",
+        "title": "Text Input",
+      },
+      "now": [Function],
+      "textComponent": "span",
+    }
+  }
+  label="Value 1"
+  multiline={false}
+  value="Delete Me"
+/>
+`;
+
+exports[`components <TextInputComponent /> renders text input component correctly 4`] = `
+<TextInputComponent
+  clearButton={false}
+  defaultText="Replace Me"
+  headerLabel={null}
+  hiddenText={null}
+  intl={
+    Object {
+      "defaultFormats": Object {},
+      "defaultLocale": "en",
+      "formatDate": [Function],
+      "formatHTMLMessage": [Function],
+      "formatMessage": [Function],
+      "formatNumber": [Function],
+      "formatPlural": [Function],
+      "formatRelative": [Function],
+      "formatTime": [Function],
+      "formats": Object {},
+      "formatters": Object {
+        "getDateTimeFormat": [Function],
+        "getMessageFormat": [Function],
+        "getNumberFormat": [Function],
+        "getPluralFormat": [Function],
+        "getRelativeFormat": [Function],
+      },
+      "locale": "en",
+      "messages": Object {
+        "defaultText": "Default Text",
+        "footDescription": "Foot Description",
+        "headerLabel": "Header Label",
+        "label": "Label",
+        "title": "Text Input",
+      },
+      "now": [Function],
+      "textComponent": "span",
+    }
+  }
+  label="Value 2"
+  multiline={false}
+  value={null}
+/>
+`;
+
+exports[`components <TextInputComponent /> renders text input component correctly 5`] = `
+<TextInputComponent
+  clearButton={false}
+  defaultText={null}
+  headerLabel="Header Label"
+  hiddenText={null}
+  intl={
+    Object {
+      "defaultFormats": Object {},
+      "defaultLocale": "en",
+      "formatDate": [Function],
+      "formatHTMLMessage": [Function],
+      "formatMessage": [Function],
+      "formatNumber": [Function],
+      "formatPlural": [Function],
+      "formatRelative": [Function],
+      "formatTime": [Function],
+      "formats": Object {},
+      "formatters": Object {
+        "getDateTimeFormat": [Function],
+        "getMessageFormat": [Function],
+        "getNumberFormat": [Function],
+        "getPluralFormat": [Function],
+        "getRelativeFormat": [Function],
+      },
+      "locale": "en",
+      "messages": Object {
+        "defaultText": "Default Text",
+        "footDescription": "Foot Description",
+        "headerLabel": "Header Label",
+        "label": "Label",
+        "title": "Text Input",
+      },
+      "now": [Function],
+      "textComponent": "span",
+    }
+  }
+  label={null}
+  multiline={false}
+  value={null}
+/>
+`;
+
+exports[`components <TextInputComponent /> renders text input component correctly 6`] = `
+<TextInputComponent
+  clearButton={false}
+  defaultText={null}
+  headerLabel="Description"
+  hiddenText={null}
+  intl={
+    Object {
+      "defaultFormats": Object {},
+      "defaultLocale": "en",
+      "formatDate": [Function],
+      "formatHTMLMessage": [Function],
+      "formatMessage": [Function],
+      "formatNumber": [Function],
+      "formatPlural": [Function],
+      "formatRelative": [Function],
+      "formatTime": [Function],
+      "formats": Object {},
+      "formatters": Object {
+        "getDateTimeFormat": [Function],
+        "getMessageFormat": [Function],
+        "getNumberFormat": [Function],
+        "getPluralFormat": [Function],
+        "getRelativeFormat": [Function],
+      },
+      "locale": "en",
+      "messages": Object {
+        "defaultText": "Default Text",
+        "footDescription": "Foot Description",
+        "headerLabel": "Header Label",
+        "label": "Label",
+        "title": "Text Input",
+      },
+      "now": [Function],
+      "textComponent": "span",
+    }
+  }
+  label={null}
+  multiline={true}
+  value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Itaque hic ipse iam pridem est reiectus; De ingenio eius in his disputationibus, non de moribus quaeritur. Nunc haec primum fortasse audientis servire debemus. Atqui iste locus est, Piso, tibi etiam atque etiam confirmandus, inquam;"
+/>
+`;
