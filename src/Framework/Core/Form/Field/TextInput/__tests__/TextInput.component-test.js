@@ -1,12 +1,11 @@
 import React from 'react';
-import { intlShape } from 'react-intl';
 
 // framework
 import TextInputComponent from '../TextInput.component';
 import i18n from '../TextInput.i18n';
 import schema from '../TextInput.schema';
 
-// shared 
+//shared
 import { shallowWithIntl } from '../../../../../../Shared/intl-enzyme-test-helper';
 
 const message = i18n.en;
