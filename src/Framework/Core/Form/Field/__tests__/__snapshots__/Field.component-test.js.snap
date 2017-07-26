@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components <FieldComponent /> renders text input component correctly 1`] = `
+<View>
+  <View>
+    <InjectIntl(TextInputComponent)
+      label="text input test"
+    />
+  </View>
+</View>
+`;
