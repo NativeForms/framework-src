@@ -9,15 +9,15 @@ import schema from '../TextInput.schema';
 import { shallowWithIntl } from '../../../../../../Shared/intl-enzyme-test-helper';
 
 const message = i18n.en;
-const props = schema.attributes.formComponents;
+const propsArray = schema.attributes.formComponents;
 
 
 describe('components <TextInputComponent />', () => {
   let wrapper;
-  props.forEach((prop) => {
+  propsArray.forEach((props) => {
     it('renders text input component correctly', () => {
       wrapper = shallowWithIntl(
-        <TextInputComponent {...prop.attributes} />, {}, message
+        <TextInputComponent {...props.attributes} />, {}, message
     );
       expect(wrapper).toMatchSnapshot();
     });
