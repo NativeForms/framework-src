@@ -74,6 +74,16 @@ exports[`container <TextInputComponent /> container render correctly 1`] = `
                 },
                 Object {
                   "attributes": Object {
+                    "label": Object {
+                      "code": "label",
+                    },
+                  },
+                  "category": "field",
+                  "type": "text",
+                  "uid": "objectLebelExample",
+                },
+                Object {
+                  "attributes": Object {
                     "defaultText": Object {
                       "code": "defaultText",
                     },

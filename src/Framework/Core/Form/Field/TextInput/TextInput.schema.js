@@ -60,6 +60,16 @@ export default {
         }
       },
       {
+        uid: 'objectLebelExample',
+        type: 'text',
+        category: 'field',
+        attributes: {
+          label: {
+            code: 'label'
+          }
+        }
+      },
+      {
         uid: 'objectDefaultTextExample',
         type: 'text',
         category: 'field',

@@ -119,6 +119,16 @@ exports[`components <FormComponent /> renders form components correctly 3`] = `
     <FieldComponent
       attributes={
         Object {
+          "label": Object {
+            "code": "label",
+          },
+        }
+      }
+      type="text"
+    />
+    <FieldComponent
+      attributes={
+        Object {
           "defaultText": Object {
             "code": "defaultText",
           },
