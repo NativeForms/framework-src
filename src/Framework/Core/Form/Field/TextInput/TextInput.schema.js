@@ -58,6 +58,26 @@ export default {
           multiline: true,
           value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Itaque hic ipse iam pridem est reiectus; De ingenio eius in his disputationibus, non de moribus quaeritur. Nunc haec primum fortasse audientis servire debemus. Atqui iste locus est, Piso, tibi etiam atque etiam confirmandus, inquam;'
         }
+      },
+      {
+        uid: 'objectLebelExample',
+        type: 'text',
+        category: 'field',
+        attributes: {
+          label: {
+            code: 'label'
+          }
+        }
+      },
+      {
+        uid: 'objectDefaultTextExample',
+        type: 'text',
+        category: 'field',
+        attributes: {
+          defaultText: {
+            code: 'defaultText'
+          }
+        }
       }
     ]
   }

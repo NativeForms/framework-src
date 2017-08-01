@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components <FormComponent /> renders form components correctly 1`] = `
+<IntlProvider
+  messages={Object {}}
+>
+  <Styled(Form)
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+  >
+    <ControlComponent
+      attributes={
+        Object {
+          "label": Object {
+            "code": "myLabel",
+          },
+        }
+      }
+      type="button"
+    />
+  </Styled(Form)>
+</IntlProvider>
+`;
+
+exports[`components <FormComponent /> renders form components correctly 2`] = `
+<IntlProvider
+  messages={Object {}}
+>
+  <Styled(Form)
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+  >
+    <ControlComponent
+      attributes={
+        Object {
+          "label": Object {
+            "code": "googleLabel",
+          },
+          "route": "http://www.google.com",
+        }
+      }
+      type="link"
+    />
+  </Styled(Form)>
+</IntlProvider>
+`;
+
+exports[`components <FormComponent /> renders form components correctly 3`] = `
+<IntlProvider
+  messages={Object {}}
+>
+  <Styled(Form)
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+  >
+    <FieldComponent
+      attributes={
+        Object {
+          "label": "Key",
+        }
+      }
+      type="text"
+    />
+    <FieldComponent
+      attributes={
+        Object {
+          "hiddenText": true,
+          "label": "Secret",
+        }
+      }
+      type="text"
+    />
+    <FieldComponent
+      attributes={
+        Object {
+          "clearButton": true,
+          "label": "Value 1",
+          "value": "Delete Me",
+        }
+      }
+      type="text"
+    />
+    <FieldComponent
+      attributes={
+        Object {
+          "defaultText": "Replace Me",
+          "label": "Value 2",
+        }
+      }
+      type="text"
+    />
+    <FieldComponent
+      attributes={
+        Object {
+          "headerLabel": "Header Label",
+        }
+      }
+      type="text"
+    />
+    <FieldComponent
+      attributes={
+        Object {
+          "headerLabel": "Description",
+          "multiline": true,
+          "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Itaque hic ipse iam pridem est reiectus; De ingenio eius in his disputationibus, non de moribus quaeritur. Nunc haec primum fortasse audientis servire debemus. Atqui iste locus est, Piso, tibi etiam atque etiam confirmandus, inquam;",
+        }
+      }
+      type="text"
+    />
+    <FieldComponent
+      attributes={
+        Object {
+          "label": Object {
+            "code": "label",
+          },
+        }
+      }
+      type="text"
+    />
+    <FieldComponent
+      attributes={
+        Object {
+          "defaultText": Object {
+            "code": "defaultText",
+          },
+        }
+      }
+      type="text"
+    />
+  </Styled(Form)>
+</IntlProvider>
+`;

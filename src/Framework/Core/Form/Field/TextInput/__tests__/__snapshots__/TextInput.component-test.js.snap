@@ -1,0 +1,2698 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components <TextInputComponent /> renders text input component correctly 1`] = `
+<InjectIntl(TextInputComponent)
+  intl={
+    Object {
+      "defaultFormats": Object {},
+      "defaultLocale": "en",
+      "formatDate": [Function],
+      "formatHTMLMessage": [Function],
+      "formatMessage": [Function],
+      "formatNumber": [Function],
+      "formatPlural": [Function],
+      "formatRelative": [Function],
+      "formatTime": [Function],
+      "formats": Object {},
+      "formatters": Object {
+        "getDateTimeFormat": [Function],
+        "getMessageFormat": [Function],
+        "getNumberFormat": [Function],
+        "getPluralFormat": [Function],
+        "getRelativeFormat": [Function],
+      },
+      "locale": "en",
+      "messages": Object {},
+      "now": [Function],
+      "textComponent": "span",
+    }
+  }
+  label="Key"
+>
+  <TextInputComponent
+    clearButton={false}
+    defaultText={null}
+    headerLabel={null}
+    hiddenText={null}
+    intl={
+      Object {
+        "defaultFormats": Object {},
+        "defaultLocale": "en",
+        "formatDate": [Function],
+        "formatHTMLMessage": [Function],
+        "formatMessage": [Function],
+        "formatNumber": [Function],
+        "formatPlural": [Function],
+        "formatRelative": [Function],
+        "formatTime": [Function],
+        "formats": Object {},
+        "formatters": Object {
+          "getDateTimeFormat": [Function],
+          "getMessageFormat": [Function],
+          "getNumberFormat": [Function],
+          "getPluralFormat": [Function],
+          "getRelativeFormat": [Function],
+        },
+        "locale": "en",
+        "messages": Object {
+          "defaultText": "Default Text",
+          "footDescription": "Foot Description",
+          "headerLabel": "Header Label",
+          "label": "Label",
+          "title": "Text Input",
+        },
+        "now": [Function],
+        "textComponent": "span",
+      }
+    }
+    label="Key"
+    multiline={false}
+    value={null}
+  >
+    <Styled(Item)
+      stackedLabel={false}
+    >
+      <Item
+        stackedLabel={false}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "borderColor": "#D9D5DC",
+            "borderLeftWidth": 0,
+            "borderRightWidth": 0,
+            "borderTopWidth": 0,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "marginLeft": 2,
+          }
+        }
+      >
+        <TouchableOpacity
+          activeOpacity={1}
+          focusedOpacity={0.7}
+          stackedLabel={false}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderColor": "#D9D5DC",
+              "borderLeftWidth": 0,
+              "borderRightWidth": 0,
+              "borderTopWidth": 0,
+              "borderWidth": 1,
+              "flexDirection": "row",
+              "marginLeft": 2,
+            }
+          }
+        >
+          <AnimatedComponent
+            accessible={true}
+            isTVSelectable={true}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#D9D5DC",
+                  "borderLeftWidth": 0,
+                  "borderRightWidth": 0,
+                  "borderTopWidth": 0,
+                  "borderWidth": 1,
+                  "flexDirection": "row",
+                  "marginLeft": 2,
+                },
+                Object {
+                  "opacity": 1,
+                },
+              ]
+            }
+          >
+            <View
+              accessible={true}
+              isTVSelectable={true}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#D9D5DC",
+                  "borderLeftWidth": 0,
+                  "borderRightWidth": 0,
+                  "borderTopWidth": 0,
+                  "borderWidth": 1,
+                  "flexDirection": "row",
+                  "marginLeft": 2,
+                  "opacity": 1,
+                }
+              }
+            >
+              <View
+                accessible={true}
+                isTVSelectable={true}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "borderColor": "#D9D5DC",
+                    "borderLeftWidth": 0,
+                    "borderRightWidth": 0,
+                    "borderTopWidth": 0,
+                    "borderWidth": 1,
+                    "flexDirection": "row",
+                    "marginLeft": 2,
+                    "opacity": 1,
+                  }
+                }
+              >
+                <Styled(Label)>
+                  <Label
+                    style={
+                      Object {
+                        "color": "#575757",
+                        "fontSize": 17,
+                        "paddingRight": 5,
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#575757",
+                          "fontSize": 17,
+                          "paddingRight": 5,
+                        }
+                      }
+                    >
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                        style={
+                          Object {
+                            "color": "#575757",
+                            "fontSize": 17,
+                            "paddingRight": 5,
+                          }
+                        }
+                      >
+                        <Text
+                          accessible={true}
+                          allowFontScaling={true}
+                          ellipsizeMode="tail"
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={true}
+                            ellipsizeMode="tail"
+                          >
+                            Key
+                          </Text>
+                        </Text>
+                      </Text>
+                    </Text>
+                  </Label>
+                </Styled(Label)>
+                <Styled(Input)
+                  multiline={false}
+                  onChangeText={[Function]}
+                  onContentSizeChange={[Function]}
+                  placeholder={null}
+                  secureTextEntry={null}
+                  style={
+                    Object {
+                      "height": undefined,
+                    }
+                  }
+                  value={null}
+                >
+                  <Input
+                    multiline={false}
+                    onChangeText={[Function]}
+                    onContentSizeChange={[Function]}
+                    placeholder={null}
+                    secureTextEntry={null}
+                    style={
+                      Object {
+                        "color": "#000",
+                        "flex": 1,
+                        "fontSize": 17,
+                        "height": 50,
+                        "lineHeight": 24,
+                        "paddingLeft": 5,
+                        "paddingRight": 5,
+                        "top": 1.5,
+                      }
+                    }
+                    value={null}
+                  >
+                    <TextInput
+                      editable={true}
+                      multiline={false}
+                      onChangeText={[Function]}
+                      onContentSizeChange={[Function]}
+                      placeholder={null}
+                      placeholderTextColor="#575757"
+                      secureTextEntry={null}
+                      style={
+                        Object {
+                          "color": "#000",
+                          "flex": 1,
+                          "fontSize": 17,
+                          "height": 50,
+                          "lineHeight": 24,
+                          "paddingLeft": 5,
+                          "paddingRight": 5,
+                          "top": 1.5,
+                        }
+                      }
+                      underlineColorAndroid="rgba(0,0,0,0)"
+                      value={null}
+                    >
+                      <TextInput
+                        editable={true}
+                        multiline={false}
+                        onChangeText={[Function]}
+                        onContentSizeChange={[Function]}
+                        placeholder={null}
+                        placeholderTextColor="#575757"
+                        secureTextEntry={null}
+                        style={
+                          Object {
+                            "color": "#000",
+                            "flex": 1,
+                            "fontSize": 17,
+                            "height": 50,
+                            "lineHeight": 24,
+                            "paddingLeft": 5,
+                            "paddingRight": 5,
+                            "top": 1.5,
+                          }
+                        }
+                        underlineColorAndroid="rgba(0,0,0,0)"
+                        value={null}
+                      />
+                    </TextInput>
+                  </Input>
+                </Styled(Input)>
+              </View>
+            </View>
+          </AnimatedComponent>
+        </TouchableOpacity>
+      </Item>
+    </Styled(Item)>
+  </TextInputComponent>
+</InjectIntl(TextInputComponent)>
+`;
+
+exports[`components <TextInputComponent /> renders text input component correctly 2`] = `
+<InjectIntl(TextInputComponent)
+  hiddenText={true}
+  intl={
+    Object {
+      "defaultFormats": Object {},
+      "defaultLocale": "en",
+      "formatDate": [Function],
+      "formatHTMLMessage": [Function],
+      "formatMessage": [Function],
+      "formatNumber": [Function],
+      "formatPlural": [Function],
+      "formatRelative": [Function],
+      "formatTime": [Function],
+      "formats": Object {},
+      "formatters": Object {
+        "getDateTimeFormat": [Function],
+        "getMessageFormat": [Function],
+        "getNumberFormat": [Function],
+        "getPluralFormat": [Function],
+        "getRelativeFormat": [Function],
+      },
+      "locale": "en",
+      "messages": Object {},
+      "now": [Function],
+      "textComponent": "span",
+    }
+  }
+  label="Secret"
+>
+  <TextInputComponent
+    clearButton={false}
+    defaultText={null}
+    headerLabel={null}
+    hiddenText={true}
+    intl={
+      Object {
+        "defaultFormats": Object {},
+        "defaultLocale": "en",
+        "formatDate": [Function],
+        "formatHTMLMessage": [Function],
+        "formatMessage": [Function],
+        "formatNumber": [Function],
+        "formatPlural": [Function],
+        "formatRelative": [Function],
+        "formatTime": [Function],
+        "formats": Object {},
+        "formatters": Object {
+          "getDateTimeFormat": [Function],
+          "getMessageFormat": [Function],
+          "getNumberFormat": [Function],
+          "getPluralFormat": [Function],
+          "getRelativeFormat": [Function],
+        },
+        "locale": "en",
+        "messages": Object {
+          "defaultText": "Default Text",
+          "footDescription": "Foot Description",
+          "headerLabel": "Header Label",
+          "label": "Label",
+          "title": "Text Input",
+        },
+        "now": [Function],
+        "textComponent": "span",
+      }
+    }
+    label="Secret"
+    multiline={false}
+    value={null}
+  >
+    <Styled(Item)
+      stackedLabel={false}
+    >
+      <Item
+        stackedLabel={false}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "borderColor": "#D9D5DC",
+            "borderLeftWidth": 0,
+            "borderRightWidth": 0,
+            "borderTopWidth": 0,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "marginLeft": 2,
+          }
+        }
+      >
+        <TouchableOpacity
+          activeOpacity={1}
+          focusedOpacity={0.7}
+          stackedLabel={false}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderColor": "#D9D5DC",
+              "borderLeftWidth": 0,
+              "borderRightWidth": 0,
+              "borderTopWidth": 0,
+              "borderWidth": 1,
+              "flexDirection": "row",
+              "marginLeft": 2,
+            }
+          }
+        >
+          <AnimatedComponent
+            accessible={true}
+            isTVSelectable={true}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#D9D5DC",
+                  "borderLeftWidth": 0,
+                  "borderRightWidth": 0,
+                  "borderTopWidth": 0,
+                  "borderWidth": 1,
+                  "flexDirection": "row",
+                  "marginLeft": 2,
+                },
+                Object {
+                  "opacity": 1,
+                },
+              ]
+            }
+          >
+            <View
+              accessible={true}
+              isTVSelectable={true}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#D9D5DC",
+                  "borderLeftWidth": 0,
+                  "borderRightWidth": 0,
+                  "borderTopWidth": 0,
+                  "borderWidth": 1,
+                  "flexDirection": "row",
+                  "marginLeft": 2,
+                  "opacity": 1,
+                }
+              }
+            >
+              <View
+                accessible={true}
+                isTVSelectable={true}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "borderColor": "#D9D5DC",
+                    "borderLeftWidth": 0,
+                    "borderRightWidth": 0,
+                    "borderTopWidth": 0,
+                    "borderWidth": 1,
+                    "flexDirection": "row",
+                    "marginLeft": 2,
+                    "opacity": 1,
+                  }
+                }
+              >
+                <Styled(Label)>
+                  <Label
+                    style={
+                      Object {
+                        "color": "#575757",
+                        "fontSize": 17,
+                        "paddingRight": 5,
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#575757",
+                          "fontSize": 17,
+                          "paddingRight": 5,
+                        }
+                      }
+                    >
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                        style={
+                          Object {
+                            "color": "#575757",
+                            "fontSize": 17,
+                            "paddingRight": 5,
+                          }
+                        }
+                      >
+                        <Text
+                          accessible={true}
+                          allowFontScaling={true}
+                          ellipsizeMode="tail"
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={true}
+                            ellipsizeMode="tail"
+                          >
+                            Secret
+                          </Text>
+                        </Text>
+                      </Text>
+                    </Text>
+                  </Label>
+                </Styled(Label)>
+                <Styled(Input)
+                  multiline={false}
+                  onChangeText={[Function]}
+                  onContentSizeChange={[Function]}
+                  placeholder={null}
+                  secureTextEntry={true}
+                  style={
+                    Object {
+                      "height": undefined,
+                    }
+                  }
+                  value={null}
+                >
+                  <Input
+                    multiline={false}
+                    onChangeText={[Function]}
+                    onContentSizeChange={[Function]}
+                    placeholder={null}
+                    secureTextEntry={true}
+                    style={
+                      Object {
+                        "color": "#000",
+                        "flex": 1,
+                        "fontSize": 17,
+                        "height": 50,
+                        "lineHeight": 24,
+                        "paddingLeft": 5,
+                        "paddingRight": 5,
+                        "top": 1.5,
+                      }
+                    }
+                    value={null}
+                  >
+                    <TextInput
+                      editable={true}
+                      multiline={false}
+                      onChangeText={[Function]}
+                      onContentSizeChange={[Function]}
+                      placeholder={null}
+                      placeholderTextColor="#575757"
+                      secureTextEntry={true}
+                      style={
+                        Object {
+                          "color": "#000",
+                          "flex": 1,
+                          "fontSize": 17,
+                          "height": 50,
+                          "lineHeight": 24,
+                          "paddingLeft": 5,
+                          "paddingRight": 5,
+                          "top": 1.5,
+                        }
+                      }
+                      underlineColorAndroid="rgba(0,0,0,0)"
+                      value={null}
+                    >
+                      <TextInput
+                        editable={true}
+                        multiline={false}
+                        onChangeText={[Function]}
+                        onContentSizeChange={[Function]}
+                        placeholder={null}
+                        placeholderTextColor="#575757"
+                        secureTextEntry={true}
+                        style={
+                          Object {
+                            "color": "#000",
+                            "flex": 1,
+                            "fontSize": 17,
+                            "height": 50,
+                            "lineHeight": 24,
+                            "paddingLeft": 5,
+                            "paddingRight": 5,
+                            "top": 1.5,
+                          }
+                        }
+                        underlineColorAndroid="rgba(0,0,0,0)"
+                        value={null}
+                      />
+                    </TextInput>
+                  </Input>
+                </Styled(Input)>
+              </View>
+            </View>
+          </AnimatedComponent>
+        </TouchableOpacity>
+      </Item>
+    </Styled(Item)>
+  </TextInputComponent>
+</InjectIntl(TextInputComponent)>
+`;
+
+exports[`components <TextInputComponent /> renders text input component correctly 3`] = `
+<InjectIntl(TextInputComponent)
+  clearButton={true}
+  intl={
+    Object {
+      "defaultFormats": Object {},
+      "defaultLocale": "en",
+      "formatDate": [Function],
+      "formatHTMLMessage": [Function],
+      "formatMessage": [Function],
+      "formatNumber": [Function],
+      "formatPlural": [Function],
+      "formatRelative": [Function],
+      "formatTime": [Function],
+      "formats": Object {},
+      "formatters": Object {
+        "getDateTimeFormat": [Function],
+        "getMessageFormat": [Function],
+        "getNumberFormat": [Function],
+        "getPluralFormat": [Function],
+        "getRelativeFormat": [Function],
+      },
+      "locale": "en",
+      "messages": Object {},
+      "now": [Function],
+      "textComponent": "span",
+    }
+  }
+  label="Value 1"
+  value="Delete Me"
+>
+  <TextInputComponent
+    clearButton={true}
+    defaultText={null}
+    headerLabel={null}
+    hiddenText={null}
+    intl={
+      Object {
+        "defaultFormats": Object {},
+        "defaultLocale": "en",
+        "formatDate": [Function],
+        "formatHTMLMessage": [Function],
+        "formatMessage": [Function],
+        "formatNumber": [Function],
+        "formatPlural": [Function],
+        "formatRelative": [Function],
+        "formatTime": [Function],
+        "formats": Object {},
+        "formatters": Object {
+          "getDateTimeFormat": [Function],
+          "getMessageFormat": [Function],
+          "getNumberFormat": [Function],
+          "getPluralFormat": [Function],
+          "getRelativeFormat": [Function],
+        },
+        "locale": "en",
+        "messages": Object {
+          "defaultText": "Default Text",
+          "footDescription": "Foot Description",
+          "headerLabel": "Header Label",
+          "label": "Label",
+          "title": "Text Input",
+        },
+        "now": [Function],
+        "textComponent": "span",
+      }
+    }
+    label="Value 1"
+    multiline={false}
+    value="Delete Me"
+  >
+    <Styled(Item)
+      stackedLabel={false}
+    >
+      <Item
+        stackedLabel={false}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "borderColor": "#D9D5DC",
+            "borderLeftWidth": 0,
+            "borderRightWidth": 0,
+            "borderTopWidth": 0,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "marginLeft": 2,
+          }
+        }
+      >
+        <TouchableOpacity
+          activeOpacity={1}
+          focusedOpacity={0.7}
+          stackedLabel={false}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderColor": "#D9D5DC",
+              "borderLeftWidth": 0,
+              "borderRightWidth": 0,
+              "borderTopWidth": 0,
+              "borderWidth": 1,
+              "flexDirection": "row",
+              "marginLeft": 2,
+            }
+          }
+        >
+          <AnimatedComponent
+            accessible={true}
+            isTVSelectable={true}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#D9D5DC",
+                  "borderLeftWidth": 0,
+                  "borderRightWidth": 0,
+                  "borderTopWidth": 0,
+                  "borderWidth": 1,
+                  "flexDirection": "row",
+                  "marginLeft": 2,
+                },
+                Object {
+                  "opacity": 1,
+                },
+              ]
+            }
+          >
+            <View
+              accessible={true}
+              isTVSelectable={true}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#D9D5DC",
+                  "borderLeftWidth": 0,
+                  "borderRightWidth": 0,
+                  "borderTopWidth": 0,
+                  "borderWidth": 1,
+                  "flexDirection": "row",
+                  "marginLeft": 2,
+                  "opacity": 1,
+                }
+              }
+            >
+              <View
+                accessible={true}
+                isTVSelectable={true}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "borderColor": "#D9D5DC",
+                    "borderLeftWidth": 0,
+                    "borderRightWidth": 0,
+                    "borderTopWidth": 0,
+                    "borderWidth": 1,
+                    "flexDirection": "row",
+                    "marginLeft": 2,
+                    "opacity": 1,
+                  }
+                }
+              >
+                <Styled(Label)>
+                  <Label
+                    style={
+                      Object {
+                        "color": "#575757",
+                        "fontSize": 17,
+                        "paddingRight": 5,
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#575757",
+                          "fontSize": 17,
+                          "paddingRight": 5,
+                        }
+                      }
+                    >
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                        style={
+                          Object {
+                            "color": "#575757",
+                            "fontSize": 17,
+                            "paddingRight": 5,
+                          }
+                        }
+                      >
+                        <Text
+                          accessible={true}
+                          allowFontScaling={true}
+                          ellipsizeMode="tail"
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={true}
+                            ellipsizeMode="tail"
+                          >
+                            Value 1
+                          </Text>
+                        </Text>
+                      </Text>
+                    </Text>
+                  </Label>
+                </Styled(Label)>
+                <Styled(Input)
+                  multiline={false}
+                  onChangeText={[Function]}
+                  onContentSizeChange={[Function]}
+                  placeholder={null}
+                  secureTextEntry={null}
+                  style={
+                    Object {
+                      "height": undefined,
+                    }
+                  }
+                  value="Delete Me"
+                >
+                  <Input
+                    multiline={false}
+                    onChangeText={[Function]}
+                    onContentSizeChange={[Function]}
+                    placeholder={null}
+                    secureTextEntry={null}
+                    style={
+                      Object {
+                        "color": "#000",
+                        "flex": 1,
+                        "fontSize": 17,
+                        "height": 50,
+                        "lineHeight": 24,
+                        "paddingLeft": 5,
+                        "paddingRight": 5,
+                        "top": 1.5,
+                      }
+                    }
+                    value="Delete Me"
+                  >
+                    <TextInput
+                      editable={true}
+                      multiline={false}
+                      onChangeText={[Function]}
+                      onContentSizeChange={[Function]}
+                      placeholder={null}
+                      placeholderTextColor="#575757"
+                      secureTextEntry={null}
+                      style={
+                        Object {
+                          "color": "#000",
+                          "flex": 1,
+                          "fontSize": 17,
+                          "height": 50,
+                          "lineHeight": 24,
+                          "paddingLeft": 5,
+                          "paddingRight": 5,
+                          "top": 1.5,
+                        }
+                      }
+                      underlineColorAndroid="rgba(0,0,0,0)"
+                      value="Delete Me"
+                    >
+                      <TextInput
+                        editable={true}
+                        multiline={false}
+                        onChangeText={[Function]}
+                        onContentSizeChange={[Function]}
+                        placeholder={null}
+                        placeholderTextColor="#575757"
+                        secureTextEntry={null}
+                        style={
+                          Object {
+                            "color": "#000",
+                            "flex": 1,
+                            "fontSize": 17,
+                            "height": 50,
+                            "lineHeight": 24,
+                            "paddingLeft": 5,
+                            "paddingRight": 5,
+                            "top": 1.5,
+                          }
+                        }
+                        underlineColorAndroid="rgba(0,0,0,0)"
+                        value="Delete Me"
+                      />
+                    </TextInput>
+                  </Input>
+                </Styled(Input)>
+                <Styled(Icon)
+                  active={true}
+                  name="backspace"
+                  onPress={[Function]}
+                >
+                  <Icon
+                    active={true}
+                    name="backspace"
+                    onPress={[Function]}
+                    style={
+                      Object {
+                        "color": "#000",
+                        "fontSize": 24,
+                        "paddingRight": 8,
+                      }
+                    }
+                  >
+                    <Styled(IconNB)
+                      active={true}
+                      name="ios-backspace"
+                      onPress={[Function]}
+                      style={
+                        Object {
+                          "color": "#000",
+                          "fontSize": 24,
+                          "paddingRight": 8,
+                        }
+                      }
+                    >
+                      <IconNB
+                        active={true}
+                        name="ios-backspace"
+                        onPress={[Function]}
+                        style={
+                          Object {
+                            "color": "#000",
+                            "fontSize": 24,
+                            "paddingRight": 8,
+                          }
+                        }
+                      >
+                        <Icon
+                          active={true}
+                          allowFontScaling={false}
+                          name="ios-backspace"
+                          onPress={[Function]}
+                          size={12}
+                          style={
+                            Object {
+                              "color": "#000",
+                              "fontSize": 24,
+                              "paddingRight": 8,
+                            }
+                          }
+                        >
+                          <Text
+                            accessible={true}
+                            active={true}
+                            allowFontScaling={false}
+                            ellipsizeMode="tail"
+                            onPress={[Function]}
+                            style={
+                              Array [
+                                Object {
+                                  "color": undefined,
+                                  "fontSize": 12,
+                                },
+                                Object {
+                                  "color": "#000",
+                                  "fontSize": 24,
+                                  "paddingRight": 8,
+                                },
+                                Object {
+                                  "fontFamily": "Ionicons",
+                                  "fontStyle": "normal",
+                                  "fontWeight": "normal",
+                                },
+                              ]
+                            }
+                          >
+                            <Text
+                              accessible={true}
+                              active={true}
+                              allowFontScaling={false}
+                              ellipsizeMode="tail"
+                              onPress={[Function]}
+                              style={
+                                Array [
+                                  Object {
+                                    "color": undefined,
+                                    "fontSize": 12,
+                                  },
+                                  Object {
+                                    "color": "#000",
+                                    "fontSize": 24,
+                                    "paddingRight": 8,
+                                  },
+                                  Object {
+                                    "fontFamily": "Ionicons",
+                                    "fontStyle": "normal",
+                                    "fontWeight": "normal",
+                                  },
+                                ]
+                              }
+                            >
+                              
+                            </Text>
+                          </Text>
+                        </Icon>
+                      </IconNB>
+                    </Styled(IconNB)>
+                  </Icon>
+                </Styled(Icon)>
+              </View>
+            </View>
+          </AnimatedComponent>
+        </TouchableOpacity>
+      </Item>
+    </Styled(Item)>
+  </TextInputComponent>
+</InjectIntl(TextInputComponent)>
+`;
+
+exports[`components <TextInputComponent /> renders text input component correctly 4`] = `
+<InjectIntl(TextInputComponent)
+  defaultText="Replace Me"
+  intl={
+    Object {
+      "defaultFormats": Object {},
+      "defaultLocale": "en",
+      "formatDate": [Function],
+      "formatHTMLMessage": [Function],
+      "formatMessage": [Function],
+      "formatNumber": [Function],
+      "formatPlural": [Function],
+      "formatRelative": [Function],
+      "formatTime": [Function],
+      "formats": Object {},
+      "formatters": Object {
+        "getDateTimeFormat": [Function],
+        "getMessageFormat": [Function],
+        "getNumberFormat": [Function],
+        "getPluralFormat": [Function],
+        "getRelativeFormat": [Function],
+      },
+      "locale": "en",
+      "messages": Object {},
+      "now": [Function],
+      "textComponent": "span",
+    }
+  }
+  label="Value 2"
+>
+  <TextInputComponent
+    clearButton={false}
+    defaultText="Replace Me"
+    headerLabel={null}
+    hiddenText={null}
+    intl={
+      Object {
+        "defaultFormats": Object {},
+        "defaultLocale": "en",
+        "formatDate": [Function],
+        "formatHTMLMessage": [Function],
+        "formatMessage": [Function],
+        "formatNumber": [Function],
+        "formatPlural": [Function],
+        "formatRelative": [Function],
+        "formatTime": [Function],
+        "formats": Object {},
+        "formatters": Object {
+          "getDateTimeFormat": [Function],
+          "getMessageFormat": [Function],
+          "getNumberFormat": [Function],
+          "getPluralFormat": [Function],
+          "getRelativeFormat": [Function],
+        },
+        "locale": "en",
+        "messages": Object {
+          "defaultText": "Default Text",
+          "footDescription": "Foot Description",
+          "headerLabel": "Header Label",
+          "label": "Label",
+          "title": "Text Input",
+        },
+        "now": [Function],
+        "textComponent": "span",
+      }
+    }
+    label="Value 2"
+    multiline={false}
+    value={null}
+  >
+    <Styled(Item)
+      stackedLabel={false}
+    >
+      <Item
+        stackedLabel={false}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "borderColor": "#D9D5DC",
+            "borderLeftWidth": 0,
+            "borderRightWidth": 0,
+            "borderTopWidth": 0,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "marginLeft": 2,
+          }
+        }
+      >
+        <TouchableOpacity
+          activeOpacity={1}
+          focusedOpacity={0.7}
+          stackedLabel={false}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderColor": "#D9D5DC",
+              "borderLeftWidth": 0,
+              "borderRightWidth": 0,
+              "borderTopWidth": 0,
+              "borderWidth": 1,
+              "flexDirection": "row",
+              "marginLeft": 2,
+            }
+          }
+        >
+          <AnimatedComponent
+            accessible={true}
+            isTVSelectable={true}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#D9D5DC",
+                  "borderLeftWidth": 0,
+                  "borderRightWidth": 0,
+                  "borderTopWidth": 0,
+                  "borderWidth": 1,
+                  "flexDirection": "row",
+                  "marginLeft": 2,
+                },
+                Object {
+                  "opacity": 1,
+                },
+              ]
+            }
+          >
+            <View
+              accessible={true}
+              isTVSelectable={true}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#D9D5DC",
+                  "borderLeftWidth": 0,
+                  "borderRightWidth": 0,
+                  "borderTopWidth": 0,
+                  "borderWidth": 1,
+                  "flexDirection": "row",
+                  "marginLeft": 2,
+                  "opacity": 1,
+                }
+              }
+            >
+              <View
+                accessible={true}
+                isTVSelectable={true}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "borderColor": "#D9D5DC",
+                    "borderLeftWidth": 0,
+                    "borderRightWidth": 0,
+                    "borderTopWidth": 0,
+                    "borderWidth": 1,
+                    "flexDirection": "row",
+                    "marginLeft": 2,
+                    "opacity": 1,
+                  }
+                }
+              >
+                <Styled(Label)>
+                  <Label
+                    style={
+                      Object {
+                        "color": "#575757",
+                        "fontSize": 17,
+                        "paddingRight": 5,
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#575757",
+                          "fontSize": 17,
+                          "paddingRight": 5,
+                        }
+                      }
+                    >
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                        style={
+                          Object {
+                            "color": "#575757",
+                            "fontSize": 17,
+                            "paddingRight": 5,
+                          }
+                        }
+                      >
+                        <Text
+                          accessible={true}
+                          allowFontScaling={true}
+                          ellipsizeMode="tail"
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={true}
+                            ellipsizeMode="tail"
+                          >
+                            Value 2
+                          </Text>
+                        </Text>
+                      </Text>
+                    </Text>
+                  </Label>
+                </Styled(Label)>
+                <Styled(Input)
+                  multiline={false}
+                  onChangeText={[Function]}
+                  onContentSizeChange={[Function]}
+                  placeholder="Replace Me"
+                  secureTextEntry={null}
+                  style={
+                    Object {
+                      "height": undefined,
+                    }
+                  }
+                  value={null}
+                >
+                  <Input
+                    multiline={false}
+                    onChangeText={[Function]}
+                    onContentSizeChange={[Function]}
+                    placeholder="Replace Me"
+                    secureTextEntry={null}
+                    style={
+                      Object {
+                        "color": "#000",
+                        "flex": 1,
+                        "fontSize": 17,
+                        "height": 50,
+                        "lineHeight": 24,
+                        "paddingLeft": 5,
+                        "paddingRight": 5,
+                        "top": 1.5,
+                      }
+                    }
+                    value={null}
+                  >
+                    <TextInput
+                      editable={true}
+                      multiline={false}
+                      onChangeText={[Function]}
+                      onContentSizeChange={[Function]}
+                      placeholder="Replace Me"
+                      placeholderTextColor="#575757"
+                      secureTextEntry={null}
+                      style={
+                        Object {
+                          "color": "#000",
+                          "flex": 1,
+                          "fontSize": 17,
+                          "height": 50,
+                          "lineHeight": 24,
+                          "paddingLeft": 5,
+                          "paddingRight": 5,
+                          "top": 1.5,
+                        }
+                      }
+                      underlineColorAndroid="rgba(0,0,0,0)"
+                      value={null}
+                    >
+                      <TextInput
+                        editable={true}
+                        multiline={false}
+                        onChangeText={[Function]}
+                        onContentSizeChange={[Function]}
+                        placeholder="Replace Me"
+                        placeholderTextColor="#575757"
+                        secureTextEntry={null}
+                        style={
+                          Object {
+                            "color": "#000",
+                            "flex": 1,
+                            "fontSize": 17,
+                            "height": 50,
+                            "lineHeight": 24,
+                            "paddingLeft": 5,
+                            "paddingRight": 5,
+                            "top": 1.5,
+                          }
+                        }
+                        underlineColorAndroid="rgba(0,0,0,0)"
+                        value={null}
+                      />
+                    </TextInput>
+                  </Input>
+                </Styled(Input)>
+              </View>
+            </View>
+          </AnimatedComponent>
+        </TouchableOpacity>
+      </Item>
+    </Styled(Item)>
+  </TextInputComponent>
+</InjectIntl(TextInputComponent)>
+`;
+
+exports[`components <TextInputComponent /> renders text input component correctly 5`] = `
+<InjectIntl(TextInputComponent)
+  headerLabel="Header Label"
+  intl={
+    Object {
+      "defaultFormats": Object {},
+      "defaultLocale": "en",
+      "formatDate": [Function],
+      "formatHTMLMessage": [Function],
+      "formatMessage": [Function],
+      "formatNumber": [Function],
+      "formatPlural": [Function],
+      "formatRelative": [Function],
+      "formatTime": [Function],
+      "formats": Object {},
+      "formatters": Object {
+        "getDateTimeFormat": [Function],
+        "getMessageFormat": [Function],
+        "getNumberFormat": [Function],
+        "getPluralFormat": [Function],
+        "getRelativeFormat": [Function],
+      },
+      "locale": "en",
+      "messages": Object {},
+      "now": [Function],
+      "textComponent": "span",
+    }
+  }
+>
+  <TextInputComponent
+    clearButton={false}
+    defaultText={null}
+    headerLabel="Header Label"
+    hiddenText={null}
+    intl={
+      Object {
+        "defaultFormats": Object {},
+        "defaultLocale": "en",
+        "formatDate": [Function],
+        "formatHTMLMessage": [Function],
+        "formatMessage": [Function],
+        "formatNumber": [Function],
+        "formatPlural": [Function],
+        "formatRelative": [Function],
+        "formatTime": [Function],
+        "formats": Object {},
+        "formatters": Object {
+          "getDateTimeFormat": [Function],
+          "getMessageFormat": [Function],
+          "getNumberFormat": [Function],
+          "getPluralFormat": [Function],
+          "getRelativeFormat": [Function],
+        },
+        "locale": "en",
+        "messages": Object {
+          "defaultText": "Default Text",
+          "footDescription": "Foot Description",
+          "headerLabel": "Header Label",
+          "label": "Label",
+          "title": "Text Input",
+        },
+        "now": [Function],
+        "textComponent": "span",
+      }
+    }
+    label={null}
+    multiline={false}
+    value={null}
+  >
+    <Styled(Item)
+      stackedLabel={true}
+    >
+      <Item
+        stackedLabel={true}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "borderColor": "#D9D5DC",
+            "borderLeftWidth": 0,
+            "borderRightWidth": 0,
+            "borderTopWidth": 0,
+            "borderWidth": 1,
+            "flexDirection": null,
+            "marginLeft": 2,
+          }
+        }
+      >
+        <TouchableOpacity
+          activeOpacity={1}
+          focusedOpacity={0.7}
+          stackedLabel={true}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderColor": "#D9D5DC",
+              "borderLeftWidth": 0,
+              "borderRightWidth": 0,
+              "borderTopWidth": 0,
+              "borderWidth": 1,
+              "flexDirection": null,
+              "marginLeft": 2,
+            }
+          }
+        >
+          <AnimatedComponent
+            accessible={true}
+            isTVSelectable={true}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#D9D5DC",
+                  "borderLeftWidth": 0,
+                  "borderRightWidth": 0,
+                  "borderTopWidth": 0,
+                  "borderWidth": 1,
+                  "flexDirection": null,
+                  "marginLeft": 2,
+                },
+                Object {
+                  "opacity": 1,
+                },
+              ]
+            }
+          >
+            <View
+              accessible={true}
+              isTVSelectable={true}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#D9D5DC",
+                  "borderLeftWidth": 0,
+                  "borderRightWidth": 0,
+                  "borderTopWidth": 0,
+                  "borderWidth": 1,
+                  "flexDirection": null,
+                  "marginLeft": 2,
+                  "opacity": 1,
+                }
+              }
+            >
+              <View
+                accessible={true}
+                isTVSelectable={true}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "borderColor": "#D9D5DC",
+                    "borderLeftWidth": 0,
+                    "borderRightWidth": 0,
+                    "borderTopWidth": 0,
+                    "borderWidth": 1,
+                    "flexDirection": null,
+                    "marginLeft": 2,
+                    "opacity": 1,
+                  }
+                }
+              >
+                <Styled(Label)>
+                  <Label
+                    style={
+                      Object {
+                        "color": "#575757",
+                        "fontSize": 17,
+                        "paddingRight": 5,
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#575757",
+                          "fontSize": 17,
+                          "paddingRight": 5,
+                        }
+                      }
+                    >
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                        style={
+                          Object {
+                            "color": "#575757",
+                            "fontSize": 17,
+                            "paddingRight": 5,
+                          }
+                        }
+                      >
+                        <Text
+                          accessible={true}
+                          allowFontScaling={true}
+                          ellipsizeMode="tail"
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={true}
+                            ellipsizeMode="tail"
+                          >
+                            Header Label
+                          </Text>
+                        </Text>
+                      </Text>
+                    </Text>
+                  </Label>
+                </Styled(Label)>
+                <Styled(Input)
+                  multiline={false}
+                  onChangeText={[Function]}
+                  onContentSizeChange={[Function]}
+                  placeholder={null}
+                  secureTextEntry={null}
+                  style={
+                    Object {
+                      "height": undefined,
+                    }
+                  }
+                  value={null}
+                >
+                  <Input
+                    multiline={false}
+                    onChangeText={[Function]}
+                    onContentSizeChange={[Function]}
+                    placeholder={null}
+                    secureTextEntry={null}
+                    style={
+                      Object {
+                        "color": "#000",
+                        "flex": 1,
+                        "fontSize": 17,
+                        "height": 50,
+                        "lineHeight": 24,
+                        "paddingLeft": 5,
+                        "paddingRight": 5,
+                        "top": 1.5,
+                      }
+                    }
+                    value={null}
+                  >
+                    <TextInput
+                      editable={true}
+                      multiline={false}
+                      onChangeText={[Function]}
+                      onContentSizeChange={[Function]}
+                      placeholder={null}
+                      placeholderTextColor="#575757"
+                      secureTextEntry={null}
+                      style={
+                        Object {
+                          "color": "#000",
+                          "flex": 1,
+                          "fontSize": 17,
+                          "height": 50,
+                          "lineHeight": 24,
+                          "paddingLeft": 5,
+                          "paddingRight": 5,
+                          "top": 1.5,
+                        }
+                      }
+                      underlineColorAndroid="rgba(0,0,0,0)"
+                      value={null}
+                    >
+                      <TextInput
+                        editable={true}
+                        multiline={false}
+                        onChangeText={[Function]}
+                        onContentSizeChange={[Function]}
+                        placeholder={null}
+                        placeholderTextColor="#575757"
+                        secureTextEntry={null}
+                        style={
+                          Object {
+                            "color": "#000",
+                            "flex": 1,
+                            "fontSize": 17,
+                            "height": 50,
+                            "lineHeight": 24,
+                            "paddingLeft": 5,
+                            "paddingRight": 5,
+                            "top": 1.5,
+                          }
+                        }
+                        underlineColorAndroid="rgba(0,0,0,0)"
+                        value={null}
+                      />
+                    </TextInput>
+                  </Input>
+                </Styled(Input)>
+              </View>
+            </View>
+          </AnimatedComponent>
+        </TouchableOpacity>
+      </Item>
+    </Styled(Item)>
+  </TextInputComponent>
+</InjectIntl(TextInputComponent)>
+`;
+
+exports[`components <TextInputComponent /> renders text input component correctly 6`] = `
+<InjectIntl(TextInputComponent)
+  headerLabel="Description"
+  intl={
+    Object {
+      "defaultFormats": Object {},
+      "defaultLocale": "en",
+      "formatDate": [Function],
+      "formatHTMLMessage": [Function],
+      "formatMessage": [Function],
+      "formatNumber": [Function],
+      "formatPlural": [Function],
+      "formatRelative": [Function],
+      "formatTime": [Function],
+      "formats": Object {},
+      "formatters": Object {
+        "getDateTimeFormat": [Function],
+        "getMessageFormat": [Function],
+        "getNumberFormat": [Function],
+        "getPluralFormat": [Function],
+        "getRelativeFormat": [Function],
+      },
+      "locale": "en",
+      "messages": Object {},
+      "now": [Function],
+      "textComponent": "span",
+    }
+  }
+  multiline={true}
+  value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Itaque hic ipse iam pridem est reiectus; De ingenio eius in his disputationibus, non de moribus quaeritur. Nunc haec primum fortasse audientis servire debemus. Atqui iste locus est, Piso, tibi etiam atque etiam confirmandus, inquam;"
+>
+  <TextInputComponent
+    clearButton={false}
+    defaultText={null}
+    headerLabel="Description"
+    hiddenText={null}
+    intl={
+      Object {
+        "defaultFormats": Object {},
+        "defaultLocale": "en",
+        "formatDate": [Function],
+        "formatHTMLMessage": [Function],
+        "formatMessage": [Function],
+        "formatNumber": [Function],
+        "formatPlural": [Function],
+        "formatRelative": [Function],
+        "formatTime": [Function],
+        "formats": Object {},
+        "formatters": Object {
+          "getDateTimeFormat": [Function],
+          "getMessageFormat": [Function],
+          "getNumberFormat": [Function],
+          "getPluralFormat": [Function],
+          "getRelativeFormat": [Function],
+        },
+        "locale": "en",
+        "messages": Object {
+          "defaultText": "Default Text",
+          "footDescription": "Foot Description",
+          "headerLabel": "Header Label",
+          "label": "Label",
+          "title": "Text Input",
+        },
+        "now": [Function],
+        "textComponent": "span",
+      }
+    }
+    label={null}
+    multiline={true}
+    value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Itaque hic ipse iam pridem est reiectus; De ingenio eius in his disputationibus, non de moribus quaeritur. Nunc haec primum fortasse audientis servire debemus. Atqui iste locus est, Piso, tibi etiam atque etiam confirmandus, inquam;"
+  >
+    <Styled(Item)
+      stackedLabel={true}
+    >
+      <Item
+        stackedLabel={true}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "borderColor": "#D9D5DC",
+            "borderLeftWidth": 0,
+            "borderRightWidth": 0,
+            "borderTopWidth": 0,
+            "borderWidth": 1,
+            "flexDirection": null,
+            "marginLeft": 2,
+          }
+        }
+      >
+        <TouchableOpacity
+          activeOpacity={1}
+          focusedOpacity={0.7}
+          stackedLabel={true}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderColor": "#D9D5DC",
+              "borderLeftWidth": 0,
+              "borderRightWidth": 0,
+              "borderTopWidth": 0,
+              "borderWidth": 1,
+              "flexDirection": null,
+              "marginLeft": 2,
+            }
+          }
+        >
+          <AnimatedComponent
+            accessible={true}
+            isTVSelectable={true}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#D9D5DC",
+                  "borderLeftWidth": 0,
+                  "borderRightWidth": 0,
+                  "borderTopWidth": 0,
+                  "borderWidth": 1,
+                  "flexDirection": null,
+                  "marginLeft": 2,
+                },
+                Object {
+                  "opacity": 1,
+                },
+              ]
+            }
+          >
+            <View
+              accessible={true}
+              isTVSelectable={true}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#D9D5DC",
+                  "borderLeftWidth": 0,
+                  "borderRightWidth": 0,
+                  "borderTopWidth": 0,
+                  "borderWidth": 1,
+                  "flexDirection": null,
+                  "marginLeft": 2,
+                  "opacity": 1,
+                }
+              }
+            >
+              <View
+                accessible={true}
+                isTVSelectable={true}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "borderColor": "#D9D5DC",
+                    "borderLeftWidth": 0,
+                    "borderRightWidth": 0,
+                    "borderTopWidth": 0,
+                    "borderWidth": 1,
+                    "flexDirection": null,
+                    "marginLeft": 2,
+                    "opacity": 1,
+                  }
+                }
+              >
+                <Styled(Label)>
+                  <Label
+                    style={
+                      Object {
+                        "color": "#575757",
+                        "fontSize": 17,
+                        "paddingRight": 5,
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#575757",
+                          "fontSize": 17,
+                          "paddingRight": 5,
+                        }
+                      }
+                    >
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                        style={
+                          Object {
+                            "color": "#575757",
+                            "fontSize": 17,
+                            "paddingRight": 5,
+                          }
+                        }
+                      >
+                        <Text
+                          accessible={true}
+                          allowFontScaling={true}
+                          ellipsizeMode="tail"
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={true}
+                            ellipsizeMode="tail"
+                          >
+                            Description
+                          </Text>
+                        </Text>
+                      </Text>
+                    </Text>
+                  </Label>
+                </Styled(Label)>
+                <Styled(Input)
+                  multiline={true}
+                  onChangeText={[Function]}
+                  onContentSizeChange={[Function]}
+                  placeholder={null}
+                  secureTextEntry={null}
+                  style={
+                    Object {
+                      "height": undefined,
+                    }
+                  }
+                  value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Itaque hic ipse iam pridem est reiectus; De ingenio eius in his disputationibus, non de moribus quaeritur. Nunc haec primum fortasse audientis servire debemus. Atqui iste locus est, Piso, tibi etiam atque etiam confirmandus, inquam;"
+                >
+                  <Input
+                    multiline={true}
+                    onChangeText={[Function]}
+                    onContentSizeChange={[Function]}
+                    placeholder={null}
+                    secureTextEntry={null}
+                    style={
+                      Object {
+                        "alignSelf": "stretch",
+                        "color": "#000",
+                        "flex": 1,
+                        "fontSize": 17,
+                        "height": 50,
+                        "lineHeight": 24,
+                        "paddingLeft": 5,
+                        "paddingRight": 5,
+                        "top": 1.5,
+                        "width": null,
+                      }
+                    }
+                    value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Itaque hic ipse iam pridem est reiectus; De ingenio eius in his disputationibus, non de moribus quaeritur. Nunc haec primum fortasse audientis servire debemus. Atqui iste locus est, Piso, tibi etiam atque etiam confirmandus, inquam;"
+                  >
+                    <TextInput
+                      editable={true}
+                      multiline={true}
+                      onChangeText={[Function]}
+                      onContentSizeChange={[Function]}
+                      placeholder={null}
+                      placeholderTextColor="#575757"
+                      secureTextEntry={null}
+                      style={
+                        Object {
+                          "alignSelf": "stretch",
+                          "color": "#000",
+                          "flex": 1,
+                          "fontSize": 17,
+                          "height": 50,
+                          "lineHeight": 24,
+                          "paddingLeft": 5,
+                          "paddingRight": 5,
+                          "top": 1.5,
+                          "width": null,
+                        }
+                      }
+                      underlineColorAndroid="rgba(0,0,0,0)"
+                      value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Itaque hic ipse iam pridem est reiectus; De ingenio eius in his disputationibus, non de moribus quaeritur. Nunc haec primum fortasse audientis servire debemus. Atqui iste locus est, Piso, tibi etiam atque etiam confirmandus, inquam;"
+                    >
+                      <TextInput
+                        editable={true}
+                        multiline={true}
+                        onChangeText={[Function]}
+                        onContentSizeChange={[Function]}
+                        placeholder={null}
+                        placeholderTextColor="#575757"
+                        secureTextEntry={null}
+                        style={
+                          Object {
+                            "alignSelf": "stretch",
+                            "color": "#000",
+                            "flex": 1,
+                            "fontSize": 17,
+                            "height": 50,
+                            "lineHeight": 24,
+                            "paddingLeft": 5,
+                            "paddingRight": 5,
+                            "top": 1.5,
+                            "width": null,
+                          }
+                        }
+                        underlineColorAndroid="rgba(0,0,0,0)"
+                        value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Itaque hic ipse iam pridem est reiectus; De ingenio eius in his disputationibus, non de moribus quaeritur. Nunc haec primum fortasse audientis servire debemus. Atqui iste locus est, Piso, tibi etiam atque etiam confirmandus, inquam;"
+                      />
+                    </TextInput>
+                  </Input>
+                </Styled(Input)>
+              </View>
+            </View>
+          </AnimatedComponent>
+        </TouchableOpacity>
+      </Item>
+    </Styled(Item)>
+  </TextInputComponent>
+</InjectIntl(TextInputComponent)>
+`;
+
+exports[`components <TextInputComponent /> renders text input component correctly 7`] = `
+<InjectIntl(TextInputComponent)
+  intl={
+    Object {
+      "defaultFormats": Object {},
+      "defaultLocale": "en",
+      "formatDate": [Function],
+      "formatHTMLMessage": [Function],
+      "formatMessage": [Function],
+      "formatNumber": [Function],
+      "formatPlural": [Function],
+      "formatRelative": [Function],
+      "formatTime": [Function],
+      "formats": Object {},
+      "formatters": Object {
+        "getDateTimeFormat": [Function],
+        "getMessageFormat": [Function],
+        "getNumberFormat": [Function],
+        "getPluralFormat": [Function],
+        "getRelativeFormat": [Function],
+      },
+      "locale": "en",
+      "messages": Object {},
+      "now": [Function],
+      "textComponent": "span",
+    }
+  }
+  label={
+    Object {
+      "code": "label",
+    }
+  }
+>
+  <TextInputComponent
+    clearButton={false}
+    defaultText={null}
+    headerLabel={null}
+    hiddenText={null}
+    intl={
+      Object {
+        "defaultFormats": Object {},
+        "defaultLocale": "en",
+        "formatDate": [Function],
+        "formatHTMLMessage": [Function],
+        "formatMessage": [Function],
+        "formatNumber": [Function],
+        "formatPlural": [Function],
+        "formatRelative": [Function],
+        "formatTime": [Function],
+        "formats": Object {},
+        "formatters": Object {
+          "getDateTimeFormat": [Function],
+          "getMessageFormat": [Function],
+          "getNumberFormat": [Function],
+          "getPluralFormat": [Function],
+          "getRelativeFormat": [Function],
+        },
+        "locale": "en",
+        "messages": Object {
+          "defaultText": "Default Text",
+          "footDescription": "Foot Description",
+          "headerLabel": "Header Label",
+          "label": "Label",
+          "title": "Text Input",
+        },
+        "now": [Function],
+        "textComponent": "span",
+      }
+    }
+    label={
+      Object {
+        "code": "label",
+      }
+    }
+    multiline={false}
+    value={null}
+  >
+    <Styled(Item)
+      stackedLabel={false}
+    >
+      <Item
+        stackedLabel={false}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "borderColor": "#D9D5DC",
+            "borderLeftWidth": 0,
+            "borderRightWidth": 0,
+            "borderTopWidth": 0,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "marginLeft": 2,
+          }
+        }
+      >
+        <TouchableOpacity
+          activeOpacity={1}
+          focusedOpacity={0.7}
+          stackedLabel={false}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderColor": "#D9D5DC",
+              "borderLeftWidth": 0,
+              "borderRightWidth": 0,
+              "borderTopWidth": 0,
+              "borderWidth": 1,
+              "flexDirection": "row",
+              "marginLeft": 2,
+            }
+          }
+        >
+          <AnimatedComponent
+            accessible={true}
+            isTVSelectable={true}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#D9D5DC",
+                  "borderLeftWidth": 0,
+                  "borderRightWidth": 0,
+                  "borderTopWidth": 0,
+                  "borderWidth": 1,
+                  "flexDirection": "row",
+                  "marginLeft": 2,
+                },
+                Object {
+                  "opacity": 1,
+                },
+              ]
+            }
+          >
+            <View
+              accessible={true}
+              isTVSelectable={true}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#D9D5DC",
+                  "borderLeftWidth": 0,
+                  "borderRightWidth": 0,
+                  "borderTopWidth": 0,
+                  "borderWidth": 1,
+                  "flexDirection": "row",
+                  "marginLeft": 2,
+                  "opacity": 1,
+                }
+              }
+            >
+              <View
+                accessible={true}
+                isTVSelectable={true}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "borderColor": "#D9D5DC",
+                    "borderLeftWidth": 0,
+                    "borderRightWidth": 0,
+                    "borderTopWidth": 0,
+                    "borderWidth": 1,
+                    "flexDirection": "row",
+                    "marginLeft": 2,
+                    "opacity": 1,
+                  }
+                }
+              >
+                <Styled(Label)>
+                  <Label
+                    style={
+                      Object {
+                        "color": "#575757",
+                        "fontSize": 17,
+                        "paddingRight": 5,
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "#575757",
+                          "fontSize": 17,
+                          "paddingRight": 5,
+                        }
+                      }
+                    >
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                        style={
+                          Object {
+                            "color": "#575757",
+                            "fontSize": 17,
+                            "paddingRight": 5,
+                          }
+                        }
+                      >
+                        <Text
+                          accessible={true}
+                          allowFontScaling={true}
+                          ellipsizeMode="tail"
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={true}
+                            ellipsizeMode="tail"
+                          >
+                            <FormattedMessage
+                              id="label"
+                              values={Object {}}
+                            >
+                              <span>
+                                Label
+                              </span>
+                            </FormattedMessage>
+                          </Text>
+                        </Text>
+                      </Text>
+                    </Text>
+                  </Label>
+                </Styled(Label)>
+                <Styled(Input)
+                  multiline={false}
+                  onChangeText={[Function]}
+                  onContentSizeChange={[Function]}
+                  placeholder={null}
+                  secureTextEntry={null}
+                  style={
+                    Object {
+                      "height": undefined,
+                    }
+                  }
+                  value={null}
+                >
+                  <Input
+                    multiline={false}
+                    onChangeText={[Function]}
+                    onContentSizeChange={[Function]}
+                    placeholder={null}
+                    secureTextEntry={null}
+                    style={
+                      Object {
+                        "color": "#000",
+                        "flex": 1,
+                        "fontSize": 17,
+                        "height": 50,
+                        "lineHeight": 24,
+                        "paddingLeft": 5,
+                        "paddingRight": 5,
+                        "top": 1.5,
+                      }
+                    }
+                    value={null}
+                  >
+                    <TextInput
+                      editable={true}
+                      multiline={false}
+                      onChangeText={[Function]}
+                      onContentSizeChange={[Function]}
+                      placeholder={null}
+                      placeholderTextColor="#575757"
+                      secureTextEntry={null}
+                      style={
+                        Object {
+                          "color": "#000",
+                          "flex": 1,
+                          "fontSize": 17,
+                          "height": 50,
+                          "lineHeight": 24,
+                          "paddingLeft": 5,
+                          "paddingRight": 5,
+                          "top": 1.5,
+                        }
+                      }
+                      underlineColorAndroid="rgba(0,0,0,0)"
+                      value={null}
+                    >
+                      <TextInput
+                        editable={true}
+                        multiline={false}
+                        onChangeText={[Function]}
+                        onContentSizeChange={[Function]}
+                        placeholder={null}
+                        placeholderTextColor="#575757"
+                        secureTextEntry={null}
+                        style={
+                          Object {
+                            "color": "#000",
+                            "flex": 1,
+                            "fontSize": 17,
+                            "height": 50,
+                            "lineHeight": 24,
+                            "paddingLeft": 5,
+                            "paddingRight": 5,
+                            "top": 1.5,
+                          }
+                        }
+                        underlineColorAndroid="rgba(0,0,0,0)"
+                        value={null}
+                      />
+                    </TextInput>
+                  </Input>
+                </Styled(Input)>
+              </View>
+            </View>
+          </AnimatedComponent>
+        </TouchableOpacity>
+      </Item>
+    </Styled(Item)>
+  </TextInputComponent>
+</InjectIntl(TextInputComponent)>
+`;
+
+exports[`components <TextInputComponent /> renders text input component correctly 8`] = `
+<InjectIntl(TextInputComponent)
+  defaultText={
+    Object {
+      "code": "defaultText",
+    }
+  }
+  intl={
+    Object {
+      "defaultFormats": Object {},
+      "defaultLocale": "en",
+      "formatDate": [Function],
+      "formatHTMLMessage": [Function],
+      "formatMessage": [Function],
+      "formatNumber": [Function],
+      "formatPlural": [Function],
+      "formatRelative": [Function],
+      "formatTime": [Function],
+      "formats": Object {},
+      "formatters": Object {
+        "getDateTimeFormat": [Function],
+        "getMessageFormat": [Function],
+        "getNumberFormat": [Function],
+        "getPluralFormat": [Function],
+        "getRelativeFormat": [Function],
+      },
+      "locale": "en",
+      "messages": Object {},
+      "now": [Function],
+      "textComponent": "span",
+    }
+  }
+>
+  <TextInputComponent
+    clearButton={false}
+    defaultText={
+      Object {
+        "code": "defaultText",
+      }
+    }
+    headerLabel={null}
+    hiddenText={null}
+    intl={
+      Object {
+        "defaultFormats": Object {},
+        "defaultLocale": "en",
+        "formatDate": [Function],
+        "formatHTMLMessage": [Function],
+        "formatMessage": [Function],
+        "formatNumber": [Function],
+        "formatPlural": [Function],
+        "formatRelative": [Function],
+        "formatTime": [Function],
+        "formats": Object {},
+        "formatters": Object {
+          "getDateTimeFormat": [Function],
+          "getMessageFormat": [Function],
+          "getNumberFormat": [Function],
+          "getPluralFormat": [Function],
+          "getRelativeFormat": [Function],
+        },
+        "locale": "en",
+        "messages": Object {
+          "defaultText": "Default Text",
+          "footDescription": "Foot Description",
+          "headerLabel": "Header Label",
+          "label": "Label",
+          "title": "Text Input",
+        },
+        "now": [Function],
+        "textComponent": "span",
+      }
+    }
+    label={null}
+    multiline={false}
+    value={null}
+  >
+    <Styled(Item)
+      stackedLabel={false}
+    >
+      <Item
+        stackedLabel={false}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "borderColor": "#D9D5DC",
+            "borderLeftWidth": 0,
+            "borderRightWidth": 0,
+            "borderTopWidth": 0,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "marginLeft": 2,
+          }
+        }
+      >
+        <TouchableOpacity
+          activeOpacity={1}
+          focusedOpacity={0.7}
+          stackedLabel={false}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderColor": "#D9D5DC",
+              "borderLeftWidth": 0,
+              "borderRightWidth": 0,
+              "borderTopWidth": 0,
+              "borderWidth": 1,
+              "flexDirection": "row",
+              "marginLeft": 2,
+            }
+          }
+        >
+          <AnimatedComponent
+            accessible={true}
+            isTVSelectable={true}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#D9D5DC",
+                  "borderLeftWidth": 0,
+                  "borderRightWidth": 0,
+                  "borderTopWidth": 0,
+                  "borderWidth": 1,
+                  "flexDirection": "row",
+                  "marginLeft": 2,
+                },
+                Object {
+                  "opacity": 1,
+                },
+              ]
+            }
+          >
+            <View
+              accessible={true}
+              isTVSelectable={true}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#D9D5DC",
+                  "borderLeftWidth": 0,
+                  "borderRightWidth": 0,
+                  "borderTopWidth": 0,
+                  "borderWidth": 1,
+                  "flexDirection": "row",
+                  "marginLeft": 2,
+                  "opacity": 1,
+                }
+              }
+            >
+              <View
+                accessible={true}
+                isTVSelectable={true}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "borderColor": "#D9D5DC",
+                    "borderLeftWidth": 0,
+                    "borderRightWidth": 0,
+                    "borderTopWidth": 0,
+                    "borderWidth": 1,
+                    "flexDirection": "row",
+                    "marginLeft": 2,
+                    "opacity": 1,
+                  }
+                }
+              >
+                <Styled(Input)
+                  multiline={false}
+                  onChangeText={[Function]}
+                  onContentSizeChange={[Function]}
+                  placeholder="Default Text"
+                  secureTextEntry={null}
+                  style={
+                    Object {
+                      "height": undefined,
+                    }
+                  }
+                  value={null}
+                >
+                  <Input
+                    multiline={false}
+                    onChangeText={[Function]}
+                    onContentSizeChange={[Function]}
+                    placeholder="Default Text"
+                    secureTextEntry={null}
+                    style={
+                      Object {
+                        "color": "#000",
+                        "flex": 1,
+                        "fontSize": 17,
+                        "height": 50,
+                        "lineHeight": 24,
+                        "paddingLeft": 5,
+                        "paddingRight": 5,
+                        "top": 1.5,
+                      }
+                    }
+                    value={null}
+                  >
+                    <TextInput
+                      editable={true}
+                      multiline={false}
+                      onChangeText={[Function]}
+                      onContentSizeChange={[Function]}
+                      placeholder="Default Text"
+                      placeholderTextColor="#575757"
+                      secureTextEntry={null}
+                      style={
+                        Object {
+                          "color": "#000",
+                          "flex": 1,
+                          "fontSize": 17,
+                          "height": 50,
+                          "lineHeight": 24,
+                          "paddingLeft": 5,
+                          "paddingRight": 5,
+                          "top": 1.5,
+                        }
+                      }
+                      underlineColorAndroid="rgba(0,0,0,0)"
+                      value={null}
+                    >
+                      <TextInput
+                        editable={true}
+                        multiline={false}
+                        onChangeText={[Function]}
+                        onContentSizeChange={[Function]}
+                        placeholder="Default Text"
+                        placeholderTextColor="#575757"
+                        secureTextEntry={null}
+                        style={
+                          Object {
+                            "color": "#000",
+                            "flex": 1,
+                            "fontSize": 17,
+                            "height": 50,
+                            "lineHeight": 24,
+                            "paddingLeft": 5,
+                            "paddingRight": 5,
+                            "top": 1.5,
+                          }
+                        }
+                        underlineColorAndroid="rgba(0,0,0,0)"
+                        value={null}
+                      />
+                    </TextInput>
+                  </Input>
+                </Styled(Input)>
+              </View>
+            </View>
+          </AnimatedComponent>
+        </TouchableOpacity>
+      </Item>
+    </Styled(Item)>
+  </TextInputComponent>
+</InjectIntl(TextInputComponent)>
+`;

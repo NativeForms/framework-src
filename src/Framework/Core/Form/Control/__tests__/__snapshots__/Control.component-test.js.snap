@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components <ControlComponent /> renders label button component correctly 1`] = `
+<Styled(Item)
+  style={
+    Object {
+      "borderBottomWidth": 0,
+    }
+  }
+>
+  <ButtonComponent
+    label="button test"
+  />
+</Styled(Item)>
+`;
+
+exports[`components <ControlComponent /> renders label link component correctly 1`] = `
+<Styled(Item)
+  style={
+    Object {
+      "borderBottomWidth": 0,
+    }
+  }
+>
+  <LinkComponent
+    label="link test"
+    route="http://www.google.com"
+  />
+</Styled(Item)>
+`;

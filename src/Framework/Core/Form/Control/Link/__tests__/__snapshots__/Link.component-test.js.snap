@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components <LinkComponent /> renders correctly -- object type 1`] = `
+<TouchableHighlight
+  activeOpacity={0.85}
+  onPress={[Function]}
+  underlayColor="black"
+>
+  <View>
+    <FormattedMessage
+      id="Click to visit google!"
+      values={Object {}}
+    />
+  </View>
+</TouchableHighlight>
+`;
+
+exports[`components <LinkComponent /> renders correctly -- string type 1`] = `
+<TouchableHighlight
+  activeOpacity={0.85}
+  onPress={[Function]}
+  underlayColor="black"
+>
+  <View>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    >
+      label
+    </Text>
+  </View>
+</TouchableHighlight>
+`;
