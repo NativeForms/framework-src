@@ -116,6 +116,16 @@ exports[`components <FormComponent /> renders form components correctly 3`] = `
       }
       type="text"
     />
+    <FieldComponent
+      attributes={
+        Object {
+          "defaultText": Object {
+            "code": "defaultText",
+          },
+        }
+      }
+      type="text"
+    />
   </Styled(Form)>
 </IntlProvider>
 `;
