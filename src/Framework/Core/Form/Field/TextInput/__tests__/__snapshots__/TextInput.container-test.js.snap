@@ -184,7 +184,7 @@ exports[`container <TextInputContainer /> container render correctly 1`] = `
                 category: 'field',
                 attributes: {
                   label: {
-                  code: 'label'
+                    code: 'label'
                   }
                 }
               },
