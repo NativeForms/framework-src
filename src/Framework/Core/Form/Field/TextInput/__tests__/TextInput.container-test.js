@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import TextInputComponent from '../TextInput.container';
+import TextInputContainer from '../TextInput.container';
 
-describe('container <TextInputComponent />', () => {
+describe('container <TextInputContainer />', () => {
   it('container render correctly', () => {
-    const wrapper = shallow(<TextInputComponent />);
+    const wrapper = shallow(<TextInputContainer />);
     expect(wrapper.dive()).toMatchSnapshot();
   });
 });
