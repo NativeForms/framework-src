@@ -1,7 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`container <ButtonContainer /> container render correctly 1`] = `
-<Styled(Content)>
+<Content
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "flex": 1,
+    }
+  }
+>
   <GridNB>
     <RowNB
       style={
@@ -65,5 +72,5 @@ exports[`container <ButtonContainer /> container render correctly 1`] = `
       </SchemaViewer>
     </RowNB>
   </GridNB>
-</Styled(Content)>
+</Content>
 `;

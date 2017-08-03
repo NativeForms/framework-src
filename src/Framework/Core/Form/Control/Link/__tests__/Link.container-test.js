@@ -7,6 +7,6 @@ describe('container <LinkContainer />', () => {
     const wrapper = shallow(
       <LinkContainer />
     );
-    expect(wrapper).toMatchSnapshot();
+    expect(wrapper.dive()).toMatchSnapshot();
   });
 });

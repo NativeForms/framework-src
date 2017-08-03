@@ -15,9 +15,10 @@ const propsArray = schema.attributes.formComponents;
 describe('components <TextInputComponent />', () => {
   let wrapper;
   propsArray.forEach((props) => {
+    const { attributes, ...rest } = props;
     it('renders text input component correctly', () => {
-      wrapper = mountWithIntl(<TextInputComponent {...props.attributes} />, {}, message);
-      expect(wrapper).toMatchSnapshot();
+      wrapper = mountWithIntl(<TextInputComponent {...rest} />, {}, message);
+      expect(wrapper.find('TextInputComponent')).toMatchSnapshot();
     });
     if (props.attributes.clearButton) {
       it('clearButton works correctly', () => {

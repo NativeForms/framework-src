@@ -1,7 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components <TextInputComponent /> renders text input component correctly 1`] = `
-<InjectIntl(TextInputComponent)
+<TextInputComponent
+  category="field"
+  clearButton={false}
+  defaultText={null}
+  headerLabel={null}
+  hiddenText={null}
   intl={
     Object {
       "defaultFormats": Object {},
@@ -22,57 +27,45 @@ exports[`components <TextInputComponent /> renders text input component correctl
         "getRelativeFormat": [Function],
       },
       "locale": "en",
-      "messages": Object {},
+      "messages": Object {
+        "defaultText": "Default Text",
+        "footDescription": "Foot Description",
+        "headerLabel": "Header Label",
+        "label": "Label",
+        "title": "Text Input",
+      },
       "now": [Function],
       "textComponent": "span",
     }
   }
-  label="Key"
+  label={null}
+  multiline={false}
+  type="text"
+  uid="fixedLabelExample"
+  value={null}
 >
-  <TextInputComponent
-    clearButton={false}
-    defaultText={null}
-    headerLabel={null}
-    hiddenText={null}
-    intl={
-      Object {
-        "defaultFormats": Object {},
-        "defaultLocale": "en",
-        "formatDate": [Function],
-        "formatHTMLMessage": [Function],
-        "formatMessage": [Function],
-        "formatNumber": [Function],
-        "formatPlural": [Function],
-        "formatRelative": [Function],
-        "formatTime": [Function],
-        "formats": Object {},
-        "formatters": Object {
-          "getDateTimeFormat": [Function],
-          "getMessageFormat": [Function],
-          "getNumberFormat": [Function],
-          "getPluralFormat": [Function],
-          "getRelativeFormat": [Function],
-        },
-        "locale": "en",
-        "messages": Object {
-          "defaultText": "Default Text",
-          "footDescription": "Foot Description",
-          "headerLabel": "Header Label",
-          "label": "Label",
-          "title": "Text Input",
-        },
-        "now": [Function],
-        "textComponent": "span",
-      }
-    }
-    label="Key"
-    multiline={false}
-    value={null}
+  <Styled(Item)
+    stackedLabel={false}
   >
-    <Styled(Item)
+    <Item
       stackedLabel={false}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "borderColor": "#D9D5DC",
+          "borderLeftWidth": 0,
+          "borderRightWidth": 0,
+          "borderTopWidth": 0,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "marginLeft": 2,
+        }
+      }
     >
-      <Item
+      <TouchableOpacity
+        activeOpacity={1}
+        focusedOpacity={0.7}
         stackedLabel={false}
         style={
           Object {
@@ -88,25 +81,35 @@ exports[`components <TextInputComponent /> renders text input component correctl
           }
         }
       >
-        <TouchableOpacity
-          activeOpacity={1}
-          focusedOpacity={0.7}
-          stackedLabel={false}
+        <AnimatedComponent
+          accessible={true}
+          isTVSelectable={true}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
           style={
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "transparent",
-              "borderColor": "#D9D5DC",
-              "borderLeftWidth": 0,
-              "borderRightWidth": 0,
-              "borderTopWidth": 0,
-              "borderWidth": 1,
-              "flexDirection": "row",
-              "marginLeft": 2,
-            }
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderColor": "#D9D5DC",
+                "borderLeftWidth": 0,
+                "borderRightWidth": 0,
+                "borderTopWidth": 0,
+                "borderWidth": 1,
+                "flexDirection": "row",
+                "marginLeft": 2,
+              },
+              Object {
+                "opacity": 1,
+              },
+            ]
           }
         >
-          <AnimatedComponent
+          <View
             accessible={true}
             isTVSelectable={true}
             onResponderGrant={[Function]}
@@ -116,22 +119,18 @@ exports[`components <TextInputComponent /> renders text input component correctl
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "backgroundColor": "transparent",
-                  "borderColor": "#D9D5DC",
-                  "borderLeftWidth": 0,
-                  "borderRightWidth": 0,
-                  "borderTopWidth": 0,
-                  "borderWidth": 1,
-                  "flexDirection": "row",
-                  "marginLeft": 2,
-                },
-                Object {
-                  "opacity": 1,
-                },
-              ]
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderColor": "#D9D5DC",
+                "borderLeftWidth": 0,
+                "borderRightWidth": 0,
+                "borderTopWidth": 0,
+                "borderWidth": 1,
+                "flexDirection": "row",
+                "marginLeft": 2,
+                "opacity": 1,
+              }
             }
           >
             <View
@@ -158,82 +157,20 @@ exports[`components <TextInputComponent /> renders text input component correctl
                 }
               }
             >
-              <View
-                accessible={true}
-                isTVSelectable={true}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
+              <Styled(Input)
+                multiline={false}
+                onChangeText={[Function]}
+                onContentSizeChange={[Function]}
+                placeholder={null}
+                secureTextEntry={null}
                 style={
                   Object {
-                    "alignItems": "center",
-                    "backgroundColor": "transparent",
-                    "borderColor": "#D9D5DC",
-                    "borderLeftWidth": 0,
-                    "borderRightWidth": 0,
-                    "borderTopWidth": 0,
-                    "borderWidth": 1,
-                    "flexDirection": "row",
-                    "marginLeft": 2,
-                    "opacity": 1,
+                    "height": undefined,
                   }
                 }
+                value={null}
               >
-                <Styled(Label)>
-                  <Label
-                    style={
-                      Object {
-                        "color": "#575757",
-                        "fontSize": 17,
-                        "paddingRight": 5,
-                      }
-                    }
-                  >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                      style={
-                        Object {
-                          "color": "#575757",
-                          "fontSize": 17,
-                          "paddingRight": 5,
-                        }
-                      }
-                    >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Object {
-                            "color": "#575757",
-                            "fontSize": 17,
-                            "paddingRight": 5,
-                          }
-                        }
-                      >
-                        <Text
-                          accessible={true}
-                          allowFontScaling={true}
-                          ellipsizeMode="tail"
-                        >
-                          <Text
-                            accessible={true}
-                            allowFontScaling={true}
-                            ellipsizeMode="tail"
-                          >
-                            Key
-                          </Text>
-                        </Text>
-                      </Text>
-                    </Text>
-                  </Label>
-                </Styled(Label)>
-                <Styled(Input)
+                <Input
                   multiline={false}
                   onChangeText={[Function]}
                   onContentSizeChange={[Function]}
@@ -241,16 +178,25 @@ exports[`components <TextInputComponent /> renders text input component correctl
                   secureTextEntry={null}
                   style={
                     Object {
-                      "height": undefined,
+                      "color": "#000",
+                      "flex": 1,
+                      "fontSize": 17,
+                      "height": 50,
+                      "lineHeight": 24,
+                      "paddingLeft": 5,
+                      "paddingRight": 5,
+                      "top": 1.5,
                     }
                   }
                   value={null}
                 >
-                  <Input
+                  <TextInput
+                    editable={true}
                     multiline={false}
                     onChangeText={[Function]}
                     onContentSizeChange={[Function]}
                     placeholder={null}
+                    placeholderTextColor="#575757"
                     secureTextEntry={null}
                     style={
                       Object {
@@ -264,6 +210,7 @@ exports[`components <TextInputComponent /> renders text input component correctl
                         "top": 1.5,
                       }
                     }
+                    underlineColorAndroid="rgba(0,0,0,0)"
                     value={null}
                   >
                     <TextInput
@@ -288,46 +235,26 @@ exports[`components <TextInputComponent /> renders text input component correctl
                       }
                       underlineColorAndroid="rgba(0,0,0,0)"
                       value={null}
-                    >
-                      <TextInput
-                        editable={true}
-                        multiline={false}
-                        onChangeText={[Function]}
-                        onContentSizeChange={[Function]}
-                        placeholder={null}
-                        placeholderTextColor="#575757"
-                        secureTextEntry={null}
-                        style={
-                          Object {
-                            "color": "#000",
-                            "flex": 1,
-                            "fontSize": 17,
-                            "height": 50,
-                            "lineHeight": 24,
-                            "paddingLeft": 5,
-                            "paddingRight": 5,
-                            "top": 1.5,
-                          }
-                        }
-                        underlineColorAndroid="rgba(0,0,0,0)"
-                        value={null}
-                      />
-                    </TextInput>
-                  </Input>
-                </Styled(Input)>
-              </View>
+                    />
+                  </TextInput>
+                </Input>
+              </Styled(Input)>
             </View>
-          </AnimatedComponent>
-        </TouchableOpacity>
-      </Item>
-    </Styled(Item)>
-  </TextInputComponent>
-</InjectIntl(TextInputComponent)>
+          </View>
+        </AnimatedComponent>
+      </TouchableOpacity>
+    </Item>
+  </Styled(Item)>
+</TextInputComponent>
 `;
 
 exports[`components <TextInputComponent /> renders text input component correctly 2`] = `
-<InjectIntl(TextInputComponent)
-  hiddenText={true}
+<TextInputComponent
+  category="field"
+  clearButton={false}
+  defaultText={null}
+  headerLabel={null}
+  hiddenText={null}
   intl={
     Object {
       "defaultFormats": Object {},
@@ -348,57 +275,45 @@ exports[`components <TextInputComponent /> renders text input component correctl
         "getRelativeFormat": [Function],
       },
       "locale": "en",
-      "messages": Object {},
+      "messages": Object {
+        "defaultText": "Default Text",
+        "footDescription": "Foot Description",
+        "headerLabel": "Header Label",
+        "label": "Label",
+        "title": "Text Input",
+      },
       "now": [Function],
       "textComponent": "span",
     }
   }
-  label="Secret"
+  label={null}
+  multiline={false}
+  type="text"
+  uid="secretExample"
+  value={null}
 >
-  <TextInputComponent
-    clearButton={false}
-    defaultText={null}
-    headerLabel={null}
-    hiddenText={true}
-    intl={
-      Object {
-        "defaultFormats": Object {},
-        "defaultLocale": "en",
-        "formatDate": [Function],
-        "formatHTMLMessage": [Function],
-        "formatMessage": [Function],
-        "formatNumber": [Function],
-        "formatPlural": [Function],
-        "formatRelative": [Function],
-        "formatTime": [Function],
-        "formats": Object {},
-        "formatters": Object {
-          "getDateTimeFormat": [Function],
-          "getMessageFormat": [Function],
-          "getNumberFormat": [Function],
-          "getPluralFormat": [Function],
-          "getRelativeFormat": [Function],
-        },
-        "locale": "en",
-        "messages": Object {
-          "defaultText": "Default Text",
-          "footDescription": "Foot Description",
-          "headerLabel": "Header Label",
-          "label": "Label",
-          "title": "Text Input",
-        },
-        "now": [Function],
-        "textComponent": "span",
-      }
-    }
-    label="Secret"
-    multiline={false}
-    value={null}
+  <Styled(Item)
+    stackedLabel={false}
   >
-    <Styled(Item)
+    <Item
       stackedLabel={false}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "borderColor": "#D9D5DC",
+          "borderLeftWidth": 0,
+          "borderRightWidth": 0,
+          "borderTopWidth": 0,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "marginLeft": 2,
+        }
+      }
     >
-      <Item
+      <TouchableOpacity
+        activeOpacity={1}
+        focusedOpacity={0.7}
         stackedLabel={false}
         style={
           Object {
@@ -414,25 +329,35 @@ exports[`components <TextInputComponent /> renders text input component correctl
           }
         }
       >
-        <TouchableOpacity
-          activeOpacity={1}
-          focusedOpacity={0.7}
-          stackedLabel={false}
+        <AnimatedComponent
+          accessible={true}
+          isTVSelectable={true}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
           style={
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "transparent",
-              "borderColor": "#D9D5DC",
-              "borderLeftWidth": 0,
-              "borderRightWidth": 0,
-              "borderTopWidth": 0,
-              "borderWidth": 1,
-              "flexDirection": "row",
-              "marginLeft": 2,
-            }
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderColor": "#D9D5DC",
+                "borderLeftWidth": 0,
+                "borderRightWidth": 0,
+                "borderTopWidth": 0,
+                "borderWidth": 1,
+                "flexDirection": "row",
+                "marginLeft": 2,
+              },
+              Object {
+                "opacity": 1,
+              },
+            ]
           }
         >
-          <AnimatedComponent
+          <View
             accessible={true}
             isTVSelectable={true}
             onResponderGrant={[Function]}
@@ -442,22 +367,18 @@ exports[`components <TextInputComponent /> renders text input component correctl
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "backgroundColor": "transparent",
-                  "borderColor": "#D9D5DC",
-                  "borderLeftWidth": 0,
-                  "borderRightWidth": 0,
-                  "borderTopWidth": 0,
-                  "borderWidth": 1,
-                  "flexDirection": "row",
-                  "marginLeft": 2,
-                },
-                Object {
-                  "opacity": 1,
-                },
-              ]
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderColor": "#D9D5DC",
+                "borderLeftWidth": 0,
+                "borderRightWidth": 0,
+                "borderTopWidth": 0,
+                "borderWidth": 1,
+                "flexDirection": "row",
+                "marginLeft": 2,
+                "opacity": 1,
+              }
             }
           >
             <View
@@ -484,100 +405,47 @@ exports[`components <TextInputComponent /> renders text input component correctl
                 }
               }
             >
-              <View
-                accessible={true}
-                isTVSelectable={true}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
+              <Styled(Input)
+                multiline={false}
+                onChangeText={[Function]}
+                onContentSizeChange={[Function]}
+                placeholder={null}
+                secureTextEntry={null}
                 style={
                   Object {
-                    "alignItems": "center",
-                    "backgroundColor": "transparent",
-                    "borderColor": "#D9D5DC",
-                    "borderLeftWidth": 0,
-                    "borderRightWidth": 0,
-                    "borderTopWidth": 0,
-                    "borderWidth": 1,
-                    "flexDirection": "row",
-                    "marginLeft": 2,
-                    "opacity": 1,
+                    "height": undefined,
                   }
                 }
+                value={null}
               >
-                <Styled(Label)>
-                  <Label
-                    style={
-                      Object {
-                        "color": "#575757",
-                        "fontSize": 17,
-                        "paddingRight": 5,
-                      }
-                    }
-                  >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                      style={
-                        Object {
-                          "color": "#575757",
-                          "fontSize": 17,
-                          "paddingRight": 5,
-                        }
-                      }
-                    >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Object {
-                            "color": "#575757",
-                            "fontSize": 17,
-                            "paddingRight": 5,
-                          }
-                        }
-                      >
-                        <Text
-                          accessible={true}
-                          allowFontScaling={true}
-                          ellipsizeMode="tail"
-                        >
-                          <Text
-                            accessible={true}
-                            allowFontScaling={true}
-                            ellipsizeMode="tail"
-                          >
-                            Secret
-                          </Text>
-                        </Text>
-                      </Text>
-                    </Text>
-                  </Label>
-                </Styled(Label)>
-                <Styled(Input)
+                <Input
                   multiline={false}
                   onChangeText={[Function]}
                   onContentSizeChange={[Function]}
                   placeholder={null}
-                  secureTextEntry={true}
+                  secureTextEntry={null}
                   style={
                     Object {
-                      "height": undefined,
+                      "color": "#000",
+                      "flex": 1,
+                      "fontSize": 17,
+                      "height": 50,
+                      "lineHeight": 24,
+                      "paddingLeft": 5,
+                      "paddingRight": 5,
+                      "top": 1.5,
                     }
                   }
                   value={null}
                 >
-                  <Input
+                  <TextInput
+                    editable={true}
                     multiline={false}
                     onChangeText={[Function]}
                     onContentSizeChange={[Function]}
                     placeholder={null}
-                    secureTextEntry={true}
+                    placeholderTextColor="#575757"
+                    secureTextEntry={null}
                     style={
                       Object {
                         "color": "#000",
@@ -590,6 +458,7 @@ exports[`components <TextInputComponent /> renders text input component correctl
                         "top": 1.5,
                       }
                     }
+                    underlineColorAndroid="rgba(0,0,0,0)"
                     value={null}
                   >
                     <TextInput
@@ -599,7 +468,7 @@ exports[`components <TextInputComponent /> renders text input component correctl
                       onContentSizeChange={[Function]}
                       placeholder={null}
                       placeholderTextColor="#575757"
-                      secureTextEntry={true}
+                      secureTextEntry={null}
                       style={
                         Object {
                           "color": "#000",
@@ -614,46 +483,26 @@ exports[`components <TextInputComponent /> renders text input component correctl
                       }
                       underlineColorAndroid="rgba(0,0,0,0)"
                       value={null}
-                    >
-                      <TextInput
-                        editable={true}
-                        multiline={false}
-                        onChangeText={[Function]}
-                        onContentSizeChange={[Function]}
-                        placeholder={null}
-                        placeholderTextColor="#575757"
-                        secureTextEntry={true}
-                        style={
-                          Object {
-                            "color": "#000",
-                            "flex": 1,
-                            "fontSize": 17,
-                            "height": 50,
-                            "lineHeight": 24,
-                            "paddingLeft": 5,
-                            "paddingRight": 5,
-                            "top": 1.5,
-                          }
-                        }
-                        underlineColorAndroid="rgba(0,0,0,0)"
-                        value={null}
-                      />
-                    </TextInput>
-                  </Input>
-                </Styled(Input)>
-              </View>
+                    />
+                  </TextInput>
+                </Input>
+              </Styled(Input)>
             </View>
-          </AnimatedComponent>
-        </TouchableOpacity>
-      </Item>
-    </Styled(Item)>
-  </TextInputComponent>
-</InjectIntl(TextInputComponent)>
+          </View>
+        </AnimatedComponent>
+      </TouchableOpacity>
+    </Item>
+  </Styled(Item)>
+</TextInputComponent>
 `;
 
 exports[`components <TextInputComponent /> renders text input component correctly 3`] = `
-<InjectIntl(TextInputComponent)
-  clearButton={true}
+<TextInputComponent
+  category="field"
+  clearButton={false}
+  defaultText={null}
+  headerLabel={null}
+  hiddenText={null}
   intl={
     Object {
       "defaultFormats": Object {},
@@ -674,58 +523,45 @@ exports[`components <TextInputComponent /> renders text input component correctl
         "getRelativeFormat": [Function],
       },
       "locale": "en",
-      "messages": Object {},
+      "messages": Object {
+        "defaultText": "Default Text",
+        "footDescription": "Foot Description",
+        "headerLabel": "Header Label",
+        "label": "Label",
+        "title": "Text Input",
+      },
       "now": [Function],
       "textComponent": "span",
     }
   }
-  label="Value 1"
-  value="Delete Me"
+  label={null}
+  multiline={false}
+  type="text"
+  uid="clearExample"
+  value={null}
 >
-  <TextInputComponent
-    clearButton={true}
-    defaultText={null}
-    headerLabel={null}
-    hiddenText={null}
-    intl={
-      Object {
-        "defaultFormats": Object {},
-        "defaultLocale": "en",
-        "formatDate": [Function],
-        "formatHTMLMessage": [Function],
-        "formatMessage": [Function],
-        "formatNumber": [Function],
-        "formatPlural": [Function],
-        "formatRelative": [Function],
-        "formatTime": [Function],
-        "formats": Object {},
-        "formatters": Object {
-          "getDateTimeFormat": [Function],
-          "getMessageFormat": [Function],
-          "getNumberFormat": [Function],
-          "getPluralFormat": [Function],
-          "getRelativeFormat": [Function],
-        },
-        "locale": "en",
-        "messages": Object {
-          "defaultText": "Default Text",
-          "footDescription": "Foot Description",
-          "headerLabel": "Header Label",
-          "label": "Label",
-          "title": "Text Input",
-        },
-        "now": [Function],
-        "textComponent": "span",
-      }
-    }
-    label="Value 1"
-    multiline={false}
-    value="Delete Me"
+  <Styled(Item)
+    stackedLabel={false}
   >
-    <Styled(Item)
+    <Item
       stackedLabel={false}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "borderColor": "#D9D5DC",
+          "borderLeftWidth": 0,
+          "borderRightWidth": 0,
+          "borderTopWidth": 0,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "marginLeft": 2,
+        }
+      }
     >
-      <Item
+      <TouchableOpacity
+        activeOpacity={1}
+        focusedOpacity={0.7}
         stackedLabel={false}
         style={
           Object {
@@ -741,25 +577,35 @@ exports[`components <TextInputComponent /> renders text input component correctl
           }
         }
       >
-        <TouchableOpacity
-          activeOpacity={1}
-          focusedOpacity={0.7}
-          stackedLabel={false}
+        <AnimatedComponent
+          accessible={true}
+          isTVSelectable={true}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
           style={
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "transparent",
-              "borderColor": "#D9D5DC",
-              "borderLeftWidth": 0,
-              "borderRightWidth": 0,
-              "borderTopWidth": 0,
-              "borderWidth": 1,
-              "flexDirection": "row",
-              "marginLeft": 2,
-            }
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderColor": "#D9D5DC",
+                "borderLeftWidth": 0,
+                "borderRightWidth": 0,
+                "borderTopWidth": 0,
+                "borderWidth": 1,
+                "flexDirection": "row",
+                "marginLeft": 2,
+              },
+              Object {
+                "opacity": 1,
+              },
+            ]
           }
         >
-          <AnimatedComponent
+          <View
             accessible={true}
             isTVSelectable={true}
             onResponderGrant={[Function]}
@@ -769,22 +615,18 @@ exports[`components <TextInputComponent /> renders text input component correctl
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "backgroundColor": "transparent",
-                  "borderColor": "#D9D5DC",
-                  "borderLeftWidth": 0,
-                  "borderRightWidth": 0,
-                  "borderTopWidth": 0,
-                  "borderWidth": 1,
-                  "flexDirection": "row",
-                  "marginLeft": 2,
-                },
-                Object {
-                  "opacity": 1,
-                },
-              ]
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderColor": "#D9D5DC",
+                "borderLeftWidth": 0,
+                "borderRightWidth": 0,
+                "borderTopWidth": 0,
+                "borderWidth": 1,
+                "flexDirection": "row",
+                "marginLeft": 2,
+                "opacity": 1,
+              }
             }
           >
             <View
@@ -811,82 +653,20 @@ exports[`components <TextInputComponent /> renders text input component correctl
                 }
               }
             >
-              <View
-                accessible={true}
-                isTVSelectable={true}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
+              <Styled(Input)
+                multiline={false}
+                onChangeText={[Function]}
+                onContentSizeChange={[Function]}
+                placeholder={null}
+                secureTextEntry={null}
                 style={
                   Object {
-                    "alignItems": "center",
-                    "backgroundColor": "transparent",
-                    "borderColor": "#D9D5DC",
-                    "borderLeftWidth": 0,
-                    "borderRightWidth": 0,
-                    "borderTopWidth": 0,
-                    "borderWidth": 1,
-                    "flexDirection": "row",
-                    "marginLeft": 2,
-                    "opacity": 1,
+                    "height": undefined,
                   }
                 }
+                value={null}
               >
-                <Styled(Label)>
-                  <Label
-                    style={
-                      Object {
-                        "color": "#575757",
-                        "fontSize": 17,
-                        "paddingRight": 5,
-                      }
-                    }
-                  >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                      style={
-                        Object {
-                          "color": "#575757",
-                          "fontSize": 17,
-                          "paddingRight": 5,
-                        }
-                      }
-                    >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Object {
-                            "color": "#575757",
-                            "fontSize": 17,
-                            "paddingRight": 5,
-                          }
-                        }
-                      >
-                        <Text
-                          accessible={true}
-                          allowFontScaling={true}
-                          ellipsizeMode="tail"
-                        >
-                          <Text
-                            accessible={true}
-                            allowFontScaling={true}
-                            ellipsizeMode="tail"
-                          >
-                            Value 1
-                          </Text>
-                        </Text>
-                      </Text>
-                    </Text>
-                  </Label>
-                </Styled(Label)>
-                <Styled(Input)
+                <Input
                   multiline={false}
                   onChangeText={[Function]}
                   onContentSizeChange={[Function]}
@@ -894,16 +674,25 @@ exports[`components <TextInputComponent /> renders text input component correctl
                   secureTextEntry={null}
                   style={
                     Object {
-                      "height": undefined,
+                      "color": "#000",
+                      "flex": 1,
+                      "fontSize": 17,
+                      "height": 50,
+                      "lineHeight": 24,
+                      "paddingLeft": 5,
+                      "paddingRight": 5,
+                      "top": 1.5,
                     }
                   }
-                  value="Delete Me"
+                  value={null}
                 >
-                  <Input
+                  <TextInput
+                    editable={true}
                     multiline={false}
                     onChangeText={[Function]}
                     onContentSizeChange={[Function]}
                     placeholder={null}
+                    placeholderTextColor="#575757"
                     secureTextEntry={null}
                     style={
                       Object {
@@ -917,7 +706,8 @@ exports[`components <TextInputComponent /> renders text input component correctl
                         "top": 1.5,
                       }
                     }
-                    value="Delete Me"
+                    underlineColorAndroid="rgba(0,0,0,0)"
+                    value={null}
                   >
                     <TextInput
                       editable={true}
@@ -940,160 +730,27 @@ exports[`components <TextInputComponent /> renders text input component correctl
                         }
                       }
                       underlineColorAndroid="rgba(0,0,0,0)"
-                      value="Delete Me"
-                    >
-                      <TextInput
-                        editable={true}
-                        multiline={false}
-                        onChangeText={[Function]}
-                        onContentSizeChange={[Function]}
-                        placeholder={null}
-                        placeholderTextColor="#575757"
-                        secureTextEntry={null}
-                        style={
-                          Object {
-                            "color": "#000",
-                            "flex": 1,
-                            "fontSize": 17,
-                            "height": 50,
-                            "lineHeight": 24,
-                            "paddingLeft": 5,
-                            "paddingRight": 5,
-                            "top": 1.5,
-                          }
-                        }
-                        underlineColorAndroid="rgba(0,0,0,0)"
-                        value="Delete Me"
-                      />
-                    </TextInput>
-                  </Input>
-                </Styled(Input)>
-                <Styled(Icon)
-                  active={true}
-                  name="backspace"
-                  onPress={[Function]}
-                >
-                  <Icon
-                    active={true}
-                    name="backspace"
-                    onPress={[Function]}
-                    style={
-                      Object {
-                        "color": "#000",
-                        "fontSize": 24,
-                        "paddingRight": 8,
-                      }
-                    }
-                  >
-                    <Styled(IconNB)
-                      active={true}
-                      name="ios-backspace"
-                      onPress={[Function]}
-                      style={
-                        Object {
-                          "color": "#000",
-                          "fontSize": 24,
-                          "paddingRight": 8,
-                        }
-                      }
-                    >
-                      <IconNB
-                        active={true}
-                        name="ios-backspace"
-                        onPress={[Function]}
-                        style={
-                          Object {
-                            "color": "#000",
-                            "fontSize": 24,
-                            "paddingRight": 8,
-                          }
-                        }
-                      >
-                        <Icon
-                          active={true}
-                          allowFontScaling={false}
-                          name="ios-backspace"
-                          onPress={[Function]}
-                          size={12}
-                          style={
-                            Object {
-                              "color": "#000",
-                              "fontSize": 24,
-                              "paddingRight": 8,
-                            }
-                          }
-                        >
-                          <Text
-                            accessible={true}
-                            active={true}
-                            allowFontScaling={false}
-                            ellipsizeMode="tail"
-                            onPress={[Function]}
-                            style={
-                              Array [
-                                Object {
-                                  "color": undefined,
-                                  "fontSize": 12,
-                                },
-                                Object {
-                                  "color": "#000",
-                                  "fontSize": 24,
-                                  "paddingRight": 8,
-                                },
-                                Object {
-                                  "fontFamily": "Ionicons",
-                                  "fontStyle": "normal",
-                                  "fontWeight": "normal",
-                                },
-                              ]
-                            }
-                          >
-                            <Text
-                              accessible={true}
-                              active={true}
-                              allowFontScaling={false}
-                              ellipsizeMode="tail"
-                              onPress={[Function]}
-                              style={
-                                Array [
-                                  Object {
-                                    "color": undefined,
-                                    "fontSize": 12,
-                                  },
-                                  Object {
-                                    "color": "#000",
-                                    "fontSize": 24,
-                                    "paddingRight": 8,
-                                  },
-                                  Object {
-                                    "fontFamily": "Ionicons",
-                                    "fontStyle": "normal",
-                                    "fontWeight": "normal",
-                                  },
-                                ]
-                              }
-                            >
-                              
-                            </Text>
-                          </Text>
-                        </Icon>
-                      </IconNB>
-                    </Styled(IconNB)>
-                  </Icon>
-                </Styled(Icon)>
-              </View>
+                      value={null}
+                    />
+                  </TextInput>
+                </Input>
+              </Styled(Input)>
             </View>
-          </AnimatedComponent>
-        </TouchableOpacity>
-      </Item>
-    </Styled(Item)>
-  </TextInputComponent>
-</InjectIntl(TextInputComponent)>
+          </View>
+        </AnimatedComponent>
+      </TouchableOpacity>
+    </Item>
+  </Styled(Item)>
+</TextInputComponent>
 `;
 
 exports[`components <TextInputComponent /> renders text input component correctly 4`] = `
-<InjectIntl(TextInputComponent)
-  defaultText="Replace Me"
+<TextInputComponent
+  category="field"
+  clearButton={false}
+  defaultText={null}
+  headerLabel={null}
+  hiddenText={null}
   intl={
     Object {
       "defaultFormats": Object {},
@@ -1114,57 +771,45 @@ exports[`components <TextInputComponent /> renders text input component correctl
         "getRelativeFormat": [Function],
       },
       "locale": "en",
-      "messages": Object {},
+      "messages": Object {
+        "defaultText": "Default Text",
+        "footDescription": "Foot Description",
+        "headerLabel": "Header Label",
+        "label": "Label",
+        "title": "Text Input",
+      },
       "now": [Function],
       "textComponent": "span",
     }
   }
-  label="Value 2"
+  label={null}
+  multiline={false}
+  type="text"
+  uid="placeHolderExample"
+  value={null}
 >
-  <TextInputComponent
-    clearButton={false}
-    defaultText="Replace Me"
-    headerLabel={null}
-    hiddenText={null}
-    intl={
-      Object {
-        "defaultFormats": Object {},
-        "defaultLocale": "en",
-        "formatDate": [Function],
-        "formatHTMLMessage": [Function],
-        "formatMessage": [Function],
-        "formatNumber": [Function],
-        "formatPlural": [Function],
-        "formatRelative": [Function],
-        "formatTime": [Function],
-        "formats": Object {},
-        "formatters": Object {
-          "getDateTimeFormat": [Function],
-          "getMessageFormat": [Function],
-          "getNumberFormat": [Function],
-          "getPluralFormat": [Function],
-          "getRelativeFormat": [Function],
-        },
-        "locale": "en",
-        "messages": Object {
-          "defaultText": "Default Text",
-          "footDescription": "Foot Description",
-          "headerLabel": "Header Label",
-          "label": "Label",
-          "title": "Text Input",
-        },
-        "now": [Function],
-        "textComponent": "span",
-      }
-    }
-    label="Value 2"
-    multiline={false}
-    value={null}
+  <Styled(Item)
+    stackedLabel={false}
   >
-    <Styled(Item)
+    <Item
       stackedLabel={false}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "borderColor": "#D9D5DC",
+          "borderLeftWidth": 0,
+          "borderRightWidth": 0,
+          "borderTopWidth": 0,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "marginLeft": 2,
+        }
+      }
     >
-      <Item
+      <TouchableOpacity
+        activeOpacity={1}
+        focusedOpacity={0.7}
         stackedLabel={false}
         style={
           Object {
@@ -1180,25 +825,35 @@ exports[`components <TextInputComponent /> renders text input component correctl
           }
         }
       >
-        <TouchableOpacity
-          activeOpacity={1}
-          focusedOpacity={0.7}
-          stackedLabel={false}
+        <AnimatedComponent
+          accessible={true}
+          isTVSelectable={true}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
           style={
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "transparent",
-              "borderColor": "#D9D5DC",
-              "borderLeftWidth": 0,
-              "borderRightWidth": 0,
-              "borderTopWidth": 0,
-              "borderWidth": 1,
-              "flexDirection": "row",
-              "marginLeft": 2,
-            }
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderColor": "#D9D5DC",
+                "borderLeftWidth": 0,
+                "borderRightWidth": 0,
+                "borderTopWidth": 0,
+                "borderWidth": 1,
+                "flexDirection": "row",
+                "marginLeft": 2,
+              },
+              Object {
+                "opacity": 1,
+              },
+            ]
           }
         >
-          <AnimatedComponent
+          <View
             accessible={true}
             isTVSelectable={true}
             onResponderGrant={[Function]}
@@ -1208,22 +863,18 @@ exports[`components <TextInputComponent /> renders text input component correctl
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "backgroundColor": "transparent",
-                  "borderColor": "#D9D5DC",
-                  "borderLeftWidth": 0,
-                  "borderRightWidth": 0,
-                  "borderTopWidth": 0,
-                  "borderWidth": 1,
-                  "flexDirection": "row",
-                  "marginLeft": 2,
-                },
-                Object {
-                  "opacity": 1,
-                },
-              ]
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderColor": "#D9D5DC",
+                "borderLeftWidth": 0,
+                "borderRightWidth": 0,
+                "borderTopWidth": 0,
+                "borderWidth": 1,
+                "flexDirection": "row",
+                "marginLeft": 2,
+                "opacity": 1,
+              }
             }
           >
             <View
@@ -1250,99 +901,46 @@ exports[`components <TextInputComponent /> renders text input component correctl
                 }
               }
             >
-              <View
-                accessible={true}
-                isTVSelectable={true}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
+              <Styled(Input)
+                multiline={false}
+                onChangeText={[Function]}
+                onContentSizeChange={[Function]}
+                placeholder={null}
+                secureTextEntry={null}
                 style={
                   Object {
-                    "alignItems": "center",
-                    "backgroundColor": "transparent",
-                    "borderColor": "#D9D5DC",
-                    "borderLeftWidth": 0,
-                    "borderRightWidth": 0,
-                    "borderTopWidth": 0,
-                    "borderWidth": 1,
-                    "flexDirection": "row",
-                    "marginLeft": 2,
-                    "opacity": 1,
+                    "height": undefined,
                   }
                 }
+                value={null}
               >
-                <Styled(Label)>
-                  <Label
-                    style={
-                      Object {
-                        "color": "#575757",
-                        "fontSize": 17,
-                        "paddingRight": 5,
-                      }
-                    }
-                  >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                      style={
-                        Object {
-                          "color": "#575757",
-                          "fontSize": 17,
-                          "paddingRight": 5,
-                        }
-                      }
-                    >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Object {
-                            "color": "#575757",
-                            "fontSize": 17,
-                            "paddingRight": 5,
-                          }
-                        }
-                      >
-                        <Text
-                          accessible={true}
-                          allowFontScaling={true}
-                          ellipsizeMode="tail"
-                        >
-                          <Text
-                            accessible={true}
-                            allowFontScaling={true}
-                            ellipsizeMode="tail"
-                          >
-                            Value 2
-                          </Text>
-                        </Text>
-                      </Text>
-                    </Text>
-                  </Label>
-                </Styled(Label)>
-                <Styled(Input)
+                <Input
                   multiline={false}
                   onChangeText={[Function]}
                   onContentSizeChange={[Function]}
-                  placeholder="Replace Me"
+                  placeholder={null}
                   secureTextEntry={null}
                   style={
                     Object {
-                      "height": undefined,
+                      "color": "#000",
+                      "flex": 1,
+                      "fontSize": 17,
+                      "height": 50,
+                      "lineHeight": 24,
+                      "paddingLeft": 5,
+                      "paddingRight": 5,
+                      "top": 1.5,
                     }
                   }
                   value={null}
                 >
-                  <Input
+                  <TextInput
+                    editable={true}
                     multiline={false}
                     onChangeText={[Function]}
                     onContentSizeChange={[Function]}
-                    placeholder="Replace Me"
+                    placeholder={null}
+                    placeholderTextColor="#575757"
                     secureTextEntry={null}
                     style={
                       Object {
@@ -1356,6 +954,7 @@ exports[`components <TextInputComponent /> renders text input component correctl
                         "top": 1.5,
                       }
                     }
+                    underlineColorAndroid="rgba(0,0,0,0)"
                     value={null}
                   >
                     <TextInput
@@ -1363,7 +962,7 @@ exports[`components <TextInputComponent /> renders text input component correctl
                       multiline={false}
                       onChangeText={[Function]}
                       onContentSizeChange={[Function]}
-                      placeholder="Replace Me"
+                      placeholder={null}
                       placeholderTextColor="#575757"
                       secureTextEntry={null}
                       style={
@@ -1380,46 +979,26 @@ exports[`components <TextInputComponent /> renders text input component correctl
                       }
                       underlineColorAndroid="rgba(0,0,0,0)"
                       value={null}
-                    >
-                      <TextInput
-                        editable={true}
-                        multiline={false}
-                        onChangeText={[Function]}
-                        onContentSizeChange={[Function]}
-                        placeholder="Replace Me"
-                        placeholderTextColor="#575757"
-                        secureTextEntry={null}
-                        style={
-                          Object {
-                            "color": "#000",
-                            "flex": 1,
-                            "fontSize": 17,
-                            "height": 50,
-                            "lineHeight": 24,
-                            "paddingLeft": 5,
-                            "paddingRight": 5,
-                            "top": 1.5,
-                          }
-                        }
-                        underlineColorAndroid="rgba(0,0,0,0)"
-                        value={null}
-                      />
-                    </TextInput>
-                  </Input>
-                </Styled(Input)>
-              </View>
+                    />
+                  </TextInput>
+                </Input>
+              </Styled(Input)>
             </View>
-          </AnimatedComponent>
-        </TouchableOpacity>
-      </Item>
-    </Styled(Item)>
-  </TextInputComponent>
-</InjectIntl(TextInputComponent)>
+          </View>
+        </AnimatedComponent>
+      </TouchableOpacity>
+    </Item>
+  </Styled(Item)>
+</TextInputComponent>
 `;
 
 exports[`components <TextInputComponent /> renders text input component correctly 5`] = `
-<InjectIntl(TextInputComponent)
-  headerLabel="Header Label"
+<TextInputComponent
+  category="field"
+  clearButton={false}
+  defaultText={null}
+  headerLabel={null}
+  hiddenText={null}
   intl={
     Object {
       "defaultFormats": Object {},
@@ -1440,57 +1019,46 @@ exports[`components <TextInputComponent /> renders text input component correctl
         "getRelativeFormat": [Function],
       },
       "locale": "en",
-      "messages": Object {},
+      "messages": Object {
+        "defaultText": "Default Text",
+        "footDescription": "Foot Description",
+        "headerLabel": "Header Label",
+        "label": "Label",
+        "title": "Text Input",
+      },
       "now": [Function],
       "textComponent": "span",
     }
   }
+  label={null}
+  multiline={false}
+  type="text"
+  uid="headerExample"
+  value={null}
 >
-  <TextInputComponent
-    clearButton={false}
-    defaultText={null}
-    headerLabel="Header Label"
-    hiddenText={null}
-    intl={
-      Object {
-        "defaultFormats": Object {},
-        "defaultLocale": "en",
-        "formatDate": [Function],
-        "formatHTMLMessage": [Function],
-        "formatMessage": [Function],
-        "formatNumber": [Function],
-        "formatPlural": [Function],
-        "formatRelative": [Function],
-        "formatTime": [Function],
-        "formats": Object {},
-        "formatters": Object {
-          "getDateTimeFormat": [Function],
-          "getMessageFormat": [Function],
-          "getNumberFormat": [Function],
-          "getPluralFormat": [Function],
-          "getRelativeFormat": [Function],
-        },
-        "locale": "en",
-        "messages": Object {
-          "defaultText": "Default Text",
-          "footDescription": "Foot Description",
-          "headerLabel": "Header Label",
-          "label": "Label",
-          "title": "Text Input",
-        },
-        "now": [Function],
-        "textComponent": "span",
-      }
-    }
-    label={null}
-    multiline={false}
-    value={null}
+  <Styled(Item)
+    stackedLabel={false}
   >
-    <Styled(Item)
-      stackedLabel={true}
+    <Item
+      stackedLabel={false}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "borderColor": "#D9D5DC",
+          "borderLeftWidth": 0,
+          "borderRightWidth": 0,
+          "borderTopWidth": 0,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "marginLeft": 2,
+        }
+      }
     >
-      <Item
-        stackedLabel={true}
+      <TouchableOpacity
+        activeOpacity={1}
+        focusedOpacity={0.7}
+        stackedLabel={false}
         style={
           Object {
             "alignItems": "center",
@@ -1500,30 +1068,40 @@ exports[`components <TextInputComponent /> renders text input component correctl
             "borderRightWidth": 0,
             "borderTopWidth": 0,
             "borderWidth": 1,
-            "flexDirection": null,
+            "flexDirection": "row",
             "marginLeft": 2,
           }
         }
       >
-        <TouchableOpacity
-          activeOpacity={1}
-          focusedOpacity={0.7}
-          stackedLabel={true}
+        <AnimatedComponent
+          accessible={true}
+          isTVSelectable={true}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
           style={
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "transparent",
-              "borderColor": "#D9D5DC",
-              "borderLeftWidth": 0,
-              "borderRightWidth": 0,
-              "borderTopWidth": 0,
-              "borderWidth": 1,
-              "flexDirection": null,
-              "marginLeft": 2,
-            }
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderColor": "#D9D5DC",
+                "borderLeftWidth": 0,
+                "borderRightWidth": 0,
+                "borderTopWidth": 0,
+                "borderWidth": 1,
+                "flexDirection": "row",
+                "marginLeft": 2,
+              },
+              Object {
+                "opacity": 1,
+              },
+            ]
           }
         >
-          <AnimatedComponent
+          <View
             accessible={true}
             isTVSelectable={true}
             onResponderGrant={[Function]}
@@ -1533,22 +1111,18 @@ exports[`components <TextInputComponent /> renders text input component correctl
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "backgroundColor": "transparent",
-                  "borderColor": "#D9D5DC",
-                  "borderLeftWidth": 0,
-                  "borderRightWidth": 0,
-                  "borderTopWidth": 0,
-                  "borderWidth": 1,
-                  "flexDirection": null,
-                  "marginLeft": 2,
-                },
-                Object {
-                  "opacity": 1,
-                },
-              ]
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderColor": "#D9D5DC",
+                "borderLeftWidth": 0,
+                "borderRightWidth": 0,
+                "borderTopWidth": 0,
+                "borderWidth": 1,
+                "flexDirection": "row",
+                "marginLeft": 2,
+                "opacity": 1,
+              }
             }
           >
             <View
@@ -1569,88 +1143,26 @@ exports[`components <TextInputComponent /> renders text input component correctl
                   "borderRightWidth": 0,
                   "borderTopWidth": 0,
                   "borderWidth": 1,
-                  "flexDirection": null,
+                  "flexDirection": "row",
                   "marginLeft": 2,
                   "opacity": 1,
                 }
               }
             >
-              <View
-                accessible={true}
-                isTVSelectable={true}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
+              <Styled(Input)
+                multiline={false}
+                onChangeText={[Function]}
+                onContentSizeChange={[Function]}
+                placeholder={null}
+                secureTextEntry={null}
                 style={
                   Object {
-                    "alignItems": "center",
-                    "backgroundColor": "transparent",
-                    "borderColor": "#D9D5DC",
-                    "borderLeftWidth": 0,
-                    "borderRightWidth": 0,
-                    "borderTopWidth": 0,
-                    "borderWidth": 1,
-                    "flexDirection": null,
-                    "marginLeft": 2,
-                    "opacity": 1,
+                    "height": undefined,
                   }
                 }
+                value={null}
               >
-                <Styled(Label)>
-                  <Label
-                    style={
-                      Object {
-                        "color": "#575757",
-                        "fontSize": 17,
-                        "paddingRight": 5,
-                      }
-                    }
-                  >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                      style={
-                        Object {
-                          "color": "#575757",
-                          "fontSize": 17,
-                          "paddingRight": 5,
-                        }
-                      }
-                    >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Object {
-                            "color": "#575757",
-                            "fontSize": 17,
-                            "paddingRight": 5,
-                          }
-                        }
-                      >
-                        <Text
-                          accessible={true}
-                          allowFontScaling={true}
-                          ellipsizeMode="tail"
-                        >
-                          <Text
-                            accessible={true}
-                            allowFontScaling={true}
-                            ellipsizeMode="tail"
-                          >
-                            Header Label
-                          </Text>
-                        </Text>
-                      </Text>
-                    </Text>
-                  </Label>
-                </Styled(Label)>
-                <Styled(Input)
+                <Input
                   multiline={false}
                   onChangeText={[Function]}
                   onContentSizeChange={[Function]}
@@ -1658,16 +1170,25 @@ exports[`components <TextInputComponent /> renders text input component correctl
                   secureTextEntry={null}
                   style={
                     Object {
-                      "height": undefined,
+                      "color": "#000",
+                      "flex": 1,
+                      "fontSize": 17,
+                      "height": 50,
+                      "lineHeight": 24,
+                      "paddingLeft": 5,
+                      "paddingRight": 5,
+                      "top": 1.5,
                     }
                   }
                   value={null}
                 >
-                  <Input
+                  <TextInput
+                    editable={true}
                     multiline={false}
                     onChangeText={[Function]}
                     onContentSizeChange={[Function]}
                     placeholder={null}
+                    placeholderTextColor="#575757"
                     secureTextEntry={null}
                     style={
                       Object {
@@ -1681,6 +1202,7 @@ exports[`components <TextInputComponent /> renders text input component correctl
                         "top": 1.5,
                       }
                     }
+                    underlineColorAndroid="rgba(0,0,0,0)"
                     value={null}
                   >
                     <TextInput
@@ -1705,46 +1227,26 @@ exports[`components <TextInputComponent /> renders text input component correctl
                       }
                       underlineColorAndroid="rgba(0,0,0,0)"
                       value={null}
-                    >
-                      <TextInput
-                        editable={true}
-                        multiline={false}
-                        onChangeText={[Function]}
-                        onContentSizeChange={[Function]}
-                        placeholder={null}
-                        placeholderTextColor="#575757"
-                        secureTextEntry={null}
-                        style={
-                          Object {
-                            "color": "#000",
-                            "flex": 1,
-                            "fontSize": 17,
-                            "height": 50,
-                            "lineHeight": 24,
-                            "paddingLeft": 5,
-                            "paddingRight": 5,
-                            "top": 1.5,
-                          }
-                        }
-                        underlineColorAndroid="rgba(0,0,0,0)"
-                        value={null}
-                      />
-                    </TextInput>
-                  </Input>
-                </Styled(Input)>
-              </View>
+                    />
+                  </TextInput>
+                </Input>
+              </Styled(Input)>
             </View>
-          </AnimatedComponent>
-        </TouchableOpacity>
-      </Item>
-    </Styled(Item)>
-  </TextInputComponent>
-</InjectIntl(TextInputComponent)>
+          </View>
+        </AnimatedComponent>
+      </TouchableOpacity>
+    </Item>
+  </Styled(Item)>
+</TextInputComponent>
 `;
 
 exports[`components <TextInputComponent /> renders text input component correctly 6`] = `
-<InjectIntl(TextInputComponent)
-  headerLabel="Description"
+<TextInputComponent
+  category="field"
+  clearButton={false}
+  defaultText={null}
+  headerLabel={null}
+  hiddenText={null}
   intl={
     Object {
       "defaultFormats": Object {},
@@ -1765,59 +1267,46 @@ exports[`components <TextInputComponent /> renders text input component correctl
         "getRelativeFormat": [Function],
       },
       "locale": "en",
-      "messages": Object {},
+      "messages": Object {
+        "defaultText": "Default Text",
+        "footDescription": "Foot Description",
+        "headerLabel": "Header Label",
+        "label": "Label",
+        "title": "Text Input",
+      },
       "now": [Function],
       "textComponent": "span",
     }
   }
-  multiline={true}
-  value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Itaque hic ipse iam pridem est reiectus; De ingenio eius in his disputationibus, non de moribus quaeritur. Nunc haec primum fortasse audientis servire debemus. Atqui iste locus est, Piso, tibi etiam atque etiam confirmandus, inquam;"
+  label={null}
+  multiline={false}
+  type="text"
+  uid="multilineExample"
+  value={null}
 >
-  <TextInputComponent
-    clearButton={false}
-    defaultText={null}
-    headerLabel="Description"
-    hiddenText={null}
-    intl={
-      Object {
-        "defaultFormats": Object {},
-        "defaultLocale": "en",
-        "formatDate": [Function],
-        "formatHTMLMessage": [Function],
-        "formatMessage": [Function],
-        "formatNumber": [Function],
-        "formatPlural": [Function],
-        "formatRelative": [Function],
-        "formatTime": [Function],
-        "formats": Object {},
-        "formatters": Object {
-          "getDateTimeFormat": [Function],
-          "getMessageFormat": [Function],
-          "getNumberFormat": [Function],
-          "getPluralFormat": [Function],
-          "getRelativeFormat": [Function],
-        },
-        "locale": "en",
-        "messages": Object {
-          "defaultText": "Default Text",
-          "footDescription": "Foot Description",
-          "headerLabel": "Header Label",
-          "label": "Label",
-          "title": "Text Input",
-        },
-        "now": [Function],
-        "textComponent": "span",
-      }
-    }
-    label={null}
-    multiline={true}
-    value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Itaque hic ipse iam pridem est reiectus; De ingenio eius in his disputationibus, non de moribus quaeritur. Nunc haec primum fortasse audientis servire debemus. Atqui iste locus est, Piso, tibi etiam atque etiam confirmandus, inquam;"
+  <Styled(Item)
+    stackedLabel={false}
   >
-    <Styled(Item)
-      stackedLabel={true}
+    <Item
+      stackedLabel={false}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "borderColor": "#D9D5DC",
+          "borderLeftWidth": 0,
+          "borderRightWidth": 0,
+          "borderTopWidth": 0,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "marginLeft": 2,
+        }
+      }
     >
-      <Item
-        stackedLabel={true}
+      <TouchableOpacity
+        activeOpacity={1}
+        focusedOpacity={0.7}
+        stackedLabel={false}
         style={
           Object {
             "alignItems": "center",
@@ -1827,30 +1316,40 @@ exports[`components <TextInputComponent /> renders text input component correctl
             "borderRightWidth": 0,
             "borderTopWidth": 0,
             "borderWidth": 1,
-            "flexDirection": null,
+            "flexDirection": "row",
             "marginLeft": 2,
           }
         }
       >
-        <TouchableOpacity
-          activeOpacity={1}
-          focusedOpacity={0.7}
-          stackedLabel={true}
+        <AnimatedComponent
+          accessible={true}
+          isTVSelectable={true}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
           style={
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "transparent",
-              "borderColor": "#D9D5DC",
-              "borderLeftWidth": 0,
-              "borderRightWidth": 0,
-              "borderTopWidth": 0,
-              "borderWidth": 1,
-              "flexDirection": null,
-              "marginLeft": 2,
-            }
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderColor": "#D9D5DC",
+                "borderLeftWidth": 0,
+                "borderRightWidth": 0,
+                "borderTopWidth": 0,
+                "borderWidth": 1,
+                "flexDirection": "row",
+                "marginLeft": 2,
+              },
+              Object {
+                "opacity": 1,
+              },
+            ]
           }
         >
-          <AnimatedComponent
+          <View
             accessible={true}
             isTVSelectable={true}
             onResponderGrant={[Function]}
@@ -1860,22 +1359,18 @@ exports[`components <TextInputComponent /> renders text input component correctl
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "backgroundColor": "transparent",
-                  "borderColor": "#D9D5DC",
-                  "borderLeftWidth": 0,
-                  "borderRightWidth": 0,
-                  "borderTopWidth": 0,
-                  "borderWidth": 1,
-                  "flexDirection": null,
-                  "marginLeft": 2,
-                },
-                Object {
-                  "opacity": 1,
-                },
-              ]
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderColor": "#D9D5DC",
+                "borderLeftWidth": 0,
+                "borderRightWidth": 0,
+                "borderTopWidth": 0,
+                "borderWidth": 1,
+                "flexDirection": "row",
+                "marginLeft": 2,
+                "opacity": 1,
+              }
             }
           >
             <View
@@ -1896,109 +1391,55 @@ exports[`components <TextInputComponent /> renders text input component correctl
                   "borderRightWidth": 0,
                   "borderTopWidth": 0,
                   "borderWidth": 1,
-                  "flexDirection": null,
+                  "flexDirection": "row",
                   "marginLeft": 2,
                   "opacity": 1,
                 }
               }
             >
-              <View
-                accessible={true}
-                isTVSelectable={true}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
+              <Styled(Input)
+                multiline={false}
+                onChangeText={[Function]}
+                onContentSizeChange={[Function]}
+                placeholder={null}
+                secureTextEntry={null}
                 style={
                   Object {
-                    "alignItems": "center",
-                    "backgroundColor": "transparent",
-                    "borderColor": "#D9D5DC",
-                    "borderLeftWidth": 0,
-                    "borderRightWidth": 0,
-                    "borderTopWidth": 0,
-                    "borderWidth": 1,
-                    "flexDirection": null,
-                    "marginLeft": 2,
-                    "opacity": 1,
+                    "height": undefined,
                   }
                 }
+                value={null}
               >
-                <Styled(Label)>
-                  <Label
-                    style={
-                      Object {
-                        "color": "#575757",
-                        "fontSize": 17,
-                        "paddingRight": 5,
-                      }
-                    }
-                  >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                      style={
-                        Object {
-                          "color": "#575757",
-                          "fontSize": 17,
-                          "paddingRight": 5,
-                        }
-                      }
-                    >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Object {
-                            "color": "#575757",
-                            "fontSize": 17,
-                            "paddingRight": 5,
-                          }
-                        }
-                      >
-                        <Text
-                          accessible={true}
-                          allowFontScaling={true}
-                          ellipsizeMode="tail"
-                        >
-                          <Text
-                            accessible={true}
-                            allowFontScaling={true}
-                            ellipsizeMode="tail"
-                          >
-                            Description
-                          </Text>
-                        </Text>
-                      </Text>
-                    </Text>
-                  </Label>
-                </Styled(Label)>
-                <Styled(Input)
-                  multiline={true}
+                <Input
+                  multiline={false}
                   onChangeText={[Function]}
                   onContentSizeChange={[Function]}
                   placeholder={null}
                   secureTextEntry={null}
                   style={
                     Object {
-                      "height": undefined,
+                      "color": "#000",
+                      "flex": 1,
+                      "fontSize": 17,
+                      "height": 50,
+                      "lineHeight": 24,
+                      "paddingLeft": 5,
+                      "paddingRight": 5,
+                      "top": 1.5,
                     }
                   }
-                  value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Itaque hic ipse iam pridem est reiectus; De ingenio eius in his disputationibus, non de moribus quaeritur. Nunc haec primum fortasse audientis servire debemus. Atqui iste locus est, Piso, tibi etiam atque etiam confirmandus, inquam;"
+                  value={null}
                 >
-                  <Input
-                    multiline={true}
+                  <TextInput
+                    editable={true}
+                    multiline={false}
                     onChangeText={[Function]}
                     onContentSizeChange={[Function]}
                     placeholder={null}
+                    placeholderTextColor="#575757"
                     secureTextEntry={null}
                     style={
                       Object {
-                        "alignSelf": "stretch",
                         "color": "#000",
                         "flex": 1,
                         "fontSize": 17,
@@ -2007,14 +1448,14 @@ exports[`components <TextInputComponent /> renders text input component correctl
                         "paddingLeft": 5,
                         "paddingRight": 5,
                         "top": 1.5,
-                        "width": null,
                       }
                     }
-                    value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Itaque hic ipse iam pridem est reiectus; De ingenio eius in his disputationibus, non de moribus quaeritur. Nunc haec primum fortasse audientis servire debemus. Atqui iste locus est, Piso, tibi etiam atque etiam confirmandus, inquam;"
+                    underlineColorAndroid="rgba(0,0,0,0)"
+                    value={null}
                   >
                     <TextInput
                       editable={true}
-                      multiline={true}
+                      multiline={false}
                       onChangeText={[Function]}
                       onContentSizeChange={[Function]}
                       placeholder={null}
@@ -2022,7 +1463,6 @@ exports[`components <TextInputComponent /> renders text input component correctl
                       secureTextEntry={null}
                       style={
                         Object {
-                          "alignSelf": "stretch",
                           "color": "#000",
                           "flex": 1,
                           "fontSize": 17,
@@ -2031,52 +1471,30 @@ exports[`components <TextInputComponent /> renders text input component correctl
                           "paddingLeft": 5,
                           "paddingRight": 5,
                           "top": 1.5,
-                          "width": null,
                         }
                       }
                       underlineColorAndroid="rgba(0,0,0,0)"
-                      value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Itaque hic ipse iam pridem est reiectus; De ingenio eius in his disputationibus, non de moribus quaeritur. Nunc haec primum fortasse audientis servire debemus. Atqui iste locus est, Piso, tibi etiam atque etiam confirmandus, inquam;"
-                    >
-                      <TextInput
-                        editable={true}
-                        multiline={true}
-                        onChangeText={[Function]}
-                        onContentSizeChange={[Function]}
-                        placeholder={null}
-                        placeholderTextColor="#575757"
-                        secureTextEntry={null}
-                        style={
-                          Object {
-                            "alignSelf": "stretch",
-                            "color": "#000",
-                            "flex": 1,
-                            "fontSize": 17,
-                            "height": 50,
-                            "lineHeight": 24,
-                            "paddingLeft": 5,
-                            "paddingRight": 5,
-                            "top": 1.5,
-                            "width": null,
-                          }
-                        }
-                        underlineColorAndroid="rgba(0,0,0,0)"
-                        value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Itaque hic ipse iam pridem est reiectus; De ingenio eius in his disputationibus, non de moribus quaeritur. Nunc haec primum fortasse audientis servire debemus. Atqui iste locus est, Piso, tibi etiam atque etiam confirmandus, inquam;"
-                      />
-                    </TextInput>
-                  </Input>
-                </Styled(Input)>
-              </View>
+                      value={null}
+                    />
+                  </TextInput>
+                </Input>
+              </Styled(Input)>
             </View>
-          </AnimatedComponent>
-        </TouchableOpacity>
-      </Item>
-    </Styled(Item)>
-  </TextInputComponent>
-</InjectIntl(TextInputComponent)>
+          </View>
+        </AnimatedComponent>
+      </TouchableOpacity>
+    </Item>
+  </Styled(Item)>
+</TextInputComponent>
 `;
 
 exports[`components <TextInputComponent /> renders text input component correctly 7`] = `
-<InjectIntl(TextInputComponent)
+<TextInputComponent
+  category="field"
+  clearButton={false}
+  defaultText={null}
+  headerLabel={null}
+  hiddenText={null}
   intl={
     Object {
       "defaultFormats": Object {},
@@ -2097,65 +1515,45 @@ exports[`components <TextInputComponent /> renders text input component correctl
         "getRelativeFormat": [Function],
       },
       "locale": "en",
-      "messages": Object {},
+      "messages": Object {
+        "defaultText": "Default Text",
+        "footDescription": "Foot Description",
+        "headerLabel": "Header Label",
+        "label": "Label",
+        "title": "Text Input",
+      },
       "now": [Function],
       "textComponent": "span",
     }
   }
-  label={
-    Object {
-      "code": "label",
-    }
-  }
+  label={null}
+  multiline={false}
+  type="text"
+  uid="objectLebelExample"
+  value={null}
 >
-  <TextInputComponent
-    clearButton={false}
-    defaultText={null}
-    headerLabel={null}
-    hiddenText={null}
-    intl={
-      Object {
-        "defaultFormats": Object {},
-        "defaultLocale": "en",
-        "formatDate": [Function],
-        "formatHTMLMessage": [Function],
-        "formatMessage": [Function],
-        "formatNumber": [Function],
-        "formatPlural": [Function],
-        "formatRelative": [Function],
-        "formatTime": [Function],
-        "formats": Object {},
-        "formatters": Object {
-          "getDateTimeFormat": [Function],
-          "getMessageFormat": [Function],
-          "getNumberFormat": [Function],
-          "getPluralFormat": [Function],
-          "getRelativeFormat": [Function],
-        },
-        "locale": "en",
-        "messages": Object {
-          "defaultText": "Default Text",
-          "footDescription": "Foot Description",
-          "headerLabel": "Header Label",
-          "label": "Label",
-          "title": "Text Input",
-        },
-        "now": [Function],
-        "textComponent": "span",
-      }
-    }
-    label={
-      Object {
-        "code": "label",
-      }
-    }
-    multiline={false}
-    value={null}
+  <Styled(Item)
+    stackedLabel={false}
   >
-    <Styled(Item)
+    <Item
       stackedLabel={false}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "borderColor": "#D9D5DC",
+          "borderLeftWidth": 0,
+          "borderRightWidth": 0,
+          "borderTopWidth": 0,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "marginLeft": 2,
+        }
+      }
     >
-      <Item
+      <TouchableOpacity
+        activeOpacity={1}
+        focusedOpacity={0.7}
         stackedLabel={false}
         style={
           Object {
@@ -2171,25 +1569,35 @@ exports[`components <TextInputComponent /> renders text input component correctl
           }
         }
       >
-        <TouchableOpacity
-          activeOpacity={1}
-          focusedOpacity={0.7}
-          stackedLabel={false}
+        <AnimatedComponent
+          accessible={true}
+          isTVSelectable={true}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
           style={
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "transparent",
-              "borderColor": "#D9D5DC",
-              "borderLeftWidth": 0,
-              "borderRightWidth": 0,
-              "borderTopWidth": 0,
-              "borderWidth": 1,
-              "flexDirection": "row",
-              "marginLeft": 2,
-            }
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderColor": "#D9D5DC",
+                "borderLeftWidth": 0,
+                "borderRightWidth": 0,
+                "borderTopWidth": 0,
+                "borderWidth": 1,
+                "flexDirection": "row",
+                "marginLeft": 2,
+              },
+              Object {
+                "opacity": 1,
+              },
+            ]
           }
         >
-          <AnimatedComponent
+          <View
             accessible={true}
             isTVSelectable={true}
             onResponderGrant={[Function]}
@@ -2199,22 +1607,18 @@ exports[`components <TextInputComponent /> renders text input component correctl
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "backgroundColor": "transparent",
-                  "borderColor": "#D9D5DC",
-                  "borderLeftWidth": 0,
-                  "borderRightWidth": 0,
-                  "borderTopWidth": 0,
-                  "borderWidth": 1,
-                  "flexDirection": "row",
-                  "marginLeft": 2,
-                },
-                Object {
-                  "opacity": 1,
-                },
-              ]
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderColor": "#D9D5DC",
+                "borderLeftWidth": 0,
+                "borderRightWidth": 0,
+                "borderTopWidth": 0,
+                "borderWidth": 1,
+                "flexDirection": "row",
+                "marginLeft": 2,
+                "opacity": 1,
+              }
             }
           >
             <View
@@ -2241,89 +1645,20 @@ exports[`components <TextInputComponent /> renders text input component correctl
                 }
               }
             >
-              <View
-                accessible={true}
-                isTVSelectable={true}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
+              <Styled(Input)
+                multiline={false}
+                onChangeText={[Function]}
+                onContentSizeChange={[Function]}
+                placeholder={null}
+                secureTextEntry={null}
                 style={
                   Object {
-                    "alignItems": "center",
-                    "backgroundColor": "transparent",
-                    "borderColor": "#D9D5DC",
-                    "borderLeftWidth": 0,
-                    "borderRightWidth": 0,
-                    "borderTopWidth": 0,
-                    "borderWidth": 1,
-                    "flexDirection": "row",
-                    "marginLeft": 2,
-                    "opacity": 1,
+                    "height": undefined,
                   }
                 }
+                value={null}
               >
-                <Styled(Label)>
-                  <Label
-                    style={
-                      Object {
-                        "color": "#575757",
-                        "fontSize": 17,
-                        "paddingRight": 5,
-                      }
-                    }
-                  >
-                    <Text
-                      accessible={true}
-                      allowFontScaling={true}
-                      ellipsizeMode="tail"
-                      style={
-                        Object {
-                          "color": "#575757",
-                          "fontSize": 17,
-                          "paddingRight": 5,
-                        }
-                      }
-                    >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Object {
-                            "color": "#575757",
-                            "fontSize": 17,
-                            "paddingRight": 5,
-                          }
-                        }
-                      >
-                        <Text
-                          accessible={true}
-                          allowFontScaling={true}
-                          ellipsizeMode="tail"
-                        >
-                          <Text
-                            accessible={true}
-                            allowFontScaling={true}
-                            ellipsizeMode="tail"
-                          >
-                            <FormattedMessage
-                              id="label"
-                              values={Object {}}
-                            >
-                              <span>
-                                Label
-                              </span>
-                            </FormattedMessage>
-                          </Text>
-                        </Text>
-                      </Text>
-                    </Text>
-                  </Label>
-                </Styled(Label)>
-                <Styled(Input)
+                <Input
                   multiline={false}
                   onChangeText={[Function]}
                   onContentSizeChange={[Function]}
@@ -2331,16 +1666,25 @@ exports[`components <TextInputComponent /> renders text input component correctl
                   secureTextEntry={null}
                   style={
                     Object {
-                      "height": undefined,
+                      "color": "#000",
+                      "flex": 1,
+                      "fontSize": 17,
+                      "height": 50,
+                      "lineHeight": 24,
+                      "paddingLeft": 5,
+                      "paddingRight": 5,
+                      "top": 1.5,
                     }
                   }
                   value={null}
                 >
-                  <Input
+                  <TextInput
+                    editable={true}
                     multiline={false}
                     onChangeText={[Function]}
                     onContentSizeChange={[Function]}
                     placeholder={null}
+                    placeholderTextColor="#575757"
                     secureTextEntry={null}
                     style={
                       Object {
@@ -2354,6 +1698,7 @@ exports[`components <TextInputComponent /> renders text input component correctl
                         "top": 1.5,
                       }
                     }
+                    underlineColorAndroid="rgba(0,0,0,0)"
                     value={null}
                   >
                     <TextInput
@@ -2378,50 +1723,26 @@ exports[`components <TextInputComponent /> renders text input component correctl
                       }
                       underlineColorAndroid="rgba(0,0,0,0)"
                       value={null}
-                    >
-                      <TextInput
-                        editable={true}
-                        multiline={false}
-                        onChangeText={[Function]}
-                        onContentSizeChange={[Function]}
-                        placeholder={null}
-                        placeholderTextColor="#575757"
-                        secureTextEntry={null}
-                        style={
-                          Object {
-                            "color": "#000",
-                            "flex": 1,
-                            "fontSize": 17,
-                            "height": 50,
-                            "lineHeight": 24,
-                            "paddingLeft": 5,
-                            "paddingRight": 5,
-                            "top": 1.5,
-                          }
-                        }
-                        underlineColorAndroid="rgba(0,0,0,0)"
-                        value={null}
-                      />
-                    </TextInput>
-                  </Input>
-                </Styled(Input)>
-              </View>
+                    />
+                  </TextInput>
+                </Input>
+              </Styled(Input)>
             </View>
-          </AnimatedComponent>
-        </TouchableOpacity>
-      </Item>
-    </Styled(Item)>
-  </TextInputComponent>
-</InjectIntl(TextInputComponent)>
+          </View>
+        </AnimatedComponent>
+      </TouchableOpacity>
+    </Item>
+  </Styled(Item)>
+</TextInputComponent>
 `;
 
 exports[`components <TextInputComponent /> renders text input component correctly 8`] = `
-<InjectIntl(TextInputComponent)
-  defaultText={
-    Object {
-      "code": "defaultText",
-    }
-  }
+<TextInputComponent
+  category="field"
+  clearButton={false}
+  defaultText={null}
+  headerLabel={null}
+  hiddenText={null}
   intl={
     Object {
       "defaultFormats": Object {},
@@ -2442,60 +1763,45 @@ exports[`components <TextInputComponent /> renders text input component correctl
         "getRelativeFormat": [Function],
       },
       "locale": "en",
-      "messages": Object {},
+      "messages": Object {
+        "defaultText": "Default Text",
+        "footDescription": "Foot Description",
+        "headerLabel": "Header Label",
+        "label": "Label",
+        "title": "Text Input",
+      },
       "now": [Function],
       "textComponent": "span",
     }
   }
+  label={null}
+  multiline={false}
+  type="text"
+  uid="objectDefaultTextExample"
+  value={null}
 >
-  <TextInputComponent
-    clearButton={false}
-    defaultText={
-      Object {
-        "code": "defaultText",
-      }
-    }
-    headerLabel={null}
-    hiddenText={null}
-    intl={
-      Object {
-        "defaultFormats": Object {},
-        "defaultLocale": "en",
-        "formatDate": [Function],
-        "formatHTMLMessage": [Function],
-        "formatMessage": [Function],
-        "formatNumber": [Function],
-        "formatPlural": [Function],
-        "formatRelative": [Function],
-        "formatTime": [Function],
-        "formats": Object {},
-        "formatters": Object {
-          "getDateTimeFormat": [Function],
-          "getMessageFormat": [Function],
-          "getNumberFormat": [Function],
-          "getPluralFormat": [Function],
-          "getRelativeFormat": [Function],
-        },
-        "locale": "en",
-        "messages": Object {
-          "defaultText": "Default Text",
-          "footDescription": "Foot Description",
-          "headerLabel": "Header Label",
-          "label": "Label",
-          "title": "Text Input",
-        },
-        "now": [Function],
-        "textComponent": "span",
-      }
-    }
-    label={null}
-    multiline={false}
-    value={null}
+  <Styled(Item)
+    stackedLabel={false}
   >
-    <Styled(Item)
+    <Item
       stackedLabel={false}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "borderColor": "#D9D5DC",
+          "borderLeftWidth": 0,
+          "borderRightWidth": 0,
+          "borderTopWidth": 0,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "marginLeft": 2,
+        }
+      }
     >
-      <Item
+      <TouchableOpacity
+        activeOpacity={1}
+        focusedOpacity={0.7}
         stackedLabel={false}
         style={
           Object {
@@ -2511,25 +1817,35 @@ exports[`components <TextInputComponent /> renders text input component correctl
           }
         }
       >
-        <TouchableOpacity
-          activeOpacity={1}
-          focusedOpacity={0.7}
-          stackedLabel={false}
+        <AnimatedComponent
+          accessible={true}
+          isTVSelectable={true}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
           style={
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "transparent",
-              "borderColor": "#D9D5DC",
-              "borderLeftWidth": 0,
-              "borderRightWidth": 0,
-              "borderTopWidth": 0,
-              "borderWidth": 1,
-              "flexDirection": "row",
-              "marginLeft": 2,
-            }
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderColor": "#D9D5DC",
+                "borderLeftWidth": 0,
+                "borderRightWidth": 0,
+                "borderTopWidth": 0,
+                "borderWidth": 1,
+                "flexDirection": "row",
+                "marginLeft": 2,
+              },
+              Object {
+                "opacity": 1,
+              },
+            ]
           }
         >
-          <AnimatedComponent
+          <View
             accessible={true}
             isTVSelectable={true}
             onResponderGrant={[Function]}
@@ -2539,22 +1855,18 @@ exports[`components <TextInputComponent /> renders text input component correctl
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "backgroundColor": "transparent",
-                  "borderColor": "#D9D5DC",
-                  "borderLeftWidth": 0,
-                  "borderRightWidth": 0,
-                  "borderTopWidth": 0,
-                  "borderWidth": 1,
-                  "flexDirection": "row",
-                  "marginLeft": 2,
-                },
-                Object {
-                  "opacity": 1,
-                },
-              ]
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderColor": "#D9D5DC",
+                "borderLeftWidth": 0,
+                "borderRightWidth": 0,
+                "borderTopWidth": 0,
+                "borderWidth": 1,
+                "flexDirection": "row",
+                "marginLeft": 2,
+                "opacity": 1,
+              }
             }
           >
             <View
@@ -2581,48 +1893,46 @@ exports[`components <TextInputComponent /> renders text input component correctl
                 }
               }
             >
-              <View
-                accessible={true}
-                isTVSelectable={true}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
+              <Styled(Input)
+                multiline={false}
+                onChangeText={[Function]}
+                onContentSizeChange={[Function]}
+                placeholder={null}
+                secureTextEntry={null}
                 style={
                   Object {
-                    "alignItems": "center",
-                    "backgroundColor": "transparent",
-                    "borderColor": "#D9D5DC",
-                    "borderLeftWidth": 0,
-                    "borderRightWidth": 0,
-                    "borderTopWidth": 0,
-                    "borderWidth": 1,
-                    "flexDirection": "row",
-                    "marginLeft": 2,
-                    "opacity": 1,
+                    "height": undefined,
                   }
                 }
+                value={null}
               >
-                <Styled(Input)
+                <Input
                   multiline={false}
                   onChangeText={[Function]}
                   onContentSizeChange={[Function]}
-                  placeholder="Default Text"
+                  placeholder={null}
                   secureTextEntry={null}
                   style={
                     Object {
-                      "height": undefined,
+                      "color": "#000",
+                      "flex": 1,
+                      "fontSize": 17,
+                      "height": 50,
+                      "lineHeight": 24,
+                      "paddingLeft": 5,
+                      "paddingRight": 5,
+                      "top": 1.5,
                     }
                   }
                   value={null}
                 >
-                  <Input
+                  <TextInput
+                    editable={true}
                     multiline={false}
                     onChangeText={[Function]}
                     onContentSizeChange={[Function]}
-                    placeholder="Default Text"
+                    placeholder={null}
+                    placeholderTextColor="#575757"
                     secureTextEntry={null}
                     style={
                       Object {
@@ -2636,6 +1946,7 @@ exports[`components <TextInputComponent /> renders text input component correctl
                         "top": 1.5,
                       }
                     }
+                    underlineColorAndroid="rgba(0,0,0,0)"
                     value={null}
                   >
                     <TextInput
@@ -2643,7 +1954,7 @@ exports[`components <TextInputComponent /> renders text input component correctl
                       multiline={false}
                       onChangeText={[Function]}
                       onContentSizeChange={[Function]}
-                      placeholder="Default Text"
+                      placeholder={null}
                       placeholderTextColor="#575757"
                       secureTextEntry={null}
                       style={
@@ -2660,39 +1971,15 @@ exports[`components <TextInputComponent /> renders text input component correctl
                       }
                       underlineColorAndroid="rgba(0,0,0,0)"
                       value={null}
-                    >
-                      <TextInput
-                        editable={true}
-                        multiline={false}
-                        onChangeText={[Function]}
-                        onContentSizeChange={[Function]}
-                        placeholder="Default Text"
-                        placeholderTextColor="#575757"
-                        secureTextEntry={null}
-                        style={
-                          Object {
-                            "color": "#000",
-                            "flex": 1,
-                            "fontSize": 17,
-                            "height": 50,
-                            "lineHeight": 24,
-                            "paddingLeft": 5,
-                            "paddingRight": 5,
-                            "top": 1.5,
-                          }
-                        }
-                        underlineColorAndroid="rgba(0,0,0,0)"
-                        value={null}
-                      />
-                    </TextInput>
-                  </Input>
-                </Styled(Input)>
-              </View>
+                    />
+                  </TextInput>
+                </Input>
+              </Styled(Input)>
             </View>
-          </AnimatedComponent>
-        </TouchableOpacity>
-      </Item>
-    </Styled(Item)>
-  </TextInputComponent>
-</InjectIntl(TextInputComponent)>
+          </View>
+        </AnimatedComponent>
+      </TouchableOpacity>
+    </Item>
+  </Styled(Item)>
+</TextInputComponent>
 `;

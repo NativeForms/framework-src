@@ -7,6 +7,6 @@ describe('container <ButtonContainer />', () => {
     const wrapper = shallow(
       <ButtonContainer />
     );
-    expect(wrapper).toMatchSnapshot();
+    expect(wrapper.dive()).toMatchSnapshot();
   });
 });
