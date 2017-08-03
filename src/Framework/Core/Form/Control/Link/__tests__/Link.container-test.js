@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import ButtonContainer from '../Button.container';
+import LinkContainer from '../Link.container';
 
-describe('container <ButtonContainer />', () => {
+describe('container <LinkContainer />', () => {
   it('container render correctly', () => {
     const wrapper = shallow(
-      <ButtonContainer />
+      <LinkContainer />
     );
     expect(wrapper.dive()).toMatchSnapshot();
   });

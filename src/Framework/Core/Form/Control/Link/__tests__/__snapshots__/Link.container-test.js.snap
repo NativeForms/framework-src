@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`container <ButtonContainer /> container render correctly 1`] = `
+exports[`container <LinkContainer /> container render correctly 1`] = `
 <Content
   style={
     Object {
@@ -20,8 +20,8 @@ exports[`container <ButtonContainer /> container render correctly 1`] = `
       <FormComponent
         messages={
           Object {
-            "myLabel": "Button Text",
-            "title": "Button",
+            "googleLabel": "Click to visit google!",
+            "title": "Link",
           }
         }
         schema={
@@ -31,39 +31,43 @@ exports[`container <ButtonContainer /> container render correctly 1`] = `
                 Object {
                   "attributes": Object {
                     "label": Object {
-                      "code": "myLabel",
+                      "code": "googleLabel",
                     },
+                    "route": "http://www.google.com",
                   },
                   "category": "control",
-                  "type": "button",
-                  "uid": "Button1",
+                  "type": "link",
+                  "uid": "Link1",
                 },
               ],
-              "label": "Button Example",
+              "label": "Link Example",
             },
             "category": "group",
             "type": "section",
-            "uid": "buttonExample",
+            "uid": "linkExample",
           }
         }
       />
     </RowNB>
-    <RowNB>
+    <RowNB
+      style={true}
+    >
       <SchemaViewer>
         export default {
-          uid: 'buttonExample',
+          uid: 'linkExample',
           type: 'section',
           category: 'group',
           attributes: {
-            label: 'Button Example',
+            label: 'Link Example',
             formComponents: [{
-              uid: 'Button1',
-              type: 'button',
+              uid: 'Link1',
+              type: 'link',
               category: 'control',
               attributes: {
                 label: {
-                  code: 'myLabel'
+                  code: 'googleLabel'
                 },
+                route: 'http://www.google.com'
               }
             }]
           }
