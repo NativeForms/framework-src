@@ -48,7 +48,6 @@ describe('components <LinkComponent />', () => {
     const stubLinking = sinon.stub(Linking, 'canOpenURL');
     stubLinking.withArgs(mockRoute).resolves(true);
     wrapper.find(TouchableHighlight).props().onPress();
-    stubLinking.restore();
     sinon.assert.calledOnce(stubLinking);
   });
 });
