@@ -32,8 +32,6 @@ describe('components <LinkComponent />', () => {
     expect(wrapper).toMatchSnapshot();
   });
   it('linkTo function works correctly', () => {
-    //let stubLink = sinon.stub(Linking, 'canOpenURL');
-    //stubLink.withArgs(mockRoute).returns(true);
     const props = {
       label: messages.title,
       route: mockRoute,
@@ -41,6 +39,16 @@ describe('components <LinkComponent />', () => {
     const wrapper = shallow(
       <LinkComponent {...props} />
     );
+    const instance = wrapper.instance();
+    const linkToSpy = sinon.spy(instance, 'linkTo');
+    instance.forceUpdate();
     wrapper.find(TouchableHighlight).props().onPress();
+    sinon.assert.calledOnce(linkToSpy);
+
+    const stubLinking = sinon.stub(Linking, 'canOpenURL');
+    stubLinking.withArgs(mockRoute).resolves(true);
+    wrapper.find(TouchableHighlight).props().onPress();
+    stubLinking.restore();
+    sinon.assert.calledOnce(stubLinking);
   });
 });
