@@ -3,6 +3,7 @@ import { View } from 'react-native';
 
 // app
 import TextInputComponent from './TextInput/TextInput.component';
+import SelectionComponent from './Selection/Selection.component';
 
 export default class FieldComponent extends Component {
   static propTypes = {
@@ -15,6 +16,7 @@ export default class FieldComponent extends Component {
 
     this.FIELD_MAP = {
       text: this.renderTextInput.bind(this),
+      selection: this.renderSelection.bind(this),
     };
   }
 
@@ -27,6 +29,14 @@ export default class FieldComponent extends Component {
     return (
       <View>
         <TextInputComponent {...this.props.attributes} />
+      </View>
+    );
+  }
+
+  renderSelection() {
+    return (
+      <View>
+        <SelectionComponent {...this.props.attributes} />
       </View>
     );
   }
