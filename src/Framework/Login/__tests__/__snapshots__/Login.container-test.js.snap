@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`container <LoginContainer /> container render correctly 1`] = `
+<Content
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "flex": 1,
+    }
+  }
+>
+  <FormComponent
+    messages={
+      Object {
+        "login": "Sign In",
+        "moreInfo": "Click for more info",
+        "password": "Password",
+        "title": "Login",
+        "username": "Username",
+      }
+    }
+    schema={
+      Object {
+        "attributes": Object {
+          "formComponents": Array [
+            Object {
+              "attributes": Object {
+                "headerLabel": Object {
+                  "code": "username",
+                },
+              },
+              "category": "field",
+              "type": "text",
+              "uid": "username",
+            },
+            Object {
+              "attributes": Object {
+                "headerLabel": Object {
+                  "code": "password",
+                },
+                "hiddenText": true,
+              },
+              "category": "field",
+              "type": "text",
+              "uid": "password",
+            },
+            Object {
+              "attributes": Object {
+                "label": Object {
+                  "code": "login",
+                },
+              },
+              "category": "control",
+              "type": "button",
+              "uid": "login",
+            },
+            Object {
+              "attributes": Object {
+                "label": Object {
+                  "code": "moreInfo",
+                },
+                "route": "https://nativebase.io/",
+              },
+              "category": "control",
+              "type": "link",
+              "uid": "moreInfo",
+            },
+          ],
+          "label": "",
+        },
+        "category": "group",
+        "type": "section",
+        "uid": "loginExample",
+      }
+    }
+  />
+</Content>
+`;
