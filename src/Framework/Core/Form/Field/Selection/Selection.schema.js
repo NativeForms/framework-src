@@ -10,10 +10,7 @@ export default {
         type: 'selection',
         category: 'field',
         attributes: {
-          label: 'Selection Box Title',
-          selectionList: {
-            label: 'Selection 1',
-          }
+          label: 'myLabel',
         }
       }
     ]

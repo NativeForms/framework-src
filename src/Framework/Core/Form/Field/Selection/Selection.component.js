@@ -1,12 +1,13 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 //import { Text } from 'react-native';
-import { CheckBox, ListItem} from 'native-base';
+import { CheckBox, ListItem } from 'native-base';
+import { injectIntl } from 'react-intl';
 
 class SelectionComponent extends Component {
   /*static propTypes = {
     label: PropTypes.string,
     selectionList: PropTypes.object,
-    radioBoxType: PropTypes.bool, 
+    radioBoxType: PropTypes.bool
   }*/
   render() {
     return (
@@ -16,3 +17,5 @@ class SelectionComponent extends Component {
     );
   }
 }
+
+export default injectIntl(SelectionComponent);

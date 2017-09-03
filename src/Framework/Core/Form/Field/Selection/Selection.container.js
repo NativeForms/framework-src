@@ -13,6 +13,11 @@ import schemaText from './Selection.schema.js';
 const messages = i18n[getLocale()];
 
 export default class SelectionContainer extends Component {
+  static navigationOptions = {
+    drawerLabel: messages.title,
+    title: messages.title,
+  };
+
   render() {
     return (
       <Content>
