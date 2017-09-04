@@ -6,12 +6,14 @@ import { injectIntl } from 'react-intl';
 class ListComponent extends Component {
   static propTypes = {
     checked: PropTypes.bool,
-    uid: PropTypes.string
+    key: PropTypes.string,
+    itemLabel: PropTypes.string
   }
 
   static defaultProps = {
     checked: false,
-    uid: null
+    key: null,
+    itemLabel: null
   }
 
   constructor(props) {
@@ -27,12 +29,11 @@ class ListComponent extends Component {
 
   render() {
     return (
-      <ListItem key={this.props.uid}>
-        <CheckBox checked={this.state.checked} onPress={this.clickSelection}>
-          <Body>
-            <Text>TEST { this.props.uid }</Text>
-          </Body>
-        </CheckBox>
+      <ListItem key={this.props.key}>
+        <CheckBox checked={this.state.checked} onPress={this.clickSelection} />
+        <Body>
+          <Text>{ this.props.itemLabel }</Text>
+        </Body>
       </ListItem>
     );
   }

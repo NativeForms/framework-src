@@ -19,7 +19,7 @@ export default {
             },
             {
               uid: 'child2',
-              itemLabel: 'No-Header Selection 2]',
+              itemLabel: 'No-Header Selection 2',
               checked: false,
             }
           ]
@@ -30,21 +30,21 @@ export default {
         type: 'selection',
         category: 'field',
         attributes: {
-          label: 'Selection Main Label',
+          label: 'Selection Header Label',
           radionBoxType: false,
           selectionList: [
             {
-              uid: 'child1',
+              uid: 'Selection child1',
               itemLabel: 'item1',
               checked: false,
             },
             {
-              uid: 'child2',
+              uid: 'Selection child2',
               itemLabel: 'item2',
               checked: false,
             },
             {
-              uid: 'child3',
+              uid: 'Selection child3',
               itemLabel: 'item2',
               checked: false,
             }
@@ -56,17 +56,17 @@ export default {
         type: 'selection',
         category: 'field',
         attributes: {
-          label: 'Radio Box Main Label',
+          label: 'Radio Box Header Label',
           radionBoxType: false,
           color: 'red',
           selectionList: [
             {
-              uid: 'child1',
+              uid: 'Radio child1',
               itemLabel: 'item1',
               checked: false,
             },
             {
-              uid: 'child2',
+              uid: 'Radio child2',
               itemLabel: 'item2',
               checked: false,
             }
