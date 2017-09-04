@@ -1,0 +1,192 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`container <SelectionContainer /> container render correctly 1`] = `
+<Content
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "flex": 1,
+    }
+  }
+>
+  <GridNB>
+    <RowNB>
+      <FormComponent
+        messages={
+          Object {
+            "label": "Selection Label",
+            "title": "Selection",
+          }
+        }
+        schema={
+          Object {
+            "attributes": Object {
+              "formComponents": Array [
+                Object {
+                  "attributes": Object {
+                    "radioBoxType": false,
+                    "selectionList": Array [
+                      Object {
+                        "checked": false,
+                        "itemLabel": "No-Header Selection 1",
+                        "uid": "child1",
+                      },
+                      Object {
+                        "checked": false,
+                        "itemLabel": "No-Header Selection 2",
+                        "uid": "child2",
+                      },
+                    ],
+                  },
+                  "category": "field",
+                  "type": "selection",
+                  "uid": "noHeaderSelection",
+                },
+                Object {
+                  "attributes": Object {
+                    "label": "Selection Header Label",
+                    "radioBoxType": false,
+                    "selectionList": Array [
+                      Object {
+                        "checked": false,
+                        "itemLabel": "Selection Type Item 1",
+                        "uid": "child1",
+                      },
+                      Object {
+                        "checked": false,
+                        "itemLabel": "Selection Type Item 2",
+                        "uid": "child2",
+                      },
+                      Object {
+                        "checked": false,
+                        "itemLabel": "Selection Type Item 3",
+                        "uid": "child3",
+                      },
+                    ],
+                  },
+                  "category": "field",
+                  "type": "selection",
+                  "uid": "selectionExample",
+                },
+                Object {
+                  "attributes": Object {
+                    "label": "Radio Box Header Label",
+                    "radioBoxType": true,
+                    "selectionList": Array [
+                      Object {
+                        "checked": true,
+                        "itemLabel": "Radio item1",
+                        "uid": "child1",
+                      },
+                      Object {
+                        "checked": false,
+                        "itemLabel": "Radio item2",
+                        "uid": "child2",
+                      },
+                    ],
+                  },
+                  "category": "field",
+                  "type": "selection",
+                  "uid": "radioSelectionExample",
+                },
+              ],
+              "label": "Selection Example",
+            },
+            "category": "group",
+            "type": "section",
+            "uid": "selectionExample",
+          }
+        }
+      />
+    </RowNB>
+    <RowNB
+      style={
+        Object {
+          "paddingTop": 10,
+        }
+      }
+    >
+      <SchemaViewer>
+        export default {
+          uid: 'selectionExample',
+          type: 'section',
+          category: 'group',
+          attributes: {
+            label: 'Selection Example',
+            formComponents: [
+              {
+                uid: 'noHeaderSelection',
+                type: 'selection',
+                category: 'field',
+                attributes: {
+                  radioBoxType: false,
+                  selectionList: [
+                    {
+                      uid: 'child1',
+                      itemLabel: 'No-Header Selection 1',
+                      checked: false,
+                    },
+                    {
+                      uid: 'child2',
+                      itemLabel: 'No-Header Selection 2',
+                      checked: false,
+                    }
+                  ]
+                }
+              },
+              {
+                uid: 'selectionExample',
+                type: 'selection',
+                category: 'field',
+                attributes: {
+                  label: 'Selection Header Label',
+                  radioBoxType: false,
+                  selectionList: [
+                    {
+                      uid: 'child1',
+                      itemLabel: 'Selection Type Item 1',
+                      checked: false,
+                    },
+                    {
+                      uid: 'child2',
+                      itemLabel: 'Selection Type Item 2',
+                      checked: false,
+                    },
+                    {
+                      uid: 'child3',
+                      itemLabel: 'Selection Type Item 3',
+                      checked: false,
+                    }
+                  ]
+                }
+              },
+              {
+                uid: 'radioSelectionExample',
+                type: 'selection',
+                category: 'field',
+                attributes: {
+                  label: 'Radio Box Header Label',
+                  radioBoxType: true,
+                  selectionList: [
+                    {
+                      uid: 'child1',
+                      itemLabel: 'Radio item1',
+                      checked: true,
+                    },
+                    {
+                      uid: 'child2',
+                      itemLabel: 'Radio item2',
+                      checked: false,
+                    }
+                  ]
+                }
+              },
+            ]
+          }
+        };
+        
+      </SchemaViewer>
+    </RowNB>
+  </GridNB>
+</Content>
+`;

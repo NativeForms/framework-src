@@ -14,7 +14,7 @@ class SelectionComponent extends Component {
 
   static defaultProps = {
     label: null,
-    selectionList: null,
+    selectionList: [],
     radioBoxType: false,
   }
 

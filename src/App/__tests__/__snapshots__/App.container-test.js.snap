@@ -27,12 +27,12 @@ exports[`AppContainer should render correctly 1`] = `
                       "routeName": "Home",
                     },
                     Object {
-                      "key": "id-42-5",
+                      "key": "id-42-6",
                       "params": undefined,
                       "routeName": "Home",
                     },
                     Object {
-                      "key": "id-42-6",
+                      "key": "id-42-7",
                       "params": undefined,
                       "routeName": "Home",
                     },
@@ -51,11 +51,22 @@ exports[`AppContainer should render correctly 1`] = `
                 },
                 Object {
                   "index": 0,
+                  "key": "Selection",
+                  "routeName": "Selection",
+                  "routes": Array [
+                    Object {
+                      "key": "Init-id-42-2",
+                      "routeName": "Selection",
+                    },
+                  ],
+                },
+                Object {
+                  "index": 0,
                   "key": "Button",
                   "routeName": "Button",
                   "routes": Array [
                     Object {
-                      "key": "Init-id-42-2",
+                      "key": "Init-id-42-3",
                       "routeName": "Button",
                     },
                   ],
@@ -66,7 +77,7 @@ exports[`AppContainer should render correctly 1`] = `
                   "routeName": "Link",
                   "routes": Array [
                     Object {
-                      "key": "Init-id-42-3",
+                      "key": "Init-id-42-4",
                       "routeName": "Link",
                     },
                   ],
@@ -77,7 +88,7 @@ exports[`AppContainer should render correctly 1`] = `
                   "routeName": "Login",
                   "routes": Array [
                     Object {
-                      "key": "Init-id-42-4",
+                      "key": "Init-id-42-5",
                       "routeName": "Login",
                     },
                   ],

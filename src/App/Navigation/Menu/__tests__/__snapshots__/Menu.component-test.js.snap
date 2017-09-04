@@ -31,6 +31,14 @@ exports[`MenuComponent should render correctly 1`] = `
       onPress={[Function]}
     >
       <Styled(Text)>
+        Selection
+      </Styled(Text)>
+    </Styled(ListItem)>
+    <Styled(ListItem)
+      button={true}
+      onPress={[Function]}
+    >
+      <Styled(Text)>
         Button
       </Styled(Text)>
     </Styled(ListItem)>
