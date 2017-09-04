@@ -1,7 +1,9 @@
 import React, { Component, PropTypes } from 'react';
-import { List, ListItem, CheckBox, Body, Text, Radio } from 'native-base';
+import { List, ListItem, Body, Text } from 'native-base';
 /*import { CheckBox } from 'react-native-elements';*/
 import { injectIntl } from 'react-intl';
+
+import ListComponent from './Selection.list';
 
 class SelectionComponent extends Component {
   static propType = {
@@ -19,7 +21,7 @@ class SelectionComponent extends Component {
   render() {
     const { label, radionBoxType, selectionList, color, uid} = this.props;
     const childItems = selectionList.map((item) =>
-      <SelectionChild key={uid} props={item} />
+      <ListComponent key={uid} props={item} />
     );
     /*const props = {
 
@@ -35,32 +37,6 @@ class SelectionComponent extends Component {
         }
         { childItems }
       </List>
-    );
-  }
-}
-
-/* REMOVE to ANOTHER FILE */
-class SelectionChild extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      checked: this.props.checked,
-    };
-    this.clickSelection = this.clickSelection.bind(this);
-  }
-  clickSelection() {
-    this.setState({ checked: !this.state.checked });
-  }
-
-  render(){
-    return (
-      <ListItem key={this.props.uid}>
-        <CheckBox checked={this.state.checked} onPress={this.clickSelection}>
-          <Body>
-            <Text>{ this.props.itemLabel }</Text>
-          </Body>
-        </CheckBox>
-      </ListItem>
     );
   }
 }
