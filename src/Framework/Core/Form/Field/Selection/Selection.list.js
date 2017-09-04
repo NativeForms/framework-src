@@ -1,9 +1,19 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { ListItem, CheckBox, Body, Text } from 'native-base';
 /*import { CheckBox } from 'react-native-elements';*/
 import { injectIntl } from 'react-intl';
 
 class ListComponent extends Component {
+  static propTypes = {
+    checked: PropTypes.bool,
+    uid: PropTypes.string
+  }
+
+  static defaultProps = {
+    checked: false,
+    uid: null
+  }
+
   constructor(props) {
     super(props);
     this.state = {
@@ -20,7 +30,7 @@ class ListComponent extends Component {
       <ListItem key={this.props.uid}>
         <CheckBox checked={this.state.checked} onPress={this.clickSelection}>
           <Body>
-            <Text>{ this.props.itemLabel }</Text>
+            <Text>TEST { this.props.uid }</Text>
           </Body>
         </CheckBox>
       </ListItem>
