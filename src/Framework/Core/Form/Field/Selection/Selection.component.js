@@ -2,24 +2,34 @@ import React, { Component, PropTypes } from 'react';
 import { List, ListItem, Body, Text } from 'native-base';
 import { injectIntl } from 'react-intl';
 
-import ListComponent from './Selection.list';
+import BoxComponent from './Selection.box';
+import RadioComponent from './Selection.radio';
 
 class SelectionComponent extends Component {
   static propTypes = {
     label: PropTypes.string,
-    selectionList: PropTypes.array
+    selectionList: PropTypes.array,
+    radioBoxType: PropTypes.bool,
   }
 
   static defaultProps = {
     label: null,
-    selectionList: null
+    selectionList: null,
+    radioBoxType: false,
   }
 
   render() {
-    const { label, selectionList } = this.props;
-    const childItems = selectionList.map((item) =>
-      <ListComponent key={item.uid} {...item} />
-    );
+    const { label, selectionList, radioBoxType } = this.props;
+    let childItems = null;
+    if (radioBoxType) {
+      childItems = selectionList.map((item) =>
+        <RadioComponent key={item.uid} {...item} />
+      );
+    } else {
+      childItems = selectionList.map((item) =>
+        <BoxComponent key={item.uid} {...item} />
+      );
+    }
     return (
       <List>
         {label &&

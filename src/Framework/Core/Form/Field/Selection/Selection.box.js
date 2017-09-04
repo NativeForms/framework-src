@@ -3,7 +3,7 @@ import { ListItem, CheckBox, Body, Text } from 'native-base';
 /*import { CheckBox } from 'react-native-elements';*/
 import { injectIntl } from 'react-intl';
 
-class ListComponent extends Component {
+class BoxComponent extends Component {
   static propTypes = {
     checked: PropTypes.bool,
     key: PropTypes.string,
@@ -39,4 +39,4 @@ class ListComponent extends Component {
   }
 }
 
-export default injectIntl(ListComponent);
+export default injectIntl(BoxComponent);
