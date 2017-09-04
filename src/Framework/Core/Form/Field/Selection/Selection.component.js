@@ -1,6 +1,5 @@
 import React, { Component, PropTypes } from 'react';
 import { List, ListItem, Body, Text } from 'native-base';
-/*import { CheckBox } from 'react-native-elements';*/
 import { injectIntl } from 'react-intl';
 
 import ListComponent from './Selection.list';

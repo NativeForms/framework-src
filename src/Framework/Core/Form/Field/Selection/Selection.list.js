@@ -15,7 +15,7 @@ class ListComponent extends Component {
     this.setState({ checked: !this.state.checked });
   }
 
-  render(){
+  render() {
     return (
       <ListItem key={this.props.uid}>
         <CheckBox checked={this.state.checked} onPress={this.clickSelection}>
